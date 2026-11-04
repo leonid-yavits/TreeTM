@@ -1,0 +1,20 @@
+[
+ {
+  "run": "results/wos/budget/seed0",
+  "gated_dense_tests": 20608108.970948175,
+  "flat_dense_tests": 53200000,
+  "reduction": 0.6126295306212749
+ },
+ {
+  "run": "results/wos/budget/seed1",
+  "gated_dense_tests": 17691092.901989996,
+  "flat_dense_tests": 53200000,
+  "reduction": 0.6674606597370301
+ },
+ {
+  "run": "results/wos/budget/seed2",
+  "gated_dense_tests": 14779440.246887304,
+  "flat_dense_tests": 53200000,
+  "reduction": 0.7221909728028701
+ }
+]

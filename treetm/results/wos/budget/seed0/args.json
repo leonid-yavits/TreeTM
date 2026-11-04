@@ -1,0 +1,15 @@
+{
+ "dataset": "wos",
+ "run": "results/wos/budget/seed0",
+ "clauses": 100,
+ "T": 10,
+ "s": 5.0,
+ "epochs": 30,
+ "per_class": 11400,
+ "seed": 0,
+ "nodes": "root",
+ "procs": 1,
+ "weighted": false,
+ "score_every": 5,
+ "resample": "child"
+}

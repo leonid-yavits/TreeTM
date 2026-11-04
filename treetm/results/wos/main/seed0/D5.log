@@ -1,0 +1,30 @@
+[D5] epoch 1 train=20.2s
+[D5] epoch 2 train=11.0s
+[D5] epoch 3 train=8.8s
+[D5] epoch 4 train=8.3s
+[D5] epoch 5 val_acc=0.5210 train=8.4s
+[D5] epoch 6 train=7.8s
+[D5] epoch 7 train=7.5s
+[D5] epoch 8 train=8.0s
+[D5] epoch 9 train=8.2s
+[D5] epoch 10 val_acc=0.5560 train=7.3s
+[D5] epoch 11 train=8.2s
+[D5] epoch 12 train=17.1s
+[D5] epoch 13 train=16.8s
+[D5] epoch 14 train=16.3s
+[D5] epoch 15 val_acc=0.5338 train=15.1s
+[D5] epoch 16 train=17.3s
+[D5] epoch 17 train=18.0s
+[D5] epoch 18 train=16.5s
+[D5] epoch 19 train=16.7s
+[D5] epoch 20 val_acc=0.5355 train=18.2s
+[D5] epoch 21 train=18.6s
+[D5] epoch 22 train=15.7s
+[D5] epoch 23 train=15.8s
+[D5] epoch 24 train=17.0s
+[D5] epoch 25 val_acc=0.5364 train=15.8s
+[D5] epoch 26 train=16.5s
+[D5] epoch 27 train=15.0s
+[D5] epoch 28 train=13.8s
+[D5] epoch 29 train=15.1s
+[D5] epoch 30 val_acc=0.5398 train=16.4s

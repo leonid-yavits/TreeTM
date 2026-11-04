@@ -1,0 +1,15 @@
+{
+ "dataset": "wos",
+ "run": "results/wos/leafbal/seed1",
+ "clauses": 100,
+ "T": 10,
+ "s": 5.0,
+ "epochs": 30,
+ "per_class": 600,
+ "seed": 1,
+ "nodes": "root",
+ "procs": 2,
+ "weighted": false,
+ "score_every": 5,
+ "resample": "leaf"
+}

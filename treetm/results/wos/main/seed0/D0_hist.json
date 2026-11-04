@@ -1,0 +1,176 @@
+{
+ "name": "D0",
+ "classes": [
+  "D0A0",
+  "D0A1",
+  "D0A2",
+  "D0A3",
+  "D0A4",
+  "D0A5",
+  "D0A6",
+  "D0A7",
+  "D0A8",
+  "D0A9",
+  "D0A10",
+  "D0A11",
+  "D0A12",
+  "D0A13",
+  "D0A14",
+  "D0A15",
+  "D0A16"
+ ],
+ "cfg": {
+  "clauses": 100,
+  "T": 10,
+  "s": 5.0,
+  "weighted": false,
+  "epochs": 30,
+  "per_class": 600,
+  "seed": 0,
+  "score_every": 5,
+  "resample": "child"
+ },
+ "epochs": [
+  {
+   "epoch": 1,
+   "train_s": 8.31
+  },
+  {
+   "epoch": 2,
+   "train_s": 4.69
+  },
+  {
+   "epoch": 3,
+   "train_s": 3.82
+  },
+  {
+   "epoch": 4,
+   "train_s": 4.04
+  },
+  {
+   "epoch": 5,
+   "train_s": 3.54,
+   "node_val_acc": 0.7846153846153846,
+   "included_literals": 59243
+  },
+  {
+   "epoch": 6,
+   "train_s": 3.32
+  },
+  {
+   "epoch": 7,
+   "train_s": 3.07
+  },
+  {
+   "epoch": 8,
+   "train_s": 3.49
+  },
+  {
+   "epoch": 9,
+   "train_s": 3.07
+  },
+  {
+   "epoch": 10,
+   "train_s": 3.25,
+   "node_val_acc": 0.8134615384615385,
+   "included_literals": 87135
+  },
+  {
+   "epoch": 11,
+   "train_s": 3.03
+  },
+  {
+   "epoch": 12,
+   "train_s": 3.06
+  },
+  {
+   "epoch": 13,
+   "train_s": 3.19
+  },
+  {
+   "epoch": 14,
+   "train_s": 3.26
+  },
+  {
+   "epoch": 15,
+   "train_s": 3.54,
+   "node_val_acc": 0.8346153846153846,
+   "included_literals": 99157
+  },
+  {
+   "epoch": 16,
+   "train_s": 3.0
+  },
+  {
+   "epoch": 17,
+   "train_s": 3.37
+  },
+  {
+   "epoch": 18,
+   "train_s": 3.17
+  },
+  {
+   "epoch": 19,
+   "train_s": 2.88
+  },
+  {
+   "epoch": 20,
+   "train_s": 3.15,
+   "node_val_acc": 0.8192307692307692,
+   "included_literals": 103838
+  },
+  {
+   "epoch": 21,
+   "train_s": 3.26
+  },
+  {
+   "epoch": 22,
+   "train_s": 3.06
+  },
+  {
+   "epoch": 23,
+   "train_s": 3.01
+  },
+  {
+   "epoch": 24,
+   "train_s": 3.11
+  },
+  {
+   "epoch": 25,
+   "train_s": 2.85,
+   "node_val_acc": 0.8192307692307692,
+   "included_literals": 99640
+  },
+  {
+   "epoch": 26,
+   "train_s": 2.65
+  },
+  {
+   "epoch": 27,
+   "train_s": 2.35
+  },
+  {
+   "epoch": 28,
+   "train_s": 2.89
+  },
+  {
+   "epoch": 29,
+   "train_s": 2.71
+  },
+  {
+   "epoch": 30,
+   "train_s": 2.83,
+   "node_val_acc": 0.8038461538461539,
+   "included_literals": 106472
+  }
+ ],
+ "final_stats": {
+  "classes": 17,
+  "clauses_per_class": 100,
+  "total_clauses": 1700,
+  "nonempty_clauses": 1650,
+  "n_literals": 4000,
+  "included_literals_total": 106472,
+  "max_clause_weight": 1
+ }
+}
