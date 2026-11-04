@@ -1,0 +1,3004 @@
+{
+ "nslkdd": {
+  "val": [
+   {
+    "variant": "main",
+    "run": "results/nslkdd/main/seed0",
+    "tree_acc": 0.9799968248928401,
+    "flat_acc": 0.9651531989204636,
+    "tree_level1": 0.9922209874583268,
+    "flat_level1": 0.9757898079060169,
+    "tree_hF": 0.9838855918232773,
+    "flat_hF": 0.9688883473457617
+   },
+   {
+    "variant": "main",
+    "run": "results/nslkdd/main/seed1",
+    "tree_acc": 0.9778536275599301,
+    "flat_acc": 0.9645975551674869,
+    "tree_level1": 0.9925384981743134,
+    "flat_level1": 0.9763454516589934,
+    "tree_hF": 0.9828253706754531,
+    "flat_hF": 0.9684249024707412
+   },
+   {
+    "variant": "main",
+    "run": "results/nslkdd/main/seed2",
+    "tree_acc": 0.9793618034608668,
+    "flat_acc": 0.9668201301793935,
+    "tree_level1": 0.9919828544213367,
+    "flat_level1": 0.9778536275599301,
+    "tree_hF": 0.9832708393423708,
+    "flat_hF": 0.9704842053909013
+   },
+   {
+    "variant": "main",
+    "run": "results/nslkdd/main/seed3",
+    "tree_acc": 0.9769804730909668,
+    "flat_acc": 0.9688839498333068,
+    "tree_level1": 0.9915859660263534,
+    "flat_level1": 0.9803937132878234,
+    "tree_hF": 0.9817792068595927,
+    "flat_hF": 0.9726802654615039
+   },
+   {
+    "variant": "main",
+    "run": "results/nslkdd/main/seed4",
+    "tree_acc": 0.9789649150658835,
+    "flat_acc": 0.9694395935862835,
+    "tree_level1": 0.9917447213843468,
+    "flat_level1": 0.9794411811398634,
+    "tree_hF": 0.9828908311345647,
+    "flat_hF": 0.9729762728419682
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/nslkdd/leafbal/seed0",
+    "tree_acc": 0.9575329417367836,
+    "flat_acc": 0.9651531989204636,
+    "tree_level1": 0.9712652802032069,
+    "flat_level1": 0.9757898079060169,
+    "tree_hF": 0.9611883280500692,
+    "flat_hF": 0.9688883473457617
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/nslkdd/leafbal/seed1",
+    "tree_acc": 0.9600730274646769,
+    "flat_acc": 0.9645975551674869,
+    "tree_level1": 0.9761866963010002,
+    "flat_level1": 0.9763454516589934,
+    "tree_hF": 0.9647772619920189,
+    "flat_hF": 0.9684249024707412
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/nslkdd/leafbal/seed2",
+    "tree_acc": 0.9620574694395936,
+    "flat_acc": 0.9668201301793935,
+    "tree_level1": 0.9757898079060169,
+    "flat_level1": 0.9778536275599301,
+    "tree_hF": 0.965827264960742,
+    "flat_hF": 0.9704842053909013
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/nslkdd/leafbal/seed3",
+    "tree_acc": 0.955310366724877,
+    "flat_acc": 0.9688839498333068,
+    "tree_level1": 0.9730909668201302,
+    "flat_level1": 0.9803937132878234,
+    "tree_hF": 0.9600243753808653,
+    "flat_hF": 0.9726802654615039
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/nslkdd/leafbal/seed4",
+    "tree_acc": 0.9596761390696936,
+    "flat_acc": 0.9694395935862835,
+    "tree_level1": 0.9750754087950468,
+    "flat_level1": 0.9794411811398634,
+    "tree_hF": 0.963484059856864,
+    "flat_hF": 0.9729762728419682
+   },
+   {
+    "variant": "budget",
+    "run": "results/nslkdd/budget/seed0",
+    "tree_acc": 0.9806318463248135,
+    "flat_acc": 0.9651531989204636,
+    "tree_level1": 0.9929353865692967,
+    "flat_level1": 0.9757898079060169,
+    "tree_hF": 0.9845507353849956,
+    "flat_hF": 0.9688883473457617
+   },
+   {
+    "variant": "budget",
+    "run": "results/nslkdd/budget/seed1",
+    "tree_acc": 0.9784092713129068,
+    "flat_acc": 0.9645975551674869,
+    "tree_level1": 0.9930147642482934,
+    "flat_level1": 0.9763454516589934,
+    "tree_hF": 0.9833566779270001,
+    "flat_hF": 0.9684249024707412
+   },
+   {
+    "variant": "budget",
+    "run": "results/nslkdd/budget/seed2",
+    "tree_acc": 0.9803937132878234,
+    "flat_acc": 0.9668201301793935,
+    "tree_level1": 0.9930147642482934,
+    "flat_level1": 0.9778536275599301,
+    "tree_hF": 0.9843479693549716,
+    "flat_hF": 0.9704842053909013
+   },
+   {
+    "variant": "budget",
+    "run": "results/nslkdd/budget/seed3",
+    "tree_acc": 0.9785680266709001,
+    "flat_acc": 0.9688839498333068,
+    "tree_level1": 0.9931735196062867,
+    "flat_level1": 0.9803937132878234,
+    "tree_hF": 0.9834445268099827,
+    "flat_hF": 0.9726802654615039
+   },
+   {
+    "variant": "budget",
+    "run": "results/nslkdd/budget/seed4",
+    "tree_acc": 0.9803143356088267,
+    "flat_acc": 0.9694395935862835,
+    "tree_level1": 0.9932528972852834,
+    "flat_level1": 0.9794411811398634,
+    "tree_hF": 0.9843524809553222,
+    "flat_hF": 0.9729762728419682
+   }
+  ],
+  "cond_leaf_err": [
+   {
+    "variant": "main",
+    "run": "results/nslkdd/main/seed0",
+    "n_both_level1_correct": 15748,
+    "tree": 0.012065024130048261,
+    "flat": 0.012509525019050038
+   },
+   {
+    "variant": "main",
+    "run": "results/nslkdd/main/seed1",
+    "n_both_level1_correct": 15752,
+    "tree": 0.01409344845099035,
+    "flat": 0.01377602844083291
+   },
+   {
+    "variant": "main",
+    "run": "results/nslkdd/main/seed2",
+    "n_both_level1_correct": 15864,
+    "tree": 0.018784669692385274,
+    "flat": 0.01796520423600605
+   },
+   {
+    "variant": "main",
+    "run": "results/nslkdd/main/seed3",
+    "n_both_level1_correct": 15686,
+    "tree": 0.013068978707127374,
+    "flat": 0.012622720897615708
+   },
+   {
+    "variant": "main",
+    "run": "results/nslkdd/main/seed4",
+    "n_both_level1_correct": 15665,
+    "tree": 0.012511969358442388,
+    "flat": 0.011362910947973188
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/nslkdd/leafbal/seed0",
+    "n_both_level1_correct": 16536,
+    "tree": 0.06821480406386067,
+    "flat": 0.06198597000483793
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/nslkdd/leafbal/seed1",
+    "n_both_level1_correct": 16537,
+    "tree": 0.06875491322488964,
+    "flat": 0.06065187156074258
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/nslkdd/leafbal/seed2",
+    "n_both_level1_correct": 16699,
+    "tree": 0.07024372716929157,
+    "flat": 0.0664111623450506
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/nslkdd/leafbal/seed3",
+    "n_both_level1_correct": 16473,
+    "tree": 0.06732228495113216,
+    "flat": 0.05682025132034238
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/nslkdd/leafbal/seed4",
+    "n_both_level1_correct": 16518,
+    "tree": 0.0675626589175445,
+    "flat": 0.0561205957137668
+   },
+   {
+    "variant": "budget",
+    "run": "results/nslkdd/budget/seed0",
+    "n_both_level1_correct": 15727,
+    "tree": 0.008011699624848986,
+    "flat": 0.008393209130794176
+   },
+   {
+    "variant": "budget",
+    "run": "results/nslkdd/budget/seed1",
+    "n_both_level1_correct": 15776,
+    "tree": 0.011346348884381338,
+    "flat": 0.010966024340770791
+   },
+   {
+    "variant": "budget",
+    "run": "results/nslkdd/budget/seed2",
+    "n_both_level1_correct": 15909,
+    "tree": 0.017851530580174742,
+    "flat": 0.01697152555157458
+   },
+   {
+    "variant": "budget",
+    "run": "results/nslkdd/budget/seed3",
+    "n_both_level1_correct": 15907,
+    "tree": 0.01716225561073741,
+    "flat": 0.01665933236939712
+   },
+   {
+    "variant": "budget",
+    "run": "results/nslkdd/budget/seed4",
+    "n_both_level1_correct": 15939,
+    "tree": 0.018257105213626952,
+    "flat": 0.017065060543321412
+   }
+  ],
+  "root_val_curve": [
+   {
+    "variant": "main",
+    "run": "results/nslkdd/main/seed0",
+    "epochs": [
+     48,
+     49,
+     50
+    ],
+    "acc": [
+     0.9910303222733767,
+     0.9916653437053501,
+     0.9922209874583268
+    ],
+    "flat_acc": [
+     0.9658675980314335,
+     0.9676139069693602,
+     0.9651531989204636
+    ]
+   },
+   {
+    "variant": "main",
+    "run": "results/nslkdd/main/seed1",
+    "epochs": [
+     40,
+     45,
+     50
+    ],
+    "acc": [
+     0.9929353865692967,
+     0.9922209874583268,
+     0.9925384981743134
+    ],
+    "flat_acc": [
+     0.9679314176853469,
+     0.9676139069693602,
+     0.9645975551674869
+    ]
+   },
+   {
+    "variant": "main",
+    "run": "results/nslkdd/main/seed2",
+    "epochs": [
+     40,
+     45,
+     50
+    ],
+    "acc": [
+     0.99095094459438,
+     0.9919828544213367,
+     0.9919828544213367
+    ],
+    "flat_acc": [
+     0.9653913319574535,
+     0.9676139069693602,
+     0.9668201301793935
+    ]
+   },
+   {
+    "variant": "main",
+    "run": "results/nslkdd/main/seed3",
+    "epochs": [
+     40,
+     45,
+     50
+    ],
+    "acc": [
+     0.9904746785204,
+     0.9922209874583268,
+     0.9915859660263534
+    ],
+    "flat_acc": [
+     0.9712652802032069,
+     0.9706302587712335,
+     0.9688839498333068
+    ]
+   },
+   {
+    "variant": "main",
+    "run": "results/nslkdd/main/seed4",
+    "epochs": [
+     40,
+     45,
+     50
+    ],
+    "acc": [
+     0.9924591204953167,
+     0.9916653437053501,
+     0.9917447213843468
+    ],
+    "flat_acc": [
+     0.9642006667725036,
+     0.9637244006985236,
+     0.9694395935862835
+    ]
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/nslkdd/leafbal/seed0",
+    "epochs": [
+     40,
+     45,
+     50
+    ],
+    "acc": [
+     0.9707890141292269,
+     0.9726147007461502,
+     0.9712652802032069
+    ],
+    "flat_acc": [
+     0.9658675980314335,
+     0.9676139069693602,
+     0.9651531989204636
+    ]
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/nslkdd/leafbal/seed1",
+    "epochs": [
+     40,
+     45,
+     50
+    ],
+    "acc": [
+     0.9732497221781236,
+     0.9733290998571201,
+     0.9761866963010002
+    ],
+    "flat_acc": [
+     0.9679314176853469,
+     0.9676139069693602,
+     0.9645975551674869
+    ]
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/nslkdd/leafbal/seed2",
+    "epochs": [
+     40,
+     45,
+     50
+    ],
+    "acc": [
+     0.9730115891411335,
+     0.9775361168439435,
+     0.9757898079060169
+    ],
+    "flat_acc": [
+     0.9653913319574535,
+     0.9676139069693602,
+     0.9668201301793935
+    ]
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/nslkdd/leafbal/seed3",
+    "epochs": [
+     40,
+     45,
+     50
+    ],
+    "acc": [
+     0.9736466105731069,
+     0.9736466105731069,
+     0.9730909668201302
+    ],
+    "flat_acc": [
+     0.9712652802032069,
+     0.9706302587712335,
+     0.9688839498333068
+    ]
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/nslkdd/leafbal/seed4",
+    "epochs": [
+     40,
+     45,
+     50
+    ],
+    "acc": [
+     0.9738053659311001,
+     0.9742816320050802,
+     0.9750754087950468
+    ],
+    "flat_acc": [
+     0.9642006667725036,
+     0.9637244006985236,
+     0.9694395935862835
+    ]
+   },
+   {
+    "variant": "budget",
+    "run": "results/nslkdd/budget/seed0",
+    "epochs": [
+     40,
+     45,
+     50
+    ],
+    "acc": [
+     0.9928560088903,
+     0.99333227496428,
+     0.9929353865692967
+    ],
+    "flat_acc": [
+     0.9658675980314335,
+     0.9676139069693602,
+     0.9651531989204636
+    ]
+   },
+   {
+    "variant": "budget",
+    "run": "results/nslkdd/budget/seed1",
+    "epochs": [
+     40,
+     45,
+     50
+    ],
+    "acc": [
+     0.9926178758533101,
+     0.9928560088903,
+     0.9930147642482934
+    ],
+    "flat_acc": [
+     0.9679314176853469,
+     0.9676139069693602,
+     0.9645975551674869
+    ]
+   },
+   {
+    "variant": "budget",
+    "run": "results/nslkdd/budget/seed2",
+    "epochs": [
+     40,
+     45,
+     50
+    ],
+    "acc": [
+     0.9930147642482934,
+     0.9926972535323068,
+     0.9930147642482934
+    ],
+    "flat_acc": [
+     0.9653913319574535,
+     0.9676139069693602,
+     0.9668201301793935
+    ]
+   },
+   {
+    "variant": "budget",
+    "run": "results/nslkdd/budget/seed3",
+    "epochs": [
+     40,
+     45,
+     50
+    ],
+    "acc": [
+     0.9929353865692967,
+     0.9927766312113033,
+     0.9931735196062867
+    ],
+    "flat_acc": [
+     0.9712652802032069,
+     0.9706302587712335,
+     0.9688839498333068
+    ]
+   },
+   {
+    "variant": "budget",
+    "run": "results/nslkdd/budget/seed4",
+    "epochs": [
+     40,
+     45,
+     50
+    ],
+    "acc": [
+     0.9926972535323068,
+     0.9927766312113033,
+     0.9932528972852834
+    ],
+    "flat_acc": [
+     0.9642006667725036,
+     0.9637244006985236,
+     0.9694395935862835
+    ]
+   }
+  ],
+  "alarms": [
+   {
+    "variant": "main",
+    "run": "results/nslkdd/main/seed0",
+    "tree_false_alarm": 0.07300998867263928,
+    "flat_false_alarm": 0.04098445062300484,
+    "tree_detect_known": 0.757899372454035,
+    "flat_detect_known": 0.8629307497522845
+   },
+   {
+    "variant": "main",
+    "run": "results/nslkdd/main/seed1",
+    "tree_false_alarm": 0.07352486870559159,
+    "flat_false_alarm": 0.04170528266913809,
+    "tree_detect_known": 0.759440713420676,
+    "flat_detect_known": 0.8596278762523395
+   },
+   {
+    "variant": "main",
+    "run": "results/nslkdd/main/seed2",
+    "tree_false_alarm": 0.07476058078467716,
+    "flat_false_alarm": 0.04005766656369066,
+    "tree_detect_known": 0.7713310580204779,
+    "flat_detect_known": 0.8719586039854673
+   },
+   {
+    "variant": "main",
+    "run": "results/nslkdd/main/seed3",
+    "tree_false_alarm": 0.07187725260014417,
+    "flat_false_alarm": 0.03768921841210998,
+    "tree_detect_known": 0.7471099856875482,
+    "flat_detect_known": 0.8502697346691622
+   },
+   {
+    "variant": "main",
+    "run": "results/nslkdd/main/seed4",
+    "tree_false_alarm": 0.07300998867263928,
+    "flat_false_alarm": 0.04077849860982391,
+    "tree_detect_known": 0.7467796983375536,
+    "flat_detect_known": 0.8535726081691071
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/nslkdd/leafbal/seed0",
+    "tree_false_alarm": 0.0966944701884461,
+    "flat_false_alarm": 0.04098445062300484,
+    "tree_detect_known": 0.8926566112517891,
+    "flat_detect_known": 0.8629307497522845
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/nslkdd/leafbal/seed1",
+    "tree_false_alarm": 0.08701472556894244,
+    "flat_false_alarm": 0.04170528266913809,
+    "tree_detect_known": 0.8842893317185951,
+    "flat_detect_known": 0.8596278762523395
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/nslkdd/leafbal/seed2",
+    "tree_false_alarm": 0.08979507774688497,
+    "flat_false_alarm": 0.04005766656369066,
+    "tree_detect_known": 0.8886931630518551,
+    "flat_detect_known": 0.8719586039854673
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/nslkdd/leafbal/seed3",
+    "tree_false_alarm": 0.09453197405004633,
+    "flat_false_alarm": 0.03768921841210998,
+    "tree_detect_known": 0.892876802818452,
+    "flat_detect_known": 0.8502697346691622
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/nslkdd/leafbal/seed4",
+    "tree_false_alarm": 0.09164864586551333,
+    "flat_false_alarm": 0.04077849860982391,
+    "tree_detect_known": 0.8881426841351976,
+    "flat_detect_known": 0.8535726081691071
+   },
+   {
+    "variant": "budget",
+    "run": "results/nslkdd/budget/seed0",
+    "tree_false_alarm": 0.07342189269900114,
+    "flat_false_alarm": 0.04098445062300484,
+    "tree_detect_known": 0.755917648354068,
+    "flat_detect_known": 0.8629307497522845
+   },
+   {
+    "variant": "budget",
+    "run": "results/nslkdd/budget/seed1",
+    "tree_false_alarm": 0.07445165276490577,
+    "flat_false_alarm": 0.04170528266913809,
+    "tree_detect_known": 0.763624353187273,
+    "flat_detect_known": 0.8596278762523395
+   },
+   {
+    "variant": "budget",
+    "run": "results/nslkdd/budget/seed2",
+    "tree_false_alarm": 0.07486355679126763,
+    "flat_false_alarm": 0.04005766656369066,
+    "tree_detect_known": 0.7765055598370583,
+    "flat_detect_known": 0.8719586039854673
+   },
+   {
+    "variant": "budget",
+    "run": "results/nslkdd/budget/seed3",
+    "tree_false_alarm": 0.07486355679126763,
+    "flat_false_alarm": 0.03768921841210998,
+    "tree_detect_known": 0.7746339315204228,
+    "flat_detect_known": 0.8502697346691622
+   },
+   {
+    "variant": "budget",
+    "run": "results/nslkdd/budget/seed4",
+    "tree_false_alarm": 0.07424570075172485,
+    "flat_false_alarm": 0.04077849860982391,
+    "tree_detect_known": 0.7773863261037103,
+    "flat_detect_known": 0.8535726081691071
+   }
+  ],
+  "misrouted_by_leaf": [
+   {
+    "variant": "main",
+    "run": "results/nslkdd/main/seed0",
+    "by_leaf": {
+     "normal": {
+      "n": 9711,
+      "tree_wrong_level1": 709,
+      "flat_wrong_level1": 398
+     },
+     "back": {
+      "n": 359,
+      "tree_wrong_level1": 83,
+      "flat_wrong_level1": 0
+     },
+     "land": {
+      "n": 7,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "neptune": {
+      "n": 4657,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 1
+     },
+     "pod": {
+      "n": 41,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
+     },
+     "smurf": {
+      "n": 665,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "teardrop": {
+      "n": 12,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "ipsweep": {
+      "n": 141,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 0
+     },
+     "nmap": {
+      "n": 73,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "portsweep": {
+      "n": 157,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "satan": {
+      "n": 735,
+      "tree_wrong_level1": 4,
+      "flat_wrong_level1": 0
+     },
+     "ftp_write": {
+      "n": 3,
+      "tree_wrong_level1": 3,
+      "flat_wrong_level1": 1
+     },
+     "guess_passwd": {
+      "n": 1231,
+      "tree_wrong_level1": 1231,
+      "flat_wrong_level1": 982
+     },
+     "imap": {
+      "n": 1,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "multihop": {
+      "n": 18,
+      "tree_wrong_level1": 18,
+      "flat_wrong_level1": 7
+     },
+     "phf": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
+     },
+     "warezmaster": {
+      "n": 944,
+      "tree_wrong_level1": 816,
+      "flat_wrong_level1": 232
+     },
+     "buffer_overflow": {
+      "n": 20,
+      "tree_wrong_level1": 20,
+      "flat_wrong_level1": 11
+     },
+     "loadmodule": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
+     },
+     "perl": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
+     },
+     "rootkit": {
+      "n": 13,
+      "tree_wrong_level1": 13,
+      "flat_wrong_level1": 7
+     }
+    }
+   },
+   {
+    "variant": "main",
+    "run": "results/nslkdd/main/seed1",
+    "by_leaf": {
+     "normal": {
+      "n": 9711,
+      "tree_wrong_level1": 714,
+      "flat_wrong_level1": 405
+     },
+     "back": {
+      "n": 359,
+      "tree_wrong_level1": 80,
+      "flat_wrong_level1": 2
+     },
+     "land": {
+      "n": 7,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "neptune": {
+      "n": 4657,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 1
+     },
+     "pod": {
+      "n": 41,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
+     },
+     "smurf": {
+      "n": 665,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "teardrop": {
+      "n": 12,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "ipsweep": {
+      "n": 141,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 0
+     },
+     "nmap": {
+      "n": 73,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "portsweep": {
+      "n": 157,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "satan": {
+      "n": 735,
+      "tree_wrong_level1": 4,
+      "flat_wrong_level1": 0
+     },
+     "ftp_write": {
+      "n": 3,
+      "tree_wrong_level1": 3,
+      "flat_wrong_level1": 2
+     },
+     "guess_passwd": {
+      "n": 1231,
+      "tree_wrong_level1": 1231,
+      "flat_wrong_level1": 893
+     },
+     "imap": {
+      "n": 1,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 0
+     },
+     "multihop": {
+      "n": 18,
+      "tree_wrong_level1": 17,
+      "flat_wrong_level1": 7
+     },
+     "phf": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
+     },
+     "warezmaster": {
+      "n": 944,
+      "tree_wrong_level1": 808,
+      "flat_wrong_level1": 347
+     },
+     "buffer_overflow": {
+      "n": 20,
+      "tree_wrong_level1": 18,
+      "flat_wrong_level1": 10
+     },
+     "loadmodule": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
+     },
+     "perl": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
+     },
+     "rootkit": {
+      "n": 13,
+      "tree_wrong_level1": 13,
+      "flat_wrong_level1": 9
+     }
+    }
+   },
+   {
+    "variant": "main",
+    "run": "results/nslkdd/main/seed2",
+    "by_leaf": {
+     "normal": {
+      "n": 9711,
+      "tree_wrong_level1": 726,
+      "flat_wrong_level1": 389
+     },
+     "back": {
+      "n": 359,
+      "tree_wrong_level1": 58,
+      "flat_wrong_level1": 0
+     },
+     "land": {
+      "n": 7,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "neptune": {
+      "n": 4657,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 0
+     },
+     "pod": {
+      "n": 41,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 0
+     },
+     "smurf": {
+      "n": 665,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "teardrop": {
+      "n": 12,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "ipsweep": {
+      "n": 141,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 0
+     },
+     "nmap": {
+      "n": 73,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "portsweep": {
+      "n": 157,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "satan": {
+      "n": 735,
+      "tree_wrong_level1": 4,
+      "flat_wrong_level1": 0
+     },
+     "ftp_write": {
+      "n": 3,
+      "tree_wrong_level1": 3,
+      "flat_wrong_level1": 2
+     },
+     "guess_passwd": {
+      "n": 1231,
+      "tree_wrong_level1": 1231,
+      "flat_wrong_level1": 898
+     },
+     "imap": {
+      "n": 1,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "multihop": {
+      "n": 18,
+      "tree_wrong_level1": 18,
+      "flat_wrong_level1": 7
+     },
+     "phf": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 2
+     },
+     "warezmaster": {
+      "n": 944,
+      "tree_wrong_level1": 719,
+      "flat_wrong_level1": 237
+     },
+     "buffer_overflow": {
+      "n": 20,
+      "tree_wrong_level1": 20,
+      "flat_wrong_level1": 8
+     },
+     "loadmodule": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
+     },
+     "perl": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
+     },
+     "rootkit": {
+      "n": 13,
+      "tree_wrong_level1": 13,
+      "flat_wrong_level1": 7
+     }
+    }
+   },
+   {
+    "variant": "main",
+    "run": "results/nslkdd/main/seed3",
+    "by_leaf": {
+     "normal": {
+      "n": 9711,
+      "tree_wrong_level1": 698,
+      "flat_wrong_level1": 366
+     },
+     "back": {
+      "n": 359,
+      "tree_wrong_level1": 180,
+      "flat_wrong_level1": 8
+     },
+     "land": {
+      "n": 7,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "neptune": {
+      "n": 4657,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 1
+     },
+     "pod": {
+      "n": 41,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 0
+     },
+     "smurf": {
+      "n": 665,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "teardrop": {
+      "n": 12,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "ipsweep": {
+      "n": 141,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 0
+     },
+     "nmap": {
+      "n": 73,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "portsweep": {
+      "n": 157,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "satan": {
+      "n": 735,
+      "tree_wrong_level1": 4,
+      "flat_wrong_level1": 0
+     },
+     "ftp_write": {
+      "n": 3,
+      "tree_wrong_level1": 3,
+      "flat_wrong_level1": 2
+     },
+     "guess_passwd": {
+      "n": 1231,
+      "tree_wrong_level1": 1230,
+      "flat_wrong_level1": 1068
+     },
+     "imap": {
+      "n": 1,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "multihop": {
+      "n": 18,
+      "tree_wrong_level1": 18,
+      "flat_wrong_level1": 7
+     },
+     "phf": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 2
+     },
+     "warezmaster": {
+      "n": 944,
+      "tree_wrong_level1": 818,
+      "flat_wrong_level1": 248
+     },
+     "buffer_overflow": {
+      "n": 20,
+      "tree_wrong_level1": 20,
+      "flat_wrong_level1": 12
+     },
+     "loadmodule": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
+     },
+     "perl": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
+     },
+     "rootkit": {
+      "n": 13,
+      "tree_wrong_level1": 13,
+      "flat_wrong_level1": 10
+     }
+    }
+   },
+   {
+    "variant": "main",
+    "run": "results/nslkdd/main/seed4",
+    "by_leaf": {
+     "normal": {
+      "n": 9711,
+      "tree_wrong_level1": 709,
+      "flat_wrong_level1": 396
+     },
+     "back": {
+      "n": 359,
+      "tree_wrong_level1": 179,
+      "flat_wrong_level1": 0
+     },
+     "land": {
+      "n": 7,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "neptune": {
+      "n": 4657,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 1
+     },
+     "pod": {
+      "n": 41,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 0
+     },
+     "smurf": {
+      "n": 665,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "teardrop": {
+      "n": 12,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "ipsweep": {
+      "n": 141,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 0
+     },
+     "nmap": {
+      "n": 73,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "portsweep": {
+      "n": 157,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "satan": {
+      "n": 735,
+      "tree_wrong_level1": 4,
+      "flat_wrong_level1": 0
+     },
+     "ftp_write": {
+      "n": 3,
+      "tree_wrong_level1": 3,
+      "flat_wrong_level1": 1
+     },
+     "guess_passwd": {
+      "n": 1231,
+      "tree_wrong_level1": 1231,
+      "flat_wrong_level1": 992
+     },
+     "imap": {
+      "n": 1,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 0
+     },
+     "multihop": {
+      "n": 18,
+      "tree_wrong_level1": 18,
+      "flat_wrong_level1": 6
+     },
+     "phf": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 2
+     },
+     "warezmaster": {
+      "n": 944,
+      "tree_wrong_level1": 820,
+      "flat_wrong_level1": 309
+     },
+     "buffer_overflow": {
+      "n": 20,
+      "tree_wrong_level1": 20,
+      "flat_wrong_level1": 10
+     },
+     "loadmodule": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
+     },
+     "perl": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
+     },
+     "rootkit": {
+      "n": 13,
+      "tree_wrong_level1": 13,
+      "flat_wrong_level1": 7
+     }
+    }
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/nslkdd/leafbal/seed0",
+    "by_leaf": {
+     "normal": {
+      "n": 9711,
+      "tree_wrong_level1": 939,
+      "flat_wrong_level1": 398
+     },
+     "back": {
+      "n": 359,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "land": {
+      "n": 7,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "neptune": {
+      "n": 4657,
+      "tree_wrong_level1": 15,
+      "flat_wrong_level1": 1
+     },
+     "pod": {
+      "n": 41,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 1
+     },
+     "smurf": {
+      "n": 665,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "teardrop": {
+      "n": 12,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "ipsweep": {
+      "n": 141,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "nmap": {
+      "n": 73,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "portsweep": {
+      "n": 157,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 0
+     },
+     "satan": {
+      "n": 735,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 0
+     },
+     "ftp_write": {
+      "n": 3,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 1
+     },
+     "guess_passwd": {
+      "n": 1231,
+      "tree_wrong_level1": 806,
+      "flat_wrong_level1": 982
+     },
+     "imap": {
+      "n": 1,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "multihop": {
+      "n": 18,
+      "tree_wrong_level1": 6,
+      "flat_wrong_level1": 7
+     },
+     "phf": {
+      "n": 2,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 1
+     },
+     "warezmaster": {
+      "n": 944,
+      "tree_wrong_level1": 133,
+      "flat_wrong_level1": 232
+     },
+     "buffer_overflow": {
+      "n": 20,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 11
+     },
+     "loadmodule": {
+      "n": 2,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 1
+     },
+     "perl": {
+      "n": 2,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 1
+     },
+     "rootkit": {
+      "n": 13,
+      "tree_wrong_level1": 6,
+      "flat_wrong_level1": 7
+     }
+    }
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/nslkdd/leafbal/seed1",
+    "by_leaf": {
+     "normal": {
+      "n": 9711,
+      "tree_wrong_level1": 845,
+      "flat_wrong_level1": 405
+     },
+     "back": {
+      "n": 359,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 2
+     },
+     "land": {
+      "n": 7,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "neptune": {
+      "n": 4657,
+      "tree_wrong_level1": 39,
+      "flat_wrong_level1": 1
+     },
+     "pod": {
+      "n": 41,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 1
+     },
+     "smurf": {
+      "n": 665,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "teardrop": {
+      "n": 12,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "ipsweep": {
+      "n": 141,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "nmap": {
+      "n": 73,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "portsweep": {
+      "n": 157,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 0
+     },
+     "satan": {
+      "n": 735,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 0
+     },
+     "ftp_write": {
+      "n": 3,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 2
+     },
+     "guess_passwd": {
+      "n": 1231,
+      "tree_wrong_level1": 838,
+      "flat_wrong_level1": 893
+     },
+     "imap": {
+      "n": 1,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "multihop": {
+      "n": 18,
+      "tree_wrong_level1": 6,
+      "flat_wrong_level1": 7
+     },
+     "phf": {
+      "n": 2,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 1
+     },
+     "warezmaster": {
+      "n": 944,
+      "tree_wrong_level1": 154,
+      "flat_wrong_level1": 347
+     },
+     "buffer_overflow": {
+      "n": 20,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 10
+     },
+     "loadmodule": {
+      "n": 2,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 1
+     },
+     "perl": {
+      "n": 2,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 1
+     },
+     "rootkit": {
+      "n": 13,
+      "tree_wrong_level1": 6,
+      "flat_wrong_level1": 9
+     }
+    }
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/nslkdd/leafbal/seed2",
+    "by_leaf": {
+     "normal": {
+      "n": 9711,
+      "tree_wrong_level1": 872,
+      "flat_wrong_level1": 389
+     },
+     "back": {
+      "n": 359,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 0
+     },
+     "land": {
+      "n": 7,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "neptune": {
+      "n": 4657,
+      "tree_wrong_level1": 7,
+      "flat_wrong_level1": 0
+     },
+     "pod": {
+      "n": 41,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 0
+     },
+     "smurf": {
+      "n": 665,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "teardrop": {
+      "n": 12,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "ipsweep": {
+      "n": 141,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "nmap": {
+      "n": 73,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "portsweep": {
+      "n": 157,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "satan": {
+      "n": 735,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 0
+     },
+     "ftp_write": {
+      "n": 3,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 2
+     },
+     "guess_passwd": {
+      "n": 1231,
+      "tree_wrong_level1": 828,
+      "flat_wrong_level1": 898
+     },
+     "imap": {
+      "n": 1,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "multihop": {
+      "n": 18,
+      "tree_wrong_level1": 6,
+      "flat_wrong_level1": 7
+     },
+     "phf": {
+      "n": 2,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 2
+     },
+     "warezmaster": {
+      "n": 944,
+      "tree_wrong_level1": 155,
+      "flat_wrong_level1": 237
+     },
+     "buffer_overflow": {
+      "n": 20,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 8
+     },
+     "loadmodule": {
+      "n": 2,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 1
+     },
+     "perl": {
+      "n": 2,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 1
+     },
+     "rootkit": {
+      "n": 13,
+      "tree_wrong_level1": 6,
+      "flat_wrong_level1": 7
+     }
+    }
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/nslkdd/leafbal/seed3",
+    "by_leaf": {
+     "normal": {
+      "n": 9711,
+      "tree_wrong_level1": 918,
+      "flat_wrong_level1": 366
+     },
+     "back": {
+      "n": 359,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 8
+     },
+     "land": {
+      "n": 7,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "neptune": {
+      "n": 4657,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 1
+     },
+     "pod": {
+      "n": 41,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 0
+     },
+     "smurf": {
+      "n": 665,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "teardrop": {
+      "n": 12,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "ipsweep": {
+      "n": 141,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "nmap": {
+      "n": 73,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "portsweep": {
+      "n": 157,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 0
+     },
+     "satan": {
+      "n": 735,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 0
+     },
+     "ftp_write": {
+      "n": 3,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 2
+     },
+     "guess_passwd": {
+      "n": 1231,
+      "tree_wrong_level1": 839,
+      "flat_wrong_level1": 1068
+     },
+     "imap": {
+      "n": 1,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "multihop": {
+      "n": 18,
+      "tree_wrong_level1": 6,
+      "flat_wrong_level1": 7
+     },
+     "phf": {
+      "n": 2,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 2
+     },
+     "warezmaster": {
+      "n": 944,
+      "tree_wrong_level1": 111,
+      "flat_wrong_level1": 248
+     },
+     "buffer_overflow": {
+      "n": 20,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 12
+     },
+     "loadmodule": {
+      "n": 2,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 1
+     },
+     "perl": {
+      "n": 2,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 1
+     },
+     "rootkit": {
+      "n": 13,
+      "tree_wrong_level1": 7,
+      "flat_wrong_level1": 10
+     }
+    }
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/nslkdd/leafbal/seed4",
+    "by_leaf": {
+     "normal": {
+      "n": 9711,
+      "tree_wrong_level1": 890,
+      "flat_wrong_level1": 396
+     },
+     "back": {
+      "n": 359,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "land": {
+      "n": 7,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "neptune": {
+      "n": 4657,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 1
+     },
+     "pod": {
+      "n": 41,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 0
+     },
+     "smurf": {
+      "n": 665,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "teardrop": {
+      "n": 12,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "ipsweep": {
+      "n": 141,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "nmap": {
+      "n": 73,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "portsweep": {
+      "n": 157,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 0
+     },
+     "satan": {
+      "n": 735,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 0
+     },
+     "ftp_write": {
+      "n": 3,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 1
+     },
+     "guess_passwd": {
+      "n": 1231,
+      "tree_wrong_level1": 839,
+      "flat_wrong_level1": 992
+     },
+     "imap": {
+      "n": 1,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "multihop": {
+      "n": 18,
+      "tree_wrong_level1": 6,
+      "flat_wrong_level1": 6
+     },
+     "phf": {
+      "n": 2,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 2
+     },
+     "warezmaster": {
+      "n": 944,
+      "tree_wrong_level1": 156,
+      "flat_wrong_level1": 309
+     },
+     "buffer_overflow": {
+      "n": 20,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 10
+     },
+     "loadmodule": {
+      "n": 2,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 1
+     },
+     "perl": {
+      "n": 2,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 1
+     },
+     "rootkit": {
+      "n": 13,
+      "tree_wrong_level1": 6,
+      "flat_wrong_level1": 7
+     }
+    }
+   },
+   {
+    "variant": "budget",
+    "run": "results/nslkdd/budget/seed0",
+    "by_leaf": {
+     "normal": {
+      "n": 9711,
+      "tree_wrong_level1": 713,
+      "flat_wrong_level1": 398
+     },
+     "back": {
+      "n": 359,
+      "tree_wrong_level1": 36,
+      "flat_wrong_level1": 0
+     },
+     "land": {
+      "n": 7,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "neptune": {
+      "n": 4657,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 1
+     },
+     "pod": {
+      "n": 41,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
+     },
+     "smurf": {
+      "n": 665,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "teardrop": {
+      "n": 12,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "ipsweep": {
+      "n": 141,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 0
+     },
+     "nmap": {
+      "n": 73,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "portsweep": {
+      "n": 157,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "satan": {
+      "n": 735,
+      "tree_wrong_level1": 4,
+      "flat_wrong_level1": 0
+     },
+     "ftp_write": {
+      "n": 3,
+      "tree_wrong_level1": 3,
+      "flat_wrong_level1": 1
+     },
+     "guess_passwd": {
+      "n": 1231,
+      "tree_wrong_level1": 1231,
+      "flat_wrong_level1": 982
+     },
+     "imap": {
+      "n": 1,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "multihop": {
+      "n": 18,
+      "tree_wrong_level1": 17,
+      "flat_wrong_level1": 7
+     },
+     "phf": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
+     },
+     "warezmaster": {
+      "n": 944,
+      "tree_wrong_level1": 882,
+      "flat_wrong_level1": 232
+     },
+     "buffer_overflow": {
+      "n": 20,
+      "tree_wrong_level1": 20,
+      "flat_wrong_level1": 11
+     },
+     "loadmodule": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
+     },
+     "perl": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
+     },
+     "rootkit": {
+      "n": 13,
+      "tree_wrong_level1": 13,
+      "flat_wrong_level1": 7
+     }
+    }
+   },
+   {
+    "variant": "budget",
+    "run": "results/nslkdd/budget/seed1",
+    "by_leaf": {
+     "normal": {
+      "n": 9711,
+      "tree_wrong_level1": 723,
+      "flat_wrong_level1": 405
+     },
+     "back": {
+      "n": 359,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 2
+     },
+     "land": {
+      "n": 7,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "neptune": {
+      "n": 4657,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 1
+     },
+     "pod": {
+      "n": 41,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 1
+     },
+     "smurf": {
+      "n": 665,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "teardrop": {
+      "n": 12,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "ipsweep": {
+      "n": 141,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 0
+     },
+     "nmap": {
+      "n": 73,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "portsweep": {
+      "n": 157,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "satan": {
+      "n": 735,
+      "tree_wrong_level1": 4,
+      "flat_wrong_level1": 0
+     },
+     "ftp_write": {
+      "n": 3,
+      "tree_wrong_level1": 3,
+      "flat_wrong_level1": 2
+     },
+     "guess_passwd": {
+      "n": 1231,
+      "tree_wrong_level1": 1231,
+      "flat_wrong_level1": 893
+     },
+     "imap": {
+      "n": 1,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "multihop": {
+      "n": 18,
+      "tree_wrong_level1": 17,
+      "flat_wrong_level1": 7
+     },
+     "phf": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
+     },
+     "warezmaster": {
+      "n": 944,
+      "tree_wrong_level1": 850,
+      "flat_wrong_level1": 347
+     },
+     "buffer_overflow": {
+      "n": 20,
+      "tree_wrong_level1": 20,
+      "flat_wrong_level1": 10
+     },
+     "loadmodule": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
+     },
+     "perl": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
+     },
+     "rootkit": {
+      "n": 13,
+      "tree_wrong_level1": 13,
+      "flat_wrong_level1": 9
+     }
+    }
+   },
+   {
+    "variant": "budget",
+    "run": "results/nslkdd/budget/seed2",
+    "by_leaf": {
+     "normal": {
+      "n": 9711,
+      "tree_wrong_level1": 727,
+      "flat_wrong_level1": 389
+     },
+     "back": {
+      "n": 359,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "land": {
+      "n": 7,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "neptune": {
+      "n": 4657,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 0
+     },
+     "pod": {
+      "n": 41,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "smurf": {
+      "n": 665,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "teardrop": {
+      "n": 12,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "ipsweep": {
+      "n": 141,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 0
+     },
+     "nmap": {
+      "n": 73,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "portsweep": {
+      "n": 157,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "satan": {
+      "n": 735,
+      "tree_wrong_level1": 4,
+      "flat_wrong_level1": 0
+     },
+     "ftp_write": {
+      "n": 3,
+      "tree_wrong_level1": 3,
+      "flat_wrong_level1": 2
+     },
+     "guess_passwd": {
+      "n": 1231,
+      "tree_wrong_level1": 1229,
+      "flat_wrong_level1": 898
+     },
+     "imap": {
+      "n": 1,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "multihop": {
+      "n": 18,
+      "tree_wrong_level1": 17,
+      "flat_wrong_level1": 7
+     },
+     "phf": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 2
+     },
+     "warezmaster": {
+      "n": 944,
+      "tree_wrong_level1": 736,
+      "flat_wrong_level1": 237
+     },
+     "buffer_overflow": {
+      "n": 20,
+      "tree_wrong_level1": 20,
+      "flat_wrong_level1": 8
+     },
+     "loadmodule": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
+     },
+     "perl": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
+     },
+     "rootkit": {
+      "n": 13,
+      "tree_wrong_level1": 13,
+      "flat_wrong_level1": 7
+     }
+    }
+   },
+   {
+    "variant": "budget",
+    "run": "results/nslkdd/budget/seed3",
+    "by_leaf": {
+     "normal": {
+      "n": 9711,
+      "tree_wrong_level1": 727,
+      "flat_wrong_level1": 366
+     },
+     "back": {
+      "n": 359,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 8
+     },
+     "land": {
+      "n": 7,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "neptune": {
+      "n": 4657,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 1
+     },
+     "pod": {
+      "n": 41,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "smurf": {
+      "n": 665,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "teardrop": {
+      "n": 12,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "ipsweep": {
+      "n": 141,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 0
+     },
+     "nmap": {
+      "n": 73,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "portsweep": {
+      "n": 157,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "satan": {
+      "n": 735,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 0
+     },
+     "ftp_write": {
+      "n": 3,
+      "tree_wrong_level1": 3,
+      "flat_wrong_level1": 2
+     },
+     "guess_passwd": {
+      "n": 1231,
+      "tree_wrong_level1": 1231,
+      "flat_wrong_level1": 1068
+     },
+     "imap": {
+      "n": 1,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "multihop": {
+      "n": 18,
+      "tree_wrong_level1": 17,
+      "flat_wrong_level1": 7
+     },
+     "phf": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 2
+     },
+     "warezmaster": {
+      "n": 944,
+      "tree_wrong_level1": 752,
+      "flat_wrong_level1": 248
+     },
+     "buffer_overflow": {
+      "n": 20,
+      "tree_wrong_level1": 20,
+      "flat_wrong_level1": 12
+     },
+     "loadmodule": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
+     },
+     "perl": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
+     },
+     "rootkit": {
+      "n": 13,
+      "tree_wrong_level1": 13,
+      "flat_wrong_level1": 10
+     }
+    }
+   },
+   {
+    "variant": "budget",
+    "run": "results/nslkdd/budget/seed4",
+    "by_leaf": {
+     "normal": {
+      "n": 9711,
+      "tree_wrong_level1": 721,
+      "flat_wrong_level1": 396
+     },
+     "back": {
+      "n": 359,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "land": {
+      "n": 7,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "neptune": {
+      "n": 4657,
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 1
+     },
+     "pod": {
+      "n": 41,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "smurf": {
+      "n": 665,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "teardrop": {
+      "n": 12,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "ipsweep": {
+      "n": 141,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "nmap": {
+      "n": 73,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "portsweep": {
+      "n": 157,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "satan": {
+      "n": 735,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 0
+     },
+     "ftp_write": {
+      "n": 3,
+      "tree_wrong_level1": 3,
+      "flat_wrong_level1": 1
+     },
+     "guess_passwd": {
+      "n": 1231,
+      "tree_wrong_level1": 1231,
+      "flat_wrong_level1": 992
+     },
+     "imap": {
+      "n": 1,
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
+     },
+     "multihop": {
+      "n": 18,
+      "tree_wrong_level1": 17,
+      "flat_wrong_level1": 6
+     },
+     "phf": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 2
+     },
+     "warezmaster": {
+      "n": 944,
+      "tree_wrong_level1": 731,
+      "flat_wrong_level1": 309
+     },
+     "buffer_overflow": {
+      "n": 20,
+      "tree_wrong_level1": 18,
+      "flat_wrong_level1": 10
+     },
+     "loadmodule": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
+     },
+     "perl": {
+      "n": 2,
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
+     },
+     "rootkit": {
+      "n": 13,
+      "tree_wrong_level1": 13,
+      "flat_wrong_level1": 7
+     }
+    }
+   }
+  ]
+ },
+ "alerce": {
+  "val": [
+   {
+    "variant": "main",
+    "run": "results/alerce/main/seed0",
+    "tree_acc": 0.8942307692307693,
+    "flat_acc": 0.897672064777328,
+    "tree_level1": 0.9882591093117409,
+    "flat_level1": 0.9876518218623481,
+    "tree_hF": 0.9412449392712551,
+    "flat_hF": 0.9426619433198381
+   },
+   {
+    "variant": "main",
+    "run": "results/alerce/main/seed1",
+    "tree_acc": 0.8911943319838057,
+    "flat_acc": 0.8988866396761134,
+    "tree_level1": 0.9893724696356275,
+    "flat_level1": 0.9883603238866396,
+    "tree_hF": 0.9402834008097166,
+    "flat_hF": 0.9436234817813766
+   },
+   {
+    "variant": "main",
+    "run": "results/alerce/main/seed2",
+    "tree_acc": 0.8890688259109312,
+    "flat_acc": 0.8984817813765182,
+    "tree_level1": 0.9895748987854251,
+    "flat_level1": 0.9883603238866396,
+    "tree_hF": 0.9393218623481782,
+    "flat_hF": 0.9434210526315789
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/alerce/leafbal/seed0",
+    "tree_acc": 0.8834008097165992,
+    "flat_acc": 0.897672064777328,
+    "tree_level1": 0.9761133603238866,
+    "flat_level1": 0.9876518218623481,
+    "tree_hF": 0.9297570850202429,
+    "flat_hF": 0.9426619433198381
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/alerce/leafbal/seed1",
+    "tree_acc": 0.8781376518218623,
+    "flat_acc": 0.8988866396761134,
+    "tree_level1": 0.9751012145748987,
+    "flat_level1": 0.9883603238866396,
+    "tree_hF": 0.9266194331983806,
+    "flat_hF": 0.9436234817813766
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/alerce/leafbal/seed2",
+    "tree_acc": 0.8809716599190284,
+    "flat_acc": 0.8984817813765182,
+    "tree_level1": 0.9802631578947368,
+    "flat_level1": 0.9883603238866396,
+    "tree_hF": 0.9306174089068826,
+    "flat_hF": 0.9434210526315789
+   },
+   {
+    "variant": "budget",
+    "run": "results/alerce/budget/seed0",
+    "tree_acc": 0.8965587044534413,
+    "flat_acc": 0.897672064777328,
+    "tree_level1": 0.9908906882591093,
+    "flat_level1": 0.9876518218623481,
+    "tree_hF": 0.9437246963562753,
+    "flat_hF": 0.9426619433198381
+   },
+   {
+    "variant": "budget",
+    "run": "results/alerce/budget/seed1",
+    "tree_acc": 0.8917004048582996,
+    "flat_acc": 0.8988866396761134,
+    "tree_level1": 0.990080971659919,
+    "flat_level1": 0.9883603238866396,
+    "tree_hF": 0.9408906882591093,
+    "flat_hF": 0.9436234817813766
+   },
+   {
+    "variant": "budget",
+    "run": "results/alerce/budget/seed2",
+    "tree_acc": 0.8902834008097166,
+    "flat_acc": 0.8984817813765182,
+    "tree_level1": 0.9903846153846154,
+    "flat_level1": 0.9883603238866396,
+    "tree_hF": 0.9403340080971659,
+    "flat_hF": 0.9434210526315789
+   }
+  ],
+  "cond_leaf_err": [
+   {
+    "variant": "main",
+    "run": "results/alerce/main/seed0",
+    "n_both_level1_correct": 24182,
+    "tree": 0.09337523778016707,
+    "flat": 0.08750310148044
+   },
+   {
+    "variant": "main",
+    "run": "results/alerce/main/seed1",
+    "n_both_level1_correct": 24233,
+    "tree": 0.09676886889778401,
+    "flat": 0.08962984360170016
+   },
+   {
+    "variant": "main",
+    "run": "results/alerce/main/seed2",
+    "n_both_level1_correct": 24207,
+    "tree": 0.09877308216631553,
+    "flat": 0.08881728425661999
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/alerce/leafbal/seed0",
+    "n_both_level1_correct": 24024,
+    "tree": 0.09344821844821845,
+    "flat": 0.08778721278721278
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/alerce/leafbal/seed1",
+    "n_both_level1_correct": 23977,
+    "tree": 0.09713475413938358,
+    "flat": 0.09004462610001251
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/alerce/leafbal/seed2",
+    "n_both_level1_correct": 24058,
+    "tree": 0.09888602543852357,
+    "flat": 0.08866073655332946
+   },
+   {
+    "variant": "budget",
+    "run": "results/alerce/budget/seed0",
+    "n_both_level1_correct": 24248,
+    "tree": 0.09336852523919499,
+    "flat": 0.08742989112504124
+   },
+   {
+    "variant": "budget",
+    "run": "results/alerce/budget/seed1",
+    "n_both_level1_correct": 24240,
+    "tree": 0.09665841584158416,
+    "flat": 0.08956270627062707
+   },
+   {
+    "variant": "budget",
+    "run": "results/alerce/budget/seed2",
+    "n_both_level1_correct": 24237,
+    "tree": 0.09856830465816727,
+    "flat": 0.08866608903742212
+   }
+  ],
+  "root_val_curve": [
+   {
+    "variant": "main",
+    "run": "results/alerce/main/seed0",
+    "epochs": [
+     48,
+     49,
+     50
+    ],
+    "acc": [
+     0.9897773279352227,
+     0.9902834008097166,
+     0.9882591093117409
+    ],
+    "flat_acc": [
+     0.8954453441295547,
+     0.894331983805668,
+     0.897672064777328
+    ]
+   },
+   {
+    "variant": "main",
+    "run": "results/alerce/main/seed1",
+    "epochs": [
+     40,
+     45,
+     50
+    ],
+    "acc": [
+     0.9892712550607288,
+     0.9876518218623481,
+     0.9893724696356275
+    ],
+    "flat_acc": [
+     0.897165991902834,
+     0.8983805668016195,
+     0.8988866396761134
+    ]
+   },
+   {
+    "variant": "main",
+    "run": "results/alerce/main/seed2",
+    "epochs": [
+     40,
+     45,
+     50
+    ],
+    "acc": [
+     0.9881578947368421,
+     0.9890688259109311,
+     0.9895748987854251
+    ],
+    "flat_acc": [
+     0.8978744939271255,
+     0.8866396761133604,
+     0.8984817813765182
+    ]
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/alerce/leafbal/seed0",
+    "epochs": [
+     40,
+     45,
+     50
+    ],
+    "acc": [
+     0.9795546558704453,
+     0.9786437246963563,
+     0.9761133603238866
+    ],
+    "flat_acc": [
+     0.8954453441295547,
+     0.894331983805668,
+     0.897672064777328
+    ]
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/alerce/leafbal/seed1",
+    "epochs": [
+     40,
+     45,
+     50
+    ],
+    "acc": [
+     0.9788461538461538,
+     0.9813765182186235,
+     0.9751012145748987
+    ],
+    "flat_acc": [
+     0.897165991902834,
+     0.8983805668016195,
+     0.8988866396761134
+    ]
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/alerce/leafbal/seed2",
+    "epochs": [
+     40,
+     45,
+     50
+    ],
+    "acc": [
+     0.9742914979757085,
+     0.9763157894736842,
+     0.9802631578947368
+    ],
+    "flat_acc": [
+     0.8978744939271255,
+     0.8866396761133604,
+     0.8984817813765182
+    ]
+   },
+   {
+    "variant": "budget",
+    "run": "results/alerce/budget/seed0",
+    "epochs": [
+     40,
+     45,
+     50
+    ],
+    "acc": [
+     0.9905870445344129,
+     0.9899797570850203,
+     0.9908906882591093
+    ],
+    "flat_acc": [
+     0.8954453441295547,
+     0.894331983805668,
+     0.897672064777328
+    ]
+   },
+   {
+    "variant": "budget",
+    "run": "results/alerce/budget/seed1",
+    "epochs": [
+     40,
+     45,
+     50
+    ],
+    "acc": [
+     0.9908906882591093,
+     0.9905870445344129,
+     0.990080971659919
+    ],
+    "flat_acc": [
+     0.897165991902834,
+     0.8983805668016195,
+     0.8988866396761134
+    ]
+   },
+   {
+    "variant": "budget",
+    "run": "results/alerce/budget/seed2",
+    "epochs": [
+     40,
+     45,
+     50
+    ],
+    "acc": [
+     0.9911943319838057,
+     0.9908906882591093,
+     0.9903846153846154
+    ],
+    "flat_acc": [
+     0.8978744939271255,
+     0.8866396761133604,
+     0.8984817813765182
+    ]
+   }
+  ],
+  "bhrf_hF": 0.9103846153846153
+ },
+ "wos": {
+  "val": [
+   {
+    "variant": "main",
+    "run": "results/wos/main/seed0",
+    "tree_acc": 0.4902899707368981,
+    "flat_acc": 0.5597233306730514,
+    "tree_level1": 0.6746475126363395,
+    "flat_level1": 0.7967544559723331,
+    "tree_hF": 0.5824687416866188,
+    "flat_hF": 0.6782388933226922
+   },
+   {
+    "variant": "main",
+    "run": "results/wos/main/seed1",
+    "tree_acc": 0.48789571694599626,
+    "flat_acc": 0.5552008512902368,
+    "tree_level1": 0.6799680766161214,
+    "flat_level1": 0.7810587922319766,
+    "tree_hF": 0.5839318967810588,
+    "flat_hF": 0.6681298217611067
+   },
+   {
+    "variant": "main",
+    "run": "results/wos/main/seed2",
+    "tree_acc": 0.48443735035913804,
+    "flat_acc": 0.5533386538973131,
+    "tree_level1": 0.6836924714019686,
+    "flat_level1": 0.7863793562117585,
+    "tree_hF": 0.5840649108805533,
+    "flat_hF": 0.6698590050545358
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/wos/leafbal/seed0",
+    "tree_acc": 0.4897579143389199,
+    "flat_acc": 0.5597233306730514,
+    "tree_level1": 0.6749135408353285,
+    "flat_level1": 0.7967544559723331,
+    "tree_hF": 0.5823357275871243,
+    "flat_hF": 0.6782388933226922
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/wos/leafbal/seed1",
+    "tree_acc": 0.48949188613993083,
+    "flat_acc": 0.5552008512902368,
+    "tree_level1": 0.6751795690343176,
+    "flat_level1": 0.7810587922319766,
+    "tree_hF": 0.5823357275871243,
+    "flat_hF": 0.6681298217611067
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/wos/leafbal/seed2",
+    "tree_acc": 0.47007182761372707,
+    "flat_acc": 0.5533386538973131,
+    "tree_level1": 0.6528332003192339,
+    "flat_level1": 0.7863793562117585,
+    "tree_hF": 0.5614525139664804,
+    "flat_hF": 0.6698590050545358
+   },
+   {
+    "variant": "budget",
+    "run": "results/wos/budget/seed0",
+    "tree_acc": 0.5280659749933493,
+    "flat_acc": 0.5597233306730514,
+    "tree_level1": 0.7291832934291035,
+    "flat_level1": 0.7967544559723331,
+    "tree_hF": 0.6286246342112264,
+    "flat_hF": 0.6782388933226922
+   },
+   {
+    "variant": "budget",
+    "run": "results/wos/budget/seed1",
+    "tree_acc": 0.5235434956105347,
+    "flat_acc": 0.5552008512902368,
+    "tree_level1": 0.7230646448523543,
+    "flat_level1": 0.7810587922319766,
+    "tree_hF": 0.6233040702314445,
+    "flat_hF": 0.6681298217611067
+   },
+   {
+    "variant": "budget",
+    "run": "results/wos/budget/seed2",
+    "tree_acc": 0.5171588188347965,
+    "flat_acc": 0.5533386538973131,
+    "tree_level1": 0.7174780526735834,
+    "flat_level1": 0.7863793562117585,
+    "tree_hF": 0.61731843575419,
+    "flat_hF": 0.6698590050545358
+   }
+  ],
+  "cond_leaf_err": [
+   {
+    "variant": "main",
+    "run": "results/wos/main/seed0",
+    "n_both_level1_correct": 5592,
+    "tree": 0.2584048640915594,
+    "flat": 0.3084763948497854
+   },
+   {
+    "variant": "main",
+    "run": "results/wos/main/seed1",
+    "n_both_level1_correct": 5588,
+    "tree": 0.26735862562634216,
+    "flat": 0.3181818181818182
+   },
+   {
+    "variant": "main",
+    "run": "results/wos/main/seed2",
+    "n_both_level1_correct": 5639,
+    "tree": 0.25731512679553115,
+    "flat": 0.3140627770881362
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/wos/leafbal/seed0",
+    "n_both_level1_correct": 5655,
+    "tree": 0.2686118479221927,
+    "flat": 0.31759504862953136
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/wos/leafbal/seed1",
+    "n_both_level1_correct": 5495,
+    "tree": 0.26715195632393085,
+    "flat": 0.3164695177434031
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/wos/leafbal/seed2",
+    "n_both_level1_correct": 5429,
+    "tree": 0.25308528274083625,
+    "flat": 0.316080309449254
+   },
+   {
+    "variant": "budget",
+    "run": "results/wos/budget/seed0",
+    "n_both_level1_correct": 6051,
+    "tree": 0.26524541398116014,
+    "flat": 0.30937035200793256
+   },
+   {
+    "variant": "budget",
+    "run": "results/wos/budget/seed1",
+    "n_both_level1_correct": 5952,
+    "tree": 0.26327284946236557,
+    "flat": 0.31031586021505375
+   },
+   {
+    "variant": "budget",
+    "run": "results/wos/budget/seed2",
+    "n_both_level1_correct": 5846,
+    "tree": 0.2598357851522409,
+    "flat": 0.3142319534724598
+   }
+  ],
+  "root_val_curve": [
+   {
+    "variant": "main",
+    "run": "results/wos/main/seed0",
+    "epochs": [
+     20,
+     25,
+     30
+    ],
+    "acc": [
+     0.6541633413141793,
+     0.6624102154828412,
+     0.6746475126363395
+    ],
+    "flat_acc": [
+     0.5586592178770949,
+     0.561585528065975,
+     0.5597233306730514
+    ]
+   },
+   {
+    "variant": "main",
+    "run": "results/wos/main/seed1",
+    "epochs": [
+     20,
+     25,
+     30
+    ],
+    "acc": [
+     0.6695929768555466,
+     0.6717212024474595,
+     0.6799680766161214
+    ],
+    "flat_acc": [
+     0.5573290768821495,
+     0.550146315509444,
+     0.5552008512902368
+    ]
+   },
+   {
+    "variant": "main",
+    "run": "results/wos/main/seed2",
+    "epochs": [
+     20,
+     25,
+     30
+    ],
+    "acc": [
+     0.6722532588454376,
+     0.6791699920191541,
+     0.6836924714019686
+    ],
+    "flat_acc": [
+     0.5488161745144985,
+     0.5477520617185422,
+     0.5533386538973131
+    ]
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/wos/leafbal/seed0",
+    "epochs": [
+     20,
+     25,
+     30
+    ],
+    "acc": [
+     0.6554934823091247,
+     0.6711891460494812,
+     0.6749135408353285
+    ],
+    "flat_acc": [
+     0.5586592178770949,
+     0.561585528065975,
+     0.5597233306730514
+    ]
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/wos/leafbal/seed1",
+    "epochs": [
+     20,
+     25,
+     30
+    ],
+    "acc": [
+     0.6443202979515829,
+     0.6483107209364193,
+     0.6751795690343176
+    ],
+    "flat_acc": [
+     0.5573290768821495,
+     0.550146315509444,
+     0.5552008512902368
+    ]
+   },
+   {
+    "variant": "leafbal",
+    "run": "results/wos/leafbal/seed2",
+    "epochs": [
+     20,
+     25,
+     30
+    ],
+    "acc": [
+     0.6488427773343974,
+     0.6546953977121575,
+     0.6528332003192339
+    ],
+    "flat_acc": [
+     0.5488161745144985,
+     0.5477520617185422,
+     0.5533386538973131
+    ]
+   },
+   {
+    "variant": "budget",
+    "run": "results/wos/budget/seed0",
+    "epochs": [
+     20,
+     25,
+     30
+    ],
+    "acc": [
+     0.7235967012503325,
+     0.7435488161745145,
+     0.7291832934291035
+    ],
+    "flat_acc": [
+     0.5586592178770949,
+     0.561585528065975,
+     0.5597233306730514
+    ]
+   },
+   {
+    "variant": "budget",
+    "run": "results/wos/budget/seed1",
+    "epochs": [
+     20,
+     25,
+     30
+    ],
+    "acc": [
+     0.7230646448523543,
+     0.7235967012503325,
+     0.7230646448523543
+    ],
+    "flat_acc": [
+     0.5573290768821495,
+     0.550146315509444,
+     0.5552008512902368
+    ]
+   },
+   {
+    "variant": "budget",
+    "run": "results/wos/budget/seed2",
+    "epochs": [
+     20,
+     25,
+     30
+    ],
+    "acc": [
+     0.7097632349028997,
+     0.7182761372705507,
+     0.7174780526735834
+    ],
+    "flat_acc": [
+     0.5488161745144985,
+     0.5477520617185422,
+     0.5533386538973131
+    ]
+   }
+  ]
+ }
+}
