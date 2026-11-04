@@ -1,0 +1,15 @@
+{
+ "dataset": "alerce",
+ "run": "results/alerce/main/seed2",
+ "clauses": 1000,
+ "T": 100,
+ "s": 4.0,
+ "epochs": 50,
+ "per_class": 4000,
+ "seed": 2,
+ "nodes": "",
+ "procs": 2,
+ "weighted": false,
+ "score_every": 5,
+ "resample": "child"
+}

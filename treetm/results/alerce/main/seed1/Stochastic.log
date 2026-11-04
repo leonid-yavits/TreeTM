@@ -1,0 +1,50 @@
+[Stochastic] epoch 1 train=47.4s
+[Stochastic] epoch 2 train=35.5s
+[Stochastic] epoch 3 train=33.2s
+[Stochastic] epoch 4 train=32.5s
+[Stochastic] epoch 5 val_acc=0.8764 train=32.4s
+[Stochastic] epoch 6 train=30.4s
+[Stochastic] epoch 7 train=30.0s
+[Stochastic] epoch 8 train=31.3s
+[Stochastic] epoch 9 train=31.0s
+[Stochastic] epoch 10 val_acc=0.8732 train=31.9s
+[Stochastic] epoch 11 train=31.0s
+[Stochastic] epoch 12 train=30.2s
+[Stochastic] epoch 13 train=30.2s
+[Stochastic] epoch 14 train=28.5s
+[Stochastic] epoch 15 val_acc=0.8847 train=28.4s
+[Stochastic] epoch 16 train=28.5s
+[Stochastic] epoch 17 train=27.7s
+[Stochastic] epoch 18 train=19.1s
+[Stochastic] epoch 19 train=18.9s
+[Stochastic] epoch 20 val_acc=0.8775 train=37.0s
+[Stochastic] epoch 21 train=45.1s
+[Stochastic] epoch 22 train=45.8s
+[Stochastic] epoch 23 train=47.0s
+[Stochastic] epoch 24 train=45.8s
+[Stochastic] epoch 25 val_acc=0.8736 train=36.3s
+[Stochastic] epoch 26 train=28.6s
+[Stochastic] epoch 27 train=28.3s
+[Stochastic] epoch 28 train=28.4s
+[Stochastic] epoch 29 train=27.9s
+[Stochastic] epoch 30 val_acc=0.8909 train=35.2s
+[Stochastic] epoch 31 train=24.6s
+[Stochastic] epoch 32 train=26.5s
+[Stochastic] epoch 33 train=27.5s
+[Stochastic] epoch 34 train=26.4s
+[Stochastic] epoch 35 val_acc=0.8890 train=27.5s
+[Stochastic] epoch 36 train=27.1s
+[Stochastic] epoch 37 train=26.4s
+[Stochastic] epoch 38 train=26.7s
+[Stochastic] epoch 39 train=25.8s
+[Stochastic] epoch 40 val_acc=0.8862 train=25.6s
+[Stochastic] epoch 41 train=25.8s
+[Stochastic] epoch 42 train=26.6s
+[Stochastic] epoch 43 train=26.1s
+[Stochastic] epoch 44 train=26.8s
+[Stochastic] epoch 45 val_acc=0.8872 train=27.9s
+[Stochastic] epoch 46 train=29.6s
+[Stochastic] epoch 47 train=31.4s
+[Stochastic] epoch 48 train=28.6s
+[Stochastic] epoch 49 train=30.0s
+[Stochastic] epoch 50 val_acc=0.8836 train=33.4s

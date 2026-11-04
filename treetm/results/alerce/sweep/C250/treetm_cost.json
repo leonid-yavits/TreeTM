@@ -1,0 +1,65 @@
+{
+ "work": {
+  "dense_literal_tests_tree": 5056325.910931174,
+  "dense_literal_tests_flat": 8790000,
+  "included_literals_tree": 314492.6950607287,
+  "included_literals_flat": 636408,
+  "clauses_stored_tree": 4500,
+  "clauses_stored_flat": 3750,
+  "expected_experts_per_input": 2.0,
+  "visit_fraction": {
+   "root": 1.0,
+   "Transient": 0.049838056680161946,
+   "Stochastic": 0.2717813765182186,
+   "Periodic": 0.6783805668016194
+  }
+ },
+ "ap_tm": {
+  "per_node": {
+   "root": {
+    "cycles": 16,
+    "reduction": 10,
+    "energy_nJ": 9.098625
+   },
+   "Transient": {
+    "cycles": 21,
+    "reduction": 10,
+    "energy_nJ": 12.2005
+   },
+   "Stochastic": {
+    "cycles": 26,
+    "reduction": 11,
+    "energy_nJ": 15.343124999999999
+   },
+   "Periodic": {
+    "cycles": 31,
+    "reduction": 11,
+    "energy_nJ": 18.51675
+   },
+   "flat": {
+    "cycles": 76,
+    "reduction": 12,
+    "energy_nJ": 48.710625
+   }
+  },
+  "tree_hard_expected": {
+   "cycles": 46.142712550607285,
+   "cycles_incl_reduction": 67.09287449392713,
+   "energy_nJ": 26.438053203441292,
+   "cycles_max": 48
+  },
+  "flat": {
+   "cycles": 76,
+   "cycles_incl_reduction": 88,
+   "energy_nJ": 48.710625
+  },
+  "max_depth": 2
+ },
+ "cpu_seconds_per_input": {
+  "flat": 0.00017104712280269219,
+  "tree_hard": 0.00013787262231446107,
+  "n_inputs": 4096,
+  "implementation": "bit-packed numpy, batch 256, best of 3, single process"
+ },
+ "packed_implementation_matches_stored_scores": true
+}

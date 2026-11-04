@@ -1,0 +1,16 @@
+alerce seed0 flat_rf   acc 0.9262 bal 0.5669 P 0.7850 F1 0.6219 hF 0.9591 fit 437s
+alerce seed0 lcpn_rf_hard acc 0.9268 bal 0.5721 P 0.7763 F1 0.6270 hF 0.9596 fit 739s
+alerce seed0 lcpn_rf_soft acc 0.9272 bal 0.5746 P 0.7735 F1 0.6274 hF 0.9599 fit 739s
+alerce seed0 flat_hgb  acc 0.9135 bal 0.7493 P 0.6850 F1 0.7030 hF 0.9523 fit 121s
+alerce seed0 flat_mlp  acc 0.8414 bal 0.4407 P 0.5464 F1 0.4620 hF 0.9014 fit 51s
+alerce seed1 flat_rf   acc 0.9261 bal 0.5660 P 0.7829 F1 0.6220 hF 0.9590 fit 475s
+skip flat_rf
+alerce seed1 lcpn_rf_hard acc 0.9262 bal 0.5720 P 0.7781 F1 0.6279 hF 0.9591 fit 321s
+alerce seed1 lcpn_rf_soft acc 0.9272 bal 0.5802 P 0.7792 F1 0.6341 hF 0.9601 fit 321s
+alerce seed1 flat_hgb  acc 0.9060 bal 0.7388 P 0.6670 F1 0.6827 hF 0.9483 fit 47s
+alerce seed1 flat_mlp  acc 0.8332 bal 0.4321 P 0.5559 F1 0.4482 hF 0.8961 fit 36s
+alerce seed2 flat_rf   acc 0.9265 bal 0.5701 P 0.7835 F1 0.6255 hF 0.9593 fit 173s
+alerce seed2 lcpn_rf_hard acc 0.9258 bal 0.5725 P 0.7740 F1 0.6280 hF 0.9590 fit 313s
+alerce seed2 lcpn_rf_soft acc 0.9267 bal 0.5791 P 0.7736 F1 0.6322 hF 0.9597 fit 313s
+alerce seed2 flat_hgb  acc 0.9057 bal 0.7436 P 0.6857 F1 0.6917 hF 0.9481 fit 47s
+alerce seed2 flat_mlp  acc 0.8273 bal 0.4212 P 0.5472 F1 0.4355 hF 0.8925 fit 26s

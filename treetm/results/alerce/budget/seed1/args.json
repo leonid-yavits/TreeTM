@@ -1,0 +1,15 @@
+{
+ "dataset": "alerce",
+ "run": "results/alerce/budget/seed1",
+ "clauses": 1000,
+ "T": 100,
+ "s": 4.0,
+ "epochs": 50,
+ "per_class": 20000,
+ "seed": 1,
+ "nodes": "root",
+ "procs": 1,
+ "weighted": false,
+ "score_every": 5,
+ "resample": "child"
+}

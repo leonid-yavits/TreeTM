@@ -1,0 +1,50 @@
+[Transient] epoch 1 train=45.0s
+[Transient] epoch 2 train=30.6s
+[Transient] epoch 3 train=27.5s
+[Transient] epoch 4 train=24.9s
+[Transient] epoch 5 val_acc=0.7174 train=22.7s
+[Transient] epoch 6 train=22.4s
+[Transient] epoch 7 train=21.9s
+[Transient] epoch 8 train=19.6s
+[Transient] epoch 9 train=20.3s
+[Transient] epoch 10 val_acc=0.7826 train=20.1s
+[Transient] epoch 11 train=19.3s
+[Transient] epoch 12 train=18.8s
+[Transient] epoch 13 train=20.2s
+[Transient] epoch 14 train=18.5s
+[Transient] epoch 15 val_acc=0.7971 train=19.1s
+[Transient] epoch 16 train=18.2s
+[Transient] epoch 17 train=18.5s
+[Transient] epoch 18 train=19.1s
+[Transient] epoch 19 train=19.8s
+[Transient] epoch 20 val_acc=0.8116 train=18.2s
+[Transient] epoch 21 train=18.3s
+[Transient] epoch 22 train=16.9s
+[Transient] epoch 23 train=18.1s
+[Transient] epoch 24 train=17.9s
+[Transient] epoch 25 val_acc=0.8188 train=17.4s
+[Transient] epoch 26 train=18.3s
+[Transient] epoch 27 train=17.7s
+[Transient] epoch 28 train=17.1s
+[Transient] epoch 29 train=17.4s
+[Transient] epoch 30 val_acc=0.8261 train=16.7s
+[Transient] epoch 31 train=17.3s
+[Transient] epoch 32 train=17.2s
+[Transient] epoch 33 train=16.4s
+[Transient] epoch 34 train=17.1s
+[Transient] epoch 35 val_acc=0.8188 train=17.9s
+[Transient] epoch 36 train=17.6s
+[Transient] epoch 37 train=16.4s
+[Transient] epoch 38 train=16.7s
+[Transient] epoch 39 train=17.7s
+[Transient] epoch 40 val_acc=0.8261 train=17.7s
+[Transient] epoch 41 train=16.8s
+[Transient] epoch 42 train=17.0s
+[Transient] epoch 43 train=15.8s
+[Transient] epoch 44 train=8.0s
+[Transient] epoch 45 val_acc=0.8333 train=8.4s
+[Transient] epoch 46 train=8.3s
+[Transient] epoch 47 train=8.1s
+[Transient] epoch 48 train=8.0s
+[Transient] epoch 49 train=8.0s
+[Transient] epoch 50 val_acc=0.7899 train=8.0s

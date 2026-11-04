@@ -1,0 +1,50 @@
+[Periodic] epoch 1 train=11.4s
+[Periodic] epoch 2 train=10.3s
+[Periodic] epoch 3 train=9.9s
+[Periodic] epoch 4 train=9.6s
+[Periodic] epoch 5 val_acc=0.7788 train=9.8s
+[Periodic] epoch 6 train=9.7s
+[Periodic] epoch 7 train=9.7s
+[Periodic] epoch 8 train=9.9s
+[Periodic] epoch 9 train=9.5s
+[Periodic] epoch 10 val_acc=0.7898 train=10.1s
+[Periodic] epoch 11 train=10.0s
+[Periodic] epoch 12 train=9.6s
+[Periodic] epoch 13 train=9.8s
+[Periodic] epoch 14 train=9.6s
+[Periodic] epoch 15 val_acc=0.7907 train=10.1s
+[Periodic] epoch 16 train=9.5s
+[Periodic] epoch 17 train=9.9s
+[Periodic] epoch 18 train=9.6s
+[Periodic] epoch 19 train=9.8s
+[Periodic] epoch 20 val_acc=0.7894 train=9.7s
+[Periodic] epoch 21 train=9.7s
+[Periodic] epoch 22 train=9.5s
+[Periodic] epoch 23 train=9.9s
+[Periodic] epoch 24 train=9.7s
+[Periodic] epoch 25 val_acc=0.7927 train=9.8s
+[Periodic] epoch 26 train=9.7s
+[Periodic] epoch 27 train=9.8s
+[Periodic] epoch 28 train=10.0s
+[Periodic] epoch 29 train=9.9s
+[Periodic] epoch 30 val_acc=0.7923 train=9.8s
+[Periodic] epoch 31 train=9.6s
+[Periodic] epoch 32 train=9.4s
+[Periodic] epoch 33 train=10.0s
+[Periodic] epoch 34 train=10.0s
+[Periodic] epoch 35 val_acc=0.7989 train=9.5s
+[Periodic] epoch 36 train=9.8s
+[Periodic] epoch 37 train=9.7s
+[Periodic] epoch 38 train=9.9s
+[Periodic] epoch 39 train=9.3s
+[Periodic] epoch 40 val_acc=0.8006 train=9.9s
+[Periodic] epoch 41 train=9.7s
+[Periodic] epoch 42 train=9.6s
+[Periodic] epoch 43 train=9.5s
+[Periodic] epoch 44 train=9.7s
+[Periodic] epoch 45 val_acc=0.7989 train=9.5s
+[Periodic] epoch 46 train=9.6s
+[Periodic] epoch 47 train=9.7s
+[Periodic] epoch 48 train=9.8s
+[Periodic] epoch 49 train=9.5s
+[Periodic] epoch 50 val_acc=0.8006 train=9.6s
