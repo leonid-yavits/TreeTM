@@ -1,0 +1,15 @@
+{
+ "dataset": "nslkdd",
+ "run": "results/nslkdd/abl_root2000_child/seed0",
+ "clauses": 2000,
+ "T": 50,
+ "s": 4.0,
+ "epochs": 50,
+ "per_class": 4000,
+ "seed": 0,
+ "nodes": "root",
+ "procs": 1,
+ "weighted": false,
+ "score_every": 5,
+ "resample": "child"
+}

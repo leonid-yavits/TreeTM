@@ -1,0 +1,333 @@
+{
+ "name": "r2l",
+ "classes": [
+  "ftp_write",
+  "guess_passwd",
+  "imap",
+  "multihop",
+  "phf",
+  "spy",
+  "warezclient",
+  "warezmaster"
+ ],
+ "cfg": {
+  "clauses": 500,
+  "T": 50,
+  "s": 4.0,
+  "weighted": false,
+  "epochs": 50,
+  "per_class": 4000,
+  "seed": 0
+ },
+ "epochs": [
+  {
+   "epoch": 1,
+   "train_s": 1.64,
+   "node_val_acc": 0.98989898989899,
+   "included_literals": 205413
+  },
+  {
+   "epoch": 2,
+   "train_s": 1.18,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 218368
+  },
+  {
+   "epoch": 3,
+   "train_s": 1.24,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 224305
+  },
+  {
+   "epoch": 4,
+   "train_s": 1.1,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 228013
+  },
+  {
+   "epoch": 5,
+   "train_s": 1.26,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 232834
+  },
+  {
+   "epoch": 6,
+   "train_s": 1.14,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 235722
+  },
+  {
+   "epoch": 7,
+   "train_s": 1.05,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 239287
+  },
+  {
+   "epoch": 8,
+   "train_s": 1.06,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 241483
+  },
+  {
+   "epoch": 9,
+   "train_s": 1.09,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 243017
+  },
+  {
+   "epoch": 10,
+   "train_s": 1.02,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 245523
+  },
+  {
+   "epoch": 11,
+   "train_s": 0.98,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 247570
+  },
+  {
+   "epoch": 12,
+   "train_s": 0.94,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 249318
+  },
+  {
+   "epoch": 13,
+   "train_s": 1.24,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 250310
+  },
+  {
+   "epoch": 14,
+   "train_s": 1.23,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 251522
+  },
+  {
+   "epoch": 15,
+   "train_s": 1.0,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 252288
+  },
+  {
+   "epoch": 16,
+   "train_s": 1.32,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 254119
+  },
+  {
+   "epoch": 17,
+   "train_s": 1.1,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 255026
+  },
+  {
+   "epoch": 18,
+   "train_s": 1.26,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 257062
+  },
+  {
+   "epoch": 19,
+   "train_s": 1.1,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 258171
+  },
+  {
+   "epoch": 20,
+   "train_s": 1.0,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 258909
+  },
+  {
+   "epoch": 21,
+   "train_s": 0.94,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 259084
+  },
+  {
+   "epoch": 22,
+   "train_s": 1.14,
+   "node_val_acc": 0.98989898989899,
+   "included_literals": 259515
+  },
+  {
+   "epoch": 23,
+   "train_s": 1.34,
+   "node_val_acc": 0.98989898989899,
+   "included_literals": 261196
+  },
+  {
+   "epoch": 24,
+   "train_s": 1.2,
+   "node_val_acc": 0.98989898989899,
+   "included_literals": 261620
+  },
+  {
+   "epoch": 25,
+   "train_s": 1.08,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 262630
+  },
+  {
+   "epoch": 26,
+   "train_s": 0.94,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 263731
+  },
+  {
+   "epoch": 27,
+   "train_s": 1.06,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 264394
+  },
+  {
+   "epoch": 28,
+   "train_s": 1.09,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 265084
+  },
+  {
+   "epoch": 29,
+   "train_s": 1.02,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 265952
+  },
+  {
+   "epoch": 30,
+   "train_s": 1.17,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 266961
+  },
+  {
+   "epoch": 31,
+   "train_s": 1.59,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 267098
+  },
+  {
+   "epoch": 32,
+   "train_s": 1.16,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 267876
+  },
+  {
+   "epoch": 33,
+   "train_s": 1.13,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 267931
+  },
+  {
+   "epoch": 34,
+   "train_s": 1.11,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 267429
+  },
+  {
+   "epoch": 35,
+   "train_s": 1.18,
+   "node_val_acc": 0.98989898989899,
+   "included_literals": 267437
+  },
+  {
+   "epoch": 36,
+   "train_s": 1.72,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 268040
+  },
+  {
+   "epoch": 37,
+   "train_s": 1.6,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 267908
+  },
+  {
+   "epoch": 38,
+   "train_s": 2.03,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 268282
+  },
+  {
+   "epoch": 39,
+   "train_s": 0.98,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 269320
+  },
+  {
+   "epoch": 40,
+   "train_s": 1.07,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 269429
+  },
+  {
+   "epoch": 41,
+   "train_s": 1.57,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 270076
+  },
+  {
+   "epoch": 42,
+   "train_s": 1.64,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 269965
+  },
+  {
+   "epoch": 43,
+   "train_s": 1.58,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 270036
+  },
+  {
+   "epoch": 44,
+   "train_s": 1.61,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 269932
+  },
+  {
+   "epoch": 45,
+   "train_s": 1.65,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 269788
+  },
+  {
+   "epoch": 46,
+   "train_s": 1.73,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 270147
+  },
+  {
+   "epoch": 47,
+   "train_s": 1.58,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 270218
+  },
+  {
+   "epoch": 48,
+   "train_s": 1.57,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 270997
+  },
+  {
+   "epoch": 49,
+   "train_s": 1.6,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 271321
+  },
+  {
+   "epoch": 50,
+   "train_s": 1.62,
+   "node_val_acc": 0.9797979797979798,
+   "included_literals": 271510
+  }
+ ],
+ "final_stats": {
+  "classes": 8,
+  "clauses_per_class": 500,
+  "total_clauses": 4000,
+  "nonempty_clauses": 3952,
+  "n_literals": 358,
+  "included_literals_total": 271510,
+  "max_clause_weight": 1
+ }
+}

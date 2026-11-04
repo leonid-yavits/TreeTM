@@ -1,0 +1,15 @@
+{
+ "dataset": "nslkdd",
+ "run": "results/nslkdd/leafbal/seed0",
+ "clauses": 500,
+ "T": 50,
+ "s": 4.0,
+ "epochs": 50,
+ "per_class": 4000,
+ "seed": 0,
+ "nodes": "root,attack,dos,probe,r2l,u2r",
+ "procs": 1,
+ "weighted": false,
+ "score_every": 5,
+ "resample": "leaf"
+}

@@ -1,0 +1,32 @@
+[
+ {
+  "clause": 338,
+  "tpr": 0.9715605250364608,
+  "fpr": 0.0,
+  "n_literals": 3,
+  "simplified": [
+   "count >= 14",
+   "same_srv_rate < 1",
+   "NOT flag == SF"
+  ]
+ },
+ {
+  "clause": 366,
+  "tpr": 0.9511424404472533,
+  "fpr": 0.0,
+  "n_literals": 11,
+  "simplified": [
+   "dst_bytes < 136",
+   "dst_host_srv_diff_host_rate < 0.04",
+   "logged_in >= 0",
+   "src_bytes < 505",
+   "srv_count >= 1",
+   "NOT protocol_type == udp",
+   "NOT service == ftp_data",
+   "NOT service == vmnet",
+   "NOT flag == S1",
+   "NOT flag == SF",
+   "NOT flag == SH"
+  ]
+ }
+]

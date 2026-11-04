@@ -1,0 +1,15 @@
+{
+ "dataset": "nslkdd",
+ "run": "results/nslkdd/sweep/C100",
+ "clauses": 100,
+ "T": 50,
+ "s": 4.0,
+ "epochs": 50,
+ "per_class": 4000,
+ "seed": 0,
+ "nodes": "",
+ "procs": 1,
+ "weighted": false,
+ "score_every": 5,
+ "resample": "child"
+}

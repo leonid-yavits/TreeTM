@@ -1,0 +1,31 @@
+[
+ {
+  "clause": 402,
+  "tpr": 0.7898799313893653,
+  "fpr": 0.1437087502661273,
+  "n_literals": 9,
+  "simplified": [
+   "0 <= dst_bytes < 136",
+   "dst_host_same_src_port_rate >= 0.01",
+   "logged_in < 1",
+   "num_failed_logins >= 0",
+   "NOT service == Z39_50",
+   "NOT service == ldap",
+   "NOT service == link",
+   "NOT service == login"
+  ]
+ },
+ {
+  "clause": 46,
+  "tpr": 0.6509433962264151,
+  "fpr": 0.011283798169044072,
+  "n_literals": 5,
+  "simplified": [
+   "count < 14",
+   "dst_bytes < 515",
+   "dst_host_same_src_port_rate >= 0.01",
+   "src_bytes < 207",
+   "NOT service == auth"
+  ]
+ }
+]

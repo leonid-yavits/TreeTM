@@ -1,0 +1,15 @@
+{
+ "dataset": "nslkdd",
+ "run": "results/nslkdd/budget/seed2",
+ "clauses": 500,
+ "T": 50,
+ "s": 4.0,
+ "epochs": 50,
+ "per_class": 46000,
+ "seed": 2,
+ "nodes": "root",
+ "procs": 1,
+ "weighted": false,
+ "score_every": 5,
+ "resample": "child"
+}

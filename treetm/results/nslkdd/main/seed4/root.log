@@ -1,0 +1,50 @@
+[root] epoch 1 train=0.6s
+[root] epoch 2 train=0.5s
+[root] epoch 3 train=0.4s
+[root] epoch 4 train=0.5s
+[root] epoch 5 val_acc=0.9881 train=0.4s
+[root] epoch 6 train=0.4s
+[root] epoch 7 train=0.3s
+[root] epoch 8 train=0.5s
+[root] epoch 9 train=0.4s
+[root] epoch 10 val_acc=0.9897 train=0.3s
+[root] epoch 11 train=0.4s
+[root] epoch 12 train=0.3s
+[root] epoch 13 train=0.3s
+[root] epoch 14 train=0.3s
+[root] epoch 15 val_acc=0.9905 train=0.3s
+[root] epoch 16 train=0.4s
+[root] epoch 17 train=0.3s
+[root] epoch 18 train=0.3s
+[root] epoch 19 train=0.4s
+[root] epoch 20 val_acc=0.9897 train=0.3s
+[root] epoch 21 train=0.3s
+[root] epoch 22 train=0.3s
+[root] epoch 23 train=0.3s
+[root] epoch 24 train=0.3s
+[root] epoch 25 val_acc=0.9908 train=0.4s
+[root] epoch 26 train=0.3s
+[root] epoch 27 train=0.3s
+[root] epoch 28 train=0.3s
+[root] epoch 29 train=0.3s
+[root] epoch 30 val_acc=0.9909 train=0.3s
+[root] epoch 31 train=0.4s
+[root] epoch 32 train=0.4s
+[root] epoch 33 train=0.5s
+[root] epoch 34 train=0.4s
+[root] epoch 35 val_acc=0.9918 train=0.4s
+[root] epoch 36 train=0.4s
+[root] epoch 37 train=0.4s
+[root] epoch 38 train=0.3s
+[root] epoch 39 train=0.3s
+[root] epoch 40 val_acc=0.9925 train=0.3s
+[root] epoch 41 train=0.2s
+[root] epoch 42 train=0.3s
+[root] epoch 43 train=0.3s
+[root] epoch 44 train=0.3s
+[root] epoch 45 val_acc=0.9917 train=0.3s
+[root] epoch 46 train=0.3s
+[root] epoch 47 train=0.3s
+[root] epoch 48 train=0.3s
+[root] epoch 49 train=0.3s
+[root] epoch 50 val_acc=0.9917 train=0.3s

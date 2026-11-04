@@ -1,0 +1,14 @@
+{
+ "dataset": "nslkdd",
+ "run": "results/nslkdd/main/seed1",
+ "clauses": 500,
+ "T": 50,
+ "s": 4.0,
+ "epochs": 50,
+ "per_class": 4000,
+ "seed": 1,
+ "nodes": "",
+ "procs": 1,
+ "weighted": false,
+ "score_every": 5
+}

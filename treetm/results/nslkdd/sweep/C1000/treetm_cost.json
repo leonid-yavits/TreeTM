@@ -1,0 +1,77 @@
+{
+ "work": {
+  "dense_literal_tests_tree": 2064986.0593806535,
+  "dense_literal_tests_flat": 8234000,
+  "included_literals_tree": 148599.43561775037,
+  "included_literals_flat": 658199,
+  "clauses_stored_tree": 28000,
+  "clauses_stored_flat": 23000,
+  "expected_experts_per_input": 1.7775885921038632,
+  "visit_fraction": {
+   "root": 1.0,
+   "attack": 0.38879429605193144,
+   "dos": 0.30142598701713313,
+   "probe": 0.07342768968819836,
+   "r2l": 0.013727785463445781,
+   "u2r": 0.00021283388315419816
+  }
+ },
+ "ap_tm": {
+  "per_node": {
+   "root": {
+    "cycles": 11,
+    "reduction": 11,
+    "energy_nJ": 4.215
+   },
+   "attack": {
+    "cycles": 21,
+    "reduction": 12,
+    "energy_nJ": 8.99
+   },
+   "dos": {
+    "cycles": 31,
+    "reduction": 13,
+    "energy_nJ": 14.349
+   },
+   "probe": {
+    "cycles": 21,
+    "reduction": 12,
+    "energy_nJ": 8.99
+   },
+   "r2l": {
+    "cycles": 41,
+    "reduction": 13,
+    "energy_nJ": 20.252
+   },
+   "u2r": {
+    "cycles": 21,
+    "reduction": 12,
+    "energy_nJ": 8.99
+   },
+   "flat": {
+    "cycles": 116,
+    "reduction": 15,
+    "energy_nJ": 83.43249999999999
+   }
+  },
+  "tree_hard_expected": {
+   "cycles": 31.39576460572523,
+   "cycles_incl_reduction": 52.04198148345217,
+   "energy_nJ": 12.97546562732787,
+   "cycles_max": 75
+  },
+  "flat": {
+   "cycles": 116,
+   "cycles_incl_reduction": 131,
+   "energy_nJ": 83.43249999999999
+  },
+  "max_depth": 3
+ },
+ "cpu_seconds_per_input": {
+  "flat": 0.00028731968798823004,
+  "tree_hard": 6.149918774411844e-05,
+  "n_inputs": 4096,
+  "implementation": "bit-packed numpy, batch 256, best of 3, single process"
+ },
+ "packed_implementation_matches_stored_scores": true
+}
