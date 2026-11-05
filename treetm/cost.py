@@ -17,7 +17,7 @@ E_CMP, E_WR, N_STATE = 1.0, 0.5, 8   # AP(TM) model constants (fJ per active bit
 
 
 def ap_infer(K, m, M):
-    """AP(TM) analytical inference model (Srot et al., ESWA): 5K+1 cycles plus a
+    """AP(TM) analytical inference model (Shrot et al., ESWA): 5K+1 cycles plus a
     reduction tree of at most ceil(log2 m) cycles; energy m * sum b_op E_op."""
     segs = math.ceil(M * (N_STATE + 1) / 512)
     e_cmptm = m * (M * E_CMP + (512 * segs - M) * E_CMP / 2)
