@@ -1,0 +1,25 @@
+{
+ "flat_rf": {
+  "novel_detected_as_attack": 0.15546666666666667,
+  "known_detected_as_attack": 0.7506330507541561,
+  "false_alarm": 0.02471424158171146,
+  "reproduces_saved_test_predictions": true
+ },
+ "flat_hgb": {
+  "novel_detected_as_attack": 0.27973333333333333,
+  "known_detected_as_attack": 0.7748541230870858,
+  "false_alarm": 0.027597569766244466,
+  "reproduces_saved_test_predictions": true
+ },
+ "flat_mlp": {
+  "novel_detected_as_attack": 0.45653333333333335,
+  "known_detected_as_attack": 0.7615325333039744,
+  "false_alarm": 0.06909690042220162,
+  "reproduces_saved_test_predictions": true
+ },
+ "lcpn_rf_hard": {
+  "novel_detected_as_attack": 0.2717333333333333,
+  "known_detected_as_attack": 0.7706704833204888,
+  "false_alarm": 0.02677376171352075
+ }
+}

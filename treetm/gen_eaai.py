@@ -14,7 +14,9 @@ m = {}
 
 
 def put(name, val, nd=3):
-    if isinstance(val, (float, np.floating)):
+    if isinstance(val, (float, np.floating)) and nd == 0 and abs(val) >= 1000:
+        val = f'{val:,.0f}'.replace(',', '{,}')
+    elif isinstance(val, (float, np.floating)):
         val = f'{val:.{nd}f}'
     elif isinstance(val, (int, np.integer)):
         val = f'{int(val):,}'.replace(',', '{,}')
@@ -290,6 +292,11 @@ put('NFalseAlarmB', 100 * amean('nslkdd', 'alarms', 'tree_false_alarm', 'budget'
 for var, tag in [('main', 'C'), ('leafbal', 'L'), ('budget', 'B')]:
     put(f'NDetKnown{tag}', 100 * amean('nslkdd', 'alarms', 'tree_detect_known', var), 1)
 put('NDetKnownFlat', 100 * amean('nslkdd', 'alarms', 'flat_detect_known'), 1)
+nb = [json.load(open(f)) for f in sorted(glob.glob('results/nslkdd/baselines/seed*/novel.json'))]
+for k, tag in [('flat_rf', 'Rf'), ('flat_hgb', 'Hgb'), ('flat_mlp', 'Mlp'), ('lcpn_rf_hard', 'Lcpn')]:
+    put(f'NNov{tag}', 100 * float(np.mean([x[k]['novel_detected_as_attack'] for x in nb])), 1)
+    put(f'NDetKnown{tag}', 100 * float(np.mean([x[k]['known_detected_as_attack'] for x in nb])), 1)
+put('NNovBaseN', len(nb))
 for leaf, tag in [('guess_passwd', 'Guess'), ('warezmaster', 'Warez'), ('back', 'Back')]:
     misl = [r for r in AN['nslkdd']['misrouted_by_leaf'] if r['variant'] == 'leafbal']
     put(f'NMis{tag}Leaf', float(np.mean([r['by_leaf'][leaf]['tree_wrong_level1'] for r in misl])), 0)
