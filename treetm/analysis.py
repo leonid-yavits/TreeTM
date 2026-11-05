@@ -10,7 +10,7 @@ import glob
 import json
 import numpy as np
 from taxonomy import Taxonomy
-from evaluate import Router, hier_prf
+from evaluate import Router, hier_prf, load_scores
 
 out = {}
 for ds in ('nslkdd', 'alerce', 'wos'):
@@ -24,7 +24,7 @@ for ds in ('nslkdd', 'alerce', 'wos'):
                 continue
             nodes = tax.internal + ['flat']
             T = {u: json.load(open(f'{run}/{u}_hist.json'))['cfg']['T'] for u in nodes}
-            Sv = {u: np.load(f'{run}/{u}_scores.npz')['val'][-1].astype(float) for u in nodes}
+            Sv = {u: load_scores(run, u, 'val') for u in nodes}
             ph = Router(tax, Sv, T).hard()[0]; pf = Sv['flat'].argmax(1)
             o['val'].append({'variant': var, 'run': run,
                              'tree_acc': float((ph == yva).mean()), 'flat_acc': float((pf == yva).mean()),

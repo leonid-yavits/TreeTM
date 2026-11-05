@@ -11,7 +11,7 @@ import sys
 import time
 import numpy as np
 from taxonomy import Taxonomy
-from evaluate import visit_fractions
+from evaluate import visit_fractions, load_scores
 
 E_CMP, E_WR, N_STATE = 1.0, 0.5, 8   # AP(TM) model constants (fJ per active bit and row; TA bits)
 
@@ -75,7 +75,7 @@ def main(ds, run):
         stored = np.load(f'{run}/{u}_scores.npz')['test'][-1][:2000]
         assert np.array_equal(np.clip(tm[u].votes(lit), -T[u], T[u]), stored), u
     # 2) counted work under hard routing (visit fractions on the test set)
-    S = {u: np.load(f'{run}/{u}_scores.npz')['test'][-1].astype(float) for u in tax.internal}
+    S = {u: load_scores(run, u, 'test') for u in tax.internal}
     frac = visit_fractions(tax, S)
     work = {'dense_literal_tests_tree': sum(frac[u] * tm[u].k * tm[u].C * M for u in tax.internal),
             'dense_literal_tests_flat': tm['flat'].k * tm['flat'].C * M,

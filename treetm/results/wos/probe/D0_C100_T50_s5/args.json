@@ -1,0 +1,14 @@
+{
+ "dataset": "wos",
+ "run": "results/wos/probe/D0_C100_T50_s5",
+ "clauses": 100,
+ "T": 50,
+ "s": 5.0,
+ "epochs": 5,
+ "per_class": 600,
+ "seed": 0,
+ "nodes": "D0",
+ "procs": 1,
+ "weighted": false,
+ "score_every": 5
+}

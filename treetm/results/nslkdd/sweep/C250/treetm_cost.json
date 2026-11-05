@@ -1,19 +1,19 @@
 {
  "work": {
-  "dense_literal_tests_tree": 500188.1451527083,
+  "dense_literal_tests_tree": 500510.1628179206,
   "dense_literal_tests_flat": 2047000,
-  "included_literals_tree": 138525.67345961477,
+  "included_literals_tree": 138636.540119187,
   "included_literals_flat": 627634,
   "clauses_stored_tree": 7000,
   "clauses_stored_flat": 5750,
-  "expected_experts_per_input": 1.7501330211769712,
+  "expected_experts_per_input": 1.750771522826434,
   "visit_fraction": {
    "root": 1.0,
-   "attack": 0.37506651058848567,
+   "attack": 0.375385761413217,
    "dos": 0.3004150260721507,
    "probe": 0.06996913908694265,
-   "r2l": 0.004682345429392359,
-   "u2r": 0.0
+   "r2l": 0.004948387783335107,
+   "u2r": 5.320847078854954e-05
   }
  },
  "ap_tm": {
@@ -55,9 +55,9 @@
    }
   },
   "tree_hard_expected": {
-   "cycles": 30.600723635202726,
-   "cycles_incl_reduction": 47.40715121847398,
-   "energy_nJ": 3.1539331169522185,
+   "cycles": 30.620091518569755,
+   "cycles_incl_reduction": 47.43317016068958,
+   "energy_nJ": 3.1561162871129085,
    "cycles_max": 75
   },
   "flat": {
@@ -68,8 +68,8 @@
   "max_depth": 3
  },
  "cpu_seconds_per_input": {
-  "flat": 4.949554492172936e-05,
-  "tree_hard": 1.684996728501531e-05,
+  "flat": 5.147742407207723e-05,
+  "tree_hard": 1.727935449213902e-05,
   "n_inputs": 4096,
   "implementation": "bit-packed numpy, batch 256, best of 3, single process"
  },

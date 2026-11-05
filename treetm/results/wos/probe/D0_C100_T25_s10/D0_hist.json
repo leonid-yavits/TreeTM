@@ -1,0 +1,65 @@
+{
+ "name": "D0",
+ "classes": [
+  "D0A0",
+  "D0A1",
+  "D0A2",
+  "D0A3",
+  "D0A4",
+  "D0A5",
+  "D0A6",
+  "D0A7",
+  "D0A8",
+  "D0A9",
+  "D0A10",
+  "D0A11",
+  "D0A12",
+  "D0A13",
+  "D0A14",
+  "D0A15",
+  "D0A16"
+ ],
+ "cfg": {
+  "clauses": 100,
+  "T": 25,
+  "s": 10.0,
+  "weighted": false,
+  "epochs": 5,
+  "per_class": 600,
+  "seed": 0,
+  "score_every": 5
+ },
+ "epochs": [
+  {
+   "epoch": 1,
+   "train_s": 5.94
+  },
+  {
+   "epoch": 2,
+   "train_s": 4.18
+  },
+  {
+   "epoch": 3,
+   "train_s": 4.49
+  },
+  {
+   "epoch": 4,
+   "train_s": 4.21
+  },
+  {
+   "epoch": 5,
+   "train_s": 4.09,
+   "node_val_acc": 0.6807692307692308,
+   "included_literals": 258156
+  }
+ ],
+ "final_stats": {
+  "classes": 17,
+  "clauses_per_class": 100,
+  "total_clauses": 1700,
+  "nonempty_clauses": 1699,
+  "n_literals": 4000,
+  "included_literals_total": 258156,
+  "max_clause_weight": 1
+ }
+}

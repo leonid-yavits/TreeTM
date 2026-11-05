@@ -14,6 +14,7 @@ Writes <run_dir>/treetm_eval.json and treetm_predictions.npz.
 import json
 import os
 import sys
+import zlib
 import numpy as np
 from sklearn.metrics import balanced_accuracy_score
 from taxonomy import Taxonomy
@@ -21,6 +22,23 @@ from metrics import report
 
 ALPHAS = [0.02, 0.05, 0.1, 0.2, 0.5, 1, 2, 5, 10]
 DELTAS = [0.0, 0.02, 0.05, 0.1, 0.2, 0.3, 0.5, 0.75, 1.01, 2.01]
+
+
+def load_scores(run, u, sp):
+    """Class sums of node u on split sp ('val', 'test' or 'novel'): the unclipped
+    sums of unclip.py when present, otherwise the clipped sums of the library.
+    Exact ties are broken uniformly at random (fixed seed per node and split)
+    by adding a perturbation far below one vote, which removes the bias of
+    argmax toward the lowest class index."""
+    if sp == 'novel':
+        f = f'{run}/{u}_novel_uscores.npy'
+        s = np.load(f) if os.path.exists(f) else np.load(f'{run}/{u}_novel_scores.npy')
+    elif os.path.exists(f'{run}/{u}_uscores.npz'):
+        s = np.load(f'{run}/{u}_uscores.npz')[sp]
+    else:
+        s = np.load(f'{run}/{u}_scores.npz')[sp][-1]
+    rng = np.random.default_rng(zlib.crc32(f'{u}/{sp}'.encode()))
+    return s.astype(float) + rng.uniform(0, 1e-3, s.shape)
 
 
 def softmax(z, t):
@@ -136,8 +154,7 @@ def evaluate_run(ds, run):
     P = np.load(f'work/{ds}/prepared.npz')
     yva, yte = P['yva'], P['yte']
     T = {u: json.load(open(f'{run}/{u}_hist.json'))['cfg']['T'] for u in tax.internal + ['flat']}
-    S = {sp: {u: np.load(f'{run}/{u}_scores.npz')[sp][-1].astype(float) for u in tax.internal + ['flat']}
-         for sp in ('val', 'test')}
+    S = {sp: {u: load_scores(run, u, sp) for u in tax.internal + ['flat']} for sp in ('val', 'test')}
     rv, rt = Router(tax, S['val'], T), Router(tax, S['test'], T)
     alpha = max(ALPHAS, key=lambda a: balanced_accuracy_score(yva, rv.leaf_probs(a)[0].argmax(1)))
     sweep = [(d, balanced_accuracy_score(yva, rv.gated(alpha, d)[0])) for d in DELTAS]
@@ -157,8 +174,8 @@ def evaluate_run(ds, run):
     # novel inputs (NSL-KDD attack types unseen in training): fraction routed to 'attack' by the root
     if os.path.exists(f'{run}/root_novel_scores.npy') and 'attack' in tax.children['root']:
         k = tax.children['root'].index('attack')
-        out['novel_detected_as_attack_root'] = float((np.load(f'{run}/root_novel_scores.npy').argmax(1) == k).mean())
-        fl = np.load(f'{run}/flat_novel_scores.npy').argmax(1)
+        out['novel_detected_as_attack_root'] = float((load_scores(run, 'root', 'novel').argmax(1) == k).mean())
+        fl = load_scores(run, 'flat', 'novel').argmax(1)
         out['novel_detected_as_attack_flat'] = float((np.array(tax.level_label(fl, 1)) == 'attack').mean())
     json.dump(out, open(f'{run}/treetm_eval.json', 'w'), indent=1)
     return out

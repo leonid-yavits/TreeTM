@@ -1,21 +1,21 @@
 {
  "work": {
-  "dense_literal_tests_tree": 6242843.460678941,
+  "dense_literal_tests_tree": 6265574.119399808,
   "dense_literal_tests_flat": 26600000,
-  "included_literals_tree": 167515.3859742471,
+  "included_literals_tree": 167653.2912631691,
   "included_literals_flat": 884463,
   "clauses_stored_tree": 7000,
   "clauses_stored_flat": 6650,
-  "expected_experts_per_input": 1.9999999999999998,
+  "expected_experts_per_input": 2.0,
   "visit_fraction": {
    "root": 1.0,
-   "D0": 0.1281259976588273,
-   "D1": 0.11344045972118762,
-   "D2": 0.16494625944450356,
-   "D3": 0.10545918910290518,
-   "D4": 0.09769075236777695,
-   "D5": 0.2650846014685538,
-   "D6": 0.1252527402362456
+   "D0": 0.1141853783122273,
+   "D1": 0.10843886346706395,
+   "D2": 0.15281472810471428,
+   "D3": 0.11014153453229754,
+   "D4": 0.10567202298605938,
+   "D5": 0.27327870596999043,
+   "D6": 0.13546876662764712
   }
  },
  "ap_tm": {
@@ -67,9 +67,9 @@
    }
   },
   "tree_hard_expected": {
-   "cycles": 159.0710865169735,
-   "cycles_incl_reduction": 178.37054379057145,
-   "energy_nJ": 34.92563671916569,
+   "cycles": 159.6393529849952,
+   "cycles_incl_reduction": 178.94030009577526,
+   "energy_nJ": 35.097753325529425,
    "cycles_max": 303
   },
   "flat": {
@@ -80,8 +80,8 @@
   "max_depth": 2
  },
  "cpu_seconds_per_input": {
-  "flat": 0.0005076038991699283,
-  "tree_hard": 0.00015883549609374548,
+  "flat": 0.0005403145925293451,
+  "tree_hard": 0.00017417608251957262,
   "n_inputs": 4096,
   "implementation": "bit-packed numpy, batch 256, best of 3, single process"
  },

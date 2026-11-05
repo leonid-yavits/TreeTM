@@ -1,19 +1,19 @@
 {
  "work": {
-  "dense_literal_tests_tree": 172495.39214642972,
+  "dense_literal_tests_tree": 202363.4777056507,
   "dense_literal_tests_flat": 818800,
-  "included_literals_tree": 63520.09024156645,
+  "included_literals_tree": 75253.86894753644,
   "included_literals_flat": 319656,
   "clauses_stored_tree": 2800,
   "clauses_stored_flat": 2300,
-  "expected_experts_per_input": 1.5831648398425031,
+  "expected_experts_per_input": 1.777588592103863,
   "visit_fraction": {
    "root": 1.0,
-   "attack": 0.29158241992125145,
-   "dos": 0.2552942428434607,
-   "probe": 0.03564967542832819,
-   "r2l": 0.0005320847078854954,
-   "u2r": 0.00010641694157709908
+   "attack": 0.38879429605193144,
+   "dos": 0.2506118974140683,
+   "probe": 0.09715866765989145,
+   "r2l": 0.018197297009683942,
+   "u2r": 0.022826433968287752
   }
  },
  "ap_tm": {
@@ -55,9 +55,9 @@
    }
   },
   "tree_hard_expected": {
-   "cycles": 26.393210599127382,
-   "cycles_incl_reduction": 39.89752048526125,
-   "energy_nJ": 1.0826920719378523,
+   "cycles": 30.97701394061935,
+   "cycles_incl_reduction": 46.244120463977865,
+   "energy_nJ": 1.2747804192827499,
    "cycles_max": 75
   },
   "flat": {
@@ -68,8 +68,8 @@
   "max_depth": 3
  },
  "cpu_seconds_per_input": {
-  "flat": 2.87021430667167e-05,
-  "tree_hard": 6.053059081967405e-06,
+  "flat": 3.570893530269181e-05,
+  "tree_hard": 7.903202636549977e-06,
   "n_inputs": 4096,
   "implementation": "bit-packed numpy, batch 256, best of 3, single process"
  },

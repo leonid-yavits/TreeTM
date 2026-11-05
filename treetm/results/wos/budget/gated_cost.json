@@ -1,20 +1,20 @@
 [
  {
   "run": "results/wos/budget/seed0",
-  "gated_dense_tests": 20608108.970948175,
+  "gated_dense_tests": 21154240.715121847,
   "flat_dense_tests": 53200000,
-  "reduction": 0.6126295306212749
+  "reduction": 0.6023638963322961
  },
  {
   "run": "results/wos/budget/seed1",
-  "gated_dense_tests": 17691092.901989996,
+  "gated_dense_tests": 20412812.599765882,
   "flat_dense_tests": 53200000,
-  "reduction": 0.6674606597370301
+  "reduction": 0.6163005150419947
  },
  {
   "run": "results/wos/budget/seed2",
-  "gated_dense_tests": 14779440.246887304,
+  "gated_dense_tests": 19280962.009151857,
   "flat_dense_tests": 53200000,
-  "reduction": 0.7221909728028701
+  "reduction": 0.6375759020836117
  }
 ]

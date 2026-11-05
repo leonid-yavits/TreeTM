@@ -30,7 +30,7 @@ summ = {d: json.load(open(f'results/{d}/summary.json')) for d, _, _ in DS}
 TAGS = {'tree_hard': 'Hard', 'tree_soft': 'Soft', 'tree_gated': 'Gated', 'flat': 'Flat',
         'leaf_hard': 'LHard', 'leaf_soft': 'LSoft', 'leaf_gated': 'LGated',
         'budget_hard': 'BHard', 'budget_soft': 'BSoft', 'budget_gated': 'BGated',
-        'flat_rf': 'Rf', 'lcpn_rf_hard': 'LcpnHard', 'lcpn_rf_soft': 'LcpnSoft', 'flat_hgb': 'Hgb', 'flat_mlp': 'Mlp'}
+        'flat_tm_tuned': 'FlatTuned', 'flat_rf': 'Rf', 'lcpn_rf_hard': 'LcpnHard', 'lcpn_rf_soft': 'LcpnSoft', 'flat_hgb': 'Hgb', 'flat_mlp': 'Mlp'}
 MET = {'accuracy': 'Acc', 'balanced_accuracy': 'Bal', 'macro_precision': 'P', 'macro_f1': 'F', 'hF': 'hF',
        'level1': 'Lone'}
 
@@ -104,7 +104,7 @@ ROWS = [('tree_hard', '\\tmt-C, hard routing'), ('tree_gated', '\\tmt-C, gated r
         ('tree_soft', '\\tmt-C, soft routing'),
         ('leaf_hard', '\\tmt-L, hard routing'), ('leaf_gated', '\\tmt-L, gated routing'),
         ('budget_hard', '\\tmt-B, hard routing'), ('budget_gated', '\\tmt-B, gated routing'),
-        ('flat', 'Flat \\tm'),
+        ('flat', 'Flat \\tm'), ('flat_tm_tuned', 'Flat \\tm, tuned $C$'),
         None, ('flat_rf', 'RF'), ('lcpn_rf_hard', 'LCPN-RF, hard'), ('lcpn_rf_soft', 'LCPN-RF, soft'),
         ('flat_hgb', 'HGB'), ('flat_mlp', 'MLP')]
 
@@ -132,7 +132,7 @@ def cell(d, k, mm):
 with open(os.path.join(PAPER, 'tables', 'tab_main.tex'), 'w') as f:
     f.write('\\begin{table*}[!p]\n\\centering\n\\caption{Test results, mean $\\pm$ standard deviation over '
             'seeds. \\tmt-C and \\tmt-L use child-balanced and leaf-balanced resampling. \\tmt-B is \\tmt-C with a budget-matched root (Section~\\ref{subsec:errors}). The single-seed \\brf is included in the bolding. Acc: leaf accuracy; '
-            'Bal: balanced accuracy; F1: macro F1; hF: hierarchical F-measure; Exp.: experts evaluated per input. '
+            'Bal: balanced accuracy; F1: macro F1; hF: hierarchical F-measure; Exp.: experts evaluated per input. Flat \\tm, tuned $C$: clauses per class selected on the validation set (1{,}000 on NSL-KDD, 200 on WOS; on ALeRCE, validation selects the $C$ of Table~\\ref{tab:config}). '
             'Bold: best mean per column.}\n\\label{tab:main}\n\\scriptsize\n\\setlength{\\tabcolsep}{3pt}\n\\renewcommand{\\arraystretch}{0.9}\n'
             '\\begin{tabular}{lccccc}\n\\toprule\n')
     for d, X, name in DS:
@@ -238,6 +238,10 @@ red = [1 - cs[d]['work']['dense_literal_tests_tree'] / cs[d]['work']['dense_lite
 spd = [cs[d]['cpu_seconds_per_input']['flat'] / cs[d]['cpu_seconds_per_input']['tree_hard'] for d, _, _ in DS]
 ered = [1 - cs[d]['ap_tm']['tree_hard_expected']['energy_nJ'] / cs[d]['ap_tm']['flat']['energy_nJ'] for d, _, _ in DS]
 put('RedDenseMin', pct(min(red))); put('RedDenseMax', pct(max(red)))
+for d, X, Ct in [('nslkdd', 'N', 1000), ('wos', 'W', 200)]:
+    w = cs[d]['work']; Cm = json.load(open(f'results/{d}/main/seed0/flat_hist.json'))['cfg']['clauses']
+    put(f'{X}RedDenseTuned', pct(1 - w['dense_literal_tests_tree'] / (w['dense_literal_tests_flat'] * Ct / Cm)))
+    put(f'{X}CTuned', Ct)
 put('SpeedMin', min(spd), 1); put('SpeedMax', max(spd), 1)
 put('ERedMin', pct(min(ered))); put('ERedMax', pct(max(ered)))
 mn = meta['nslkdd']

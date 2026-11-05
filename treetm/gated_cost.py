@@ -4,7 +4,7 @@ Usage: python gated_cost.py <dataset> <variant>   -> results/<ds>/<variant>/gate
 import glob, json, sys
 import numpy as np
 from taxonomy import Taxonomy
-from evaluate import Router
+from evaluate import Router, load_scores
 
 ds, var = sys.argv[1], sys.argv[2]
 tax = Taxonomy(json.load(open(f'work/{ds}/meta.json'))['taxonomy'])
@@ -15,7 +15,7 @@ for run in sorted(d for d in glob.glob(f'results/{ds}/{var}/seed*') if not d.end
     nodes = tax.internal + ['flat']
     T = {u: json.load(open(f'{run}/{u}_hist.json'))['cfg']['T'] for u in nodes}
     C = {u: json.load(open(f'{run}/{u}_hist.json'))['cfg']['clauses'] for u in nodes}
-    S = {u: np.load(f'{run}/{u}_scores.npz')['test'][-1].astype(float) for u in nodes}
+    S = {u: load_scores(run, u, 'test') for u in nodes}
     n = len(S['flat']); tests = np.zeros(n)
     r = Router(tax, S, T)
     delta = ev['delta']
