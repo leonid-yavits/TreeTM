@@ -6,7 +6,6 @@ work/<name>/meta.json (taxonomy, leaves, sizes, provenance).
 Usage:
   python datasets.py alerce   <hier_tm dir>
   python datasets.py nslkdd   <dir with KDDTrain+.txt, KDDTest+.txt, training_attack_types.txt>
-  python datasets.py wos      <dir with the extracted WebOfScience/WOS46985 folder>
 """
 import json
 import os
@@ -158,33 +157,5 @@ def nslkdd(d):
           'Fnov': np.hstack([Xn_nov, O_nov]).astype(np.float32)})
 
 
-def wos(d, vocab=2000):
-    from sklearn.feature_extraction.text import CountVectorizer
-    X = [l.rstrip('\n') for l in open(os.path.join(d, 'X.txt'), encoding='utf-8', errors='replace')]
-    YL1 = np.loadtxt(os.path.join(d, 'YL1.txt'), dtype=int)
-    YL2 = np.loadtxt(os.path.join(d, 'YL2.txt'), dtype=int)
-    assert len(X) == len(YL1) == len(YL2)
-    pairs = sorted(set(zip(YL1.tolist(), YL2.tolist())))
-    tree = {}
-    for a, b in pairs:
-        tree.setdefault(f'D{a}', {})[f'D{a}A{b}'] = None
-    tax = Taxonomy(tree)
-    y = np.array([tax.leaf_index[f'D{a}A{b}'] for a, b in zip(YL1, YL2)])
-    idx = np.arange(len(X))
-    tr_i, te_i = train_test_split(idx, test_size=0.2, stratify=y, random_state=SEED)
-    tr_i, va_i = train_test_split(tr_i, test_size=0.1, stratify=y[tr_i], random_state=SEED)
-    cv = CountVectorizer(binary=True, max_features=vocab, stop_words='english', lowercase=True,
-                         token_pattern=r'(?u)\b[a-zA-Z][a-zA-Z]+\b')
-    cv.fit([X[i] for i in tr_i])
-    Bs = {s: (cv.transform([X[i] for i in ii]) > 0).toarray().astype(np.uint8)
-          for s, ii in (('tr', tr_i), ('va', va_i), ('te', te_i))}
-    save('wos', tax, Bs, {s: Bs[s].astype(np.float32) for s in Bs},
-         {'tr': y[tr_i], 'va': y[va_i], 'te': y[te_i]},
-         {'source': 'Web of Science WOS-46985 (Kowsari et al., ICMLA 2017), Mendeley Data 10.17632/9rw3vkcfy4.6, CC BY 4.0',
-          'split': 'stratified 80/20 train/test on the leaf, 10% of train as validation, seed 0',
-          'features': f'binary bag of words, {vocab} most frequent training-set words, English stop words removed',
-          'bit_names': [f'contains "{w}"' for w in cv.get_feature_names_out().tolist()]})
-
-
 if __name__ == '__main__':
-    {'alerce': alerce, 'nslkdd': nslkdd, 'wos': wos}[sys.argv[1]](sys.argv[2])
+    {'alerce': alerce, 'nslkdd': nslkdd}[sys.argv[1]](sys.argv[2])

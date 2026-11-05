@@ -14,12 +14,12 @@ OUT = os.path.join(sys.argv[1], 'figs')
 os.makedirs(OUT, exist_ok=True)
 plt.rcParams.update({'font.size': 9, 'axes.grid': True, 'grid.alpha': 0.3, 'pdf.fonttype': 42,
                      'axes.titlesize': 9})
-DS = [('nslkdd', 'NSL-KDD'), ('alerce', 'ALeRCE'), ('wos', 'WOS')]
+DS = [('nslkdd', 'NSL-KDD'), ('alerce', 'ALeRCE')]
 COL = {'tree': '#1f5fa8', 'flat': '#3a8f3a'}
 
 # ---------------------------------------------------------------- Fig. A: accuracy versus inference work (clause sweep)
-fig = plt.figure(figsize=(7.2, 3.1))
-gs = GridSpec(2, 3, height_ratios=[1, 0.14], hspace=0.75, wspace=0.38)
+fig = plt.figure(figsize=(6.0, 3.1))
+gs = GridSpec(2, 2, height_ratios=[1, 0.14], hspace=0.75, wspace=0.32)
 handles = None
 for i, (d, name) in enumerate(DS):
     ax = fig.add_subplot(gs[0, i])
@@ -57,8 +57,8 @@ fig.savefig(f'{OUT}/fig_tradeoff.pdf', bbox_inches='tight'); fig.savefig(f'{OUT}
 plt.close(fig)
 
 # ---------------------------------------------------------------- Fig. B: errors by depth of the first wrong decision
-fig = plt.figure(figsize=(7.2, 3.0))
-gs = GridSpec(2, 3, height_ratios=[1, 0.15], hspace=0.75, wspace=0.32)
+fig = plt.figure(figsize=(6.0, 3.0))
+gs = GridSpec(2, 2, height_ratios=[1, 0.15], hspace=0.75, wspace=0.32)
 models = [('main', 'tree_hard', 'TreeTM-C, hard', '#1f5fa8'), ('leafbal', 'tree_hard', 'TreeTM-L, hard', '#d1702a'),
           ('main', 'flat', 'Flat TM', '#3a8f3a')]
 hs = []

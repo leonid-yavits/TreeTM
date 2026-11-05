@@ -13,7 +13,7 @@ from taxonomy import Taxonomy
 from evaluate import Router, hier_prf, load_scores
 
 out = {}
-for ds in ('nslkdd', 'alerce', 'wos'):
+for ds in ('nslkdd', 'alerce'):
     meta = json.load(open(f'work/{ds}/meta.json')); tax = Taxonomy(meta['taxonomy'])
     P = np.load(f'work/{ds}/prepared.npz'); yva, yte = P['yva'], P['yte']
     lv1 = lambda y: np.array(tax.level_label(y, 1))

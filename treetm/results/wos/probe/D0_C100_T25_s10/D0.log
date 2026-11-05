@@ -1,5 +1,0 @@
-[D0] epoch 1 train=5.9s
-[D0] epoch 2 train=4.2s
-[D0] epoch 3 train=4.5s
-[D0] epoch 4 train=4.2s
-[D0] epoch 5 val_acc=0.6808 train=4.1s

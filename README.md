@@ -39,7 +39,6 @@ The datasets are public and are not redistributed here.
 
 - **NSL-KDD.** Canadian Institute for Cybersecurity. Place `KDDTrain+.txt`, `KDDTest+.txt`, and `training_attack_types.txt` (KDD Cup 1999, UCI Machine Learning Repository, DOI 10.24432/C51C7N) in one directory.
 - **ALeRCE light-curve classifier labeled set and features.** Zenodo, DOI 10.5281/zenodo.4279623.
-- **Web of Science WOS-46985.** Mendeley Data, DOI 10.17632/9rw3vkcfy4.6, folder `WOS46985` inside `WebOfScience.zip`.
 
 ## Requirements
 
@@ -54,28 +53,24 @@ Run all commands from `treetm/`.
 python ../alerce_prep/prepare.py <ALeRCE data dir> --out ../alerce_prep/work
 python datasets.py alerce ../alerce_prep
 python datasets.py nslkdd <NSL-KDD dir>
-python datasets.py wos    <WOS46985 dir>
 
 # 2. TreeTM-C and the flat TM, one call per seed
 python train.py nslkdd --run results/nslkdd/main/seed<s> --clauses 500  --T 50  --s 4 --epochs 50 --per_class 4000 --seed <s>
 python train.py alerce --run results/alerce/main/seed<s> --clauses 1000 --T 100 --s 4 --epochs 50 --per_class 4000 --seed <s>
-python train.py wos    --run results/wos/main/seed<s>    --clauses 100  --T 10  --s 5 --epochs 30 --per_class 600  --seed <s>
 
 # 3. TreeTM-L and TreeTM-B
 ./leafbal.sh <dataset> <seed> <nodes> C T s E P    # nodes: root (NSL-KDD: root,attack)
-./budget.sh  <dataset> <seed> <P_root> C T s E     # P_root = P*L/K_root: 46000 (NSL-KDD), 20000 (ALeRCE), 11400 (WOS)
+./budget.sh  <dataset> <seed> <P_root> C T s E     # P_root = P*L/K_root: 46000 (NSL-KDD), 20000 (ALeRCE)
 
 # 4. Baselines
 python baselines.py nslkdd <s>
 python baselines.py alerce <s>
-python baselines.py wos <s> --models flat_rf,lcpn_rf,flat_mlp --trees 100
 
 # 5. Evaluation, statistics, cost, and analyses
 ./eval_all.sh
 python aggregate.py <dataset>
 python analysis.py
 python cost.py <dataset> results/<dataset>/main/seed0
-python gated_cost.py wos budget
 python interpret.py nslkdd results/nslkdd/main/seed0 dos neptune 2
 
 # 6. Paper tables and figures
@@ -84,7 +79,7 @@ python figs_eaai.py <paper dir>
 ```
 
 The shell scripts `run_*.sh` and `queue*.sh` list the exact runs and their order.
-NSL-KDD uses five seeds (0 to 4). ALeRCE and WOS use three seeds (0 to 2).
+NSL-KDD uses five seeds (0 to 4). ALeRCE uses three seeds (0 to 2).
 
 ## Notes on reproducibility
 

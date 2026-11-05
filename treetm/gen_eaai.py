@@ -9,7 +9,7 @@ import numpy as np
 
 PAPER = sys.argv[1]
 os.makedirs(os.path.join(PAPER, 'tables'), exist_ok=True)
-DS = [('nslkdd', 'N', 'NSL-KDD'), ('alerce', 'A', 'ALeRCE'), ('wos', 'W', 'WOS')]
+DS = [('nslkdd', 'N', 'NSL-KDD'), ('alerce', 'A', 'ALeRCE')]
 m = {}
 
 
@@ -49,18 +49,16 @@ for d, X, name in DS:
     put(f'{X}MinTrain', min(cnt.values())); put(f'{X}MaxTrain', max(cnt.values()))
 ma = json.load(open('../alerce_prep/work/meta.json'))
 put('ANSamples', ma['n_samples']); put('ANFeatures', ma['n_features'])
-put('WNSamples', meta['wos']['n_train'] + meta['wos']['n_val'] + meta['wos']['n_test']); put('WNLeaves', len(Taxonomy(meta['wos']['taxonomy']).leaves))
 put('NslNovel', meta['nslkdd']['n_test_novel']); put('NslValPct', 10)
 put('NslSeeds', summ['nslkdd']['n_seeds']['tree_hard']); put('ASeeds', summ['alerce']['n_seeds']['tree_hard'])
-put('WSeeds', summ['wos']['n_seeds']['tree_hard'])
 
-feat = {'nslkdd': '\\makecell{38 numeric,\\\\ 3 categorical}', 'alerce': '152 numeric', 'wos': '2{,}000 words'}
-dom = {'nslkdd': 'Network intrusion', 'alerce': 'Astronomical alerts', 'wos': 'Document routing'}
+feat = {'nslkdd': '\\makecell{38 numeric,\\\\ 3 categorical}', 'alerce': '152 numeric'}
+dom = {'nslkdd': 'Network intrusion', 'alerce': 'Astronomical alerts'}
 with open(os.path.join(PAPER, 'tables', 'tab_datasets.tex'), 'w') as f:
     f.write('\\begin{table}[t]\n\\centering\n\\caption{Datasets and taxonomies. Train, validation, and test '
             'sizes are numbers of records. Leaf sizes give the smallest and largest leaf class in the training set.}\n'
-            '\\label{tab:data}\n\\footnotesize\n\\setlength{\\tabcolsep}{4pt}\n\\begin{tabular}{lccc}\n\\toprule\n'
-            '& NSL-KDD & ALeRCE & WOS\\\\\n\\midrule\n')
+            '\\label{tab:data}\n\\footnotesize\n\\setlength{\\tabcolsep}{4pt}\n\\begin{tabular}{lcc}\n\\toprule\n'
+            '& NSL-KDD & ALeRCE\\\\\n\\midrule\n')
     f.write('Domain & ' + ' & '.join(dom[d] for d, _, _ in DS) + '\\\\\n')
     f.write('Input features & ' + ' & '.join(feat[d] for d, _, _ in DS) + '\\\\\n')
     f.write('Boolean features (bits) & ' + ' & '.join(m[f'{X}NBits'] for _, X, _ in DS) + '\\\\\n')
@@ -84,8 +82,8 @@ for d, X, _ in DS:
 with open(os.path.join(PAPER, 'tables', 'tab_config.tex'), 'w') as f:
     f.write('\\begin{table}[t]\n\\centering\n\\caption{\\tm configuration per dataset. All experts and the flat '
             '\\tm of a dataset use the same values, except the root of \\tmt-B, which draws '
-            + f"{m['NPBudgetRoot']}, {m['APBudgetRoot']}, and {m['WPBudgetRoot']} samples per child and epoch.}}\n" + '\\label{tab:config}\n\\small\n\\begin{tabular}{lccc}\n'
-            '\\toprule\n& NSL-KDD & ALeRCE & WOS\\\\\n\\midrule\n')
+            + f"{m['NPBudgetRoot']} and {m['APBudgetRoot']} samples per child and epoch.}}\n" + '\\label{tab:config}\n\\small\n\\begin{tabular}{lcc}\n'
+            '\\toprule\n& NSL-KDD & ALeRCE\\\\\n\\midrule\n')
     for lab, key in [('Clauses per class $C$', 'C'), ('Threshold $T$', 'T'), ('Specificity $s$', 'S'),
                      ('Samples per class and epoch $P$', 'P'), ('Epochs $E$', 'E'), ('Seeds', 'Seeds')]:
         f.write(lab + ' & ' + ' & '.join(m[f'{X}{key}'] for _, X, _ in DS) + '\\\\\n')
@@ -134,7 +132,7 @@ def cell(d, k, mm):
 with open(os.path.join(PAPER, 'tables', 'tab_main.tex'), 'w') as f:
     f.write('\\begin{table*}[!p]\n\\centering\n\\caption{Test results, mean $\\pm$ standard deviation over '
             'seeds. \\tmt-C and \\tmt-L use child-balanced and leaf-balanced resampling. \\tmt-B is \\tmt-C with a budget-matched root (Section~\\ref{subsec:errors}). The single-seed \\brf is included in the bolding. Acc: leaf accuracy; '
-            'Bal: balanced accuracy; F1: macro F1; hF: hierarchical F-measure; Exp.: experts evaluated per input. Flat \\tm, tuned $C$: clauses per class selected on the validation set (1{,}000 on NSL-KDD, 200 on WOS; on ALeRCE, validation selects the $C$ of Table~\\ref{tab:config}). '
+            'Bal: balanced accuracy; F1: macro F1; hF: hierarchical F-measure; Exp.: experts evaluated per input. Flat \\tm, tuned $C$: clauses per class selected on the validation set (1{,}000 on NSL-KDD; on ALeRCE, validation selects the $C$ of Table~\\ref{tab:config}, so the row is omitted). '
             'Bold: best mean per column.}\n\\label{tab:main}\n\\scriptsize\n\\setlength{\\tabcolsep}{3pt}\n\\renewcommand{\\arraystretch}{0.87}\n'
             '\\begin{tabular}{lccccc}\n\\toprule\n')
     for d, X, name in DS:
@@ -155,7 +153,7 @@ with open(os.path.join(PAPER, 'tables', 'tab_main.tex'), 'w') as f:
             bc = lambda mm: (f'\\textbf{{{BH[mm]:.3f}}}' if abs(BH[mm] - best_of('alerce', mm)) < 5e-4 else f'{BH[mm]:.3f}')
             f.write('ALeRCE \\brf (one seed) & ' + ' & '.join(bc(mm) for mm in ('accuracy', 'balanced_accuracy', 'macro_f1', 'hF'))
                     + ' & --\\\\\n')
-        f.write('\\midrule\n' if d != 'wos' else '\\bottomrule\n')
+        f.write('\\midrule\n' if d != DS[-1][0] else '\\bottomrule\n')
     f.write('\\end{tabular}\n\\end{table*}\n')
 
 # ---------------------------------------------------------------- statistics
@@ -198,10 +196,10 @@ with open(os.path.join(PAPER, 'tables', 'tab_cost.tex'), 'w') as f:
             'and of the flat \\tm (seed 0). Literal tests and included literals are counted on the trained '
             'models with the test-set routing fractions. CPU time: bit-packed NumPy implementation. '
             '\\aptm values are predictions of the analytical model (blue).}\n\\label{tab:cost}\n\\scriptsize\n'
-            '\\setlength{\\tabcolsep}{2.5pt}\n\\begin{tabular}{lcccccc}\n\\toprule\n'
-            '& \\multicolumn{2}{c}{NSL-KDD} & \\multicolumn{2}{c}{ALeRCE} & \\multicolumn{2}{c}{WOS}\\\\\n'
-            '\\cmidrule(lr){2-3}\\cmidrule(lr){4-5}\\cmidrule(lr){6-7}\n'
-            '& Tree & Flat & Tree & Flat & Tree & Flat\\\\\n\\midrule\n')
+            '\\setlength{\\tabcolsep}{4pt}\n\\begin{tabular}{lcccc}\n\\toprule\n'
+            '& \\multicolumn{2}{c}{NSL-KDD} & \\multicolumn{2}{c}{ALeRCE}\\\\\n'
+            '\\cmidrule(lr){2-3}\\cmidrule(lr){4-5}\n'
+            '& Tree & Flat & Tree & Flat\\\\\n\\midrule\n')
     cs = {d: json.load(open(f'results/{d}/main/seed0/treetm_cost.json')) for d, _, _ in DS}
     def row(lab, ft, ff, fmt, pred=False):
         cells = []
@@ -240,7 +238,7 @@ red = [1 - cs[d]['work']['dense_literal_tests_tree'] / cs[d]['work']['dense_lite
 spd = [cs[d]['cpu_seconds_per_input']['flat'] / cs[d]['cpu_seconds_per_input']['tree_hard'] for d, _, _ in DS]
 ered = [1 - cs[d]['ap_tm']['tree_hard_expected']['energy_nJ'] / cs[d]['ap_tm']['flat']['energy_nJ'] for d, _, _ in DS]
 put('RedDenseMin', pct(min(red))); put('RedDenseMax', pct(max(red)))
-for d, X, Ct in [('nslkdd', 'N', 1000), ('wos', 'W', 200)]:
+for d, X, Ct in [('nslkdd', 'N', 1000)]:
     w = cs[d]['work']; Cm = json.load(open(f'results/{d}/main/seed0/flat_hist.json'))['cfg']['clauses']
     put(f'{X}RedDenseTuned', pct(1 - w['dense_literal_tests_tree'] / (w['dense_literal_tests_flat'] * Ct / Cm)))
     put(f'{X}CTuned', Ct)
@@ -254,7 +252,7 @@ cl = json.load(open('results/nslkdd/main/seed0/clauses_dos_neptune.json'))[0]
 put('NClTpr', cl['tpr']); put('NClFpr', cl['fpr'], 4); put('NClLits', cl['n_literals'])
 cl2 = json.load(open('results/nslkdd/main/seed0/clauses_dos_neptune.json'))[1]
 put('NClTprB', cl2['tpr']); put('NClFprB', cl2['fpr']); put('NClLitsB', cl2['n_literals'])
-for d, X in [('nslkdd', 'N'), ('wos', 'W')]:
+for d, X in [('nslkdd', 'N')]:
     clj = json.load(open(f'results/{d}/clause_length.json'))
     put(f'{X}ClMedTree', clj['tree_median'], 0); put(f'{X}ClMedFlat', clj['flat_median'], 0)
 put('NClTprPct', 100 * cl['tpr'], 1); put('NClTprBPct', 100 * cl2['tpr'], 1); put('NClFprBPct', 100 * cl2['fpr'], 1)
@@ -300,24 +298,19 @@ put('NNovBaseN', len(nb))
 for leaf, tag in [('guess_passwd', 'Guess'), ('warezmaster', 'Warez'), ('back', 'Back')]:
     misl = [r for r in AN['nslkdd']['misrouted_by_leaf'] if r['variant'] == 'leafbal']
     put(f'NMis{tag}Leaf', float(np.mean([r['by_leaf'][leaf]['tree_wrong_level1'] for r in misl])), 0)
-rc = [r for r in AN['wos']['root_val_curve'] if r['variant'] == 'main']
-put('WRootValA', float(np.mean([r['acc'][0] for r in rc]))); put('WRootValC', float(np.mean([r['acc'][-1] for r in rc])))
-rb2 = [r for r in AN['wos']['root_val_curve'] if r['variant'] == 'budget']
-put('WBRootValA', float(np.mean([r['acc'][0] for r in rb2]))); put('WBRootValC', float(np.mean([r['acc'][-1] for r in rb2])))
-put('WBValLone', amean('wos', 'val', 'tree_level1', 'budget'))
-gc = json.load(open('results/wos/budget/gated_cost.json'))
-put('WBGatedRed', pct(float(np.mean([g['reduction'] for g in gc]))))
-bl_g = [json.load(open(f))['tree_gated']['level1'] for f in sorted(glob.glob('results/wos/budget/seed*/treetm_eval.json'))]
-put('WBGatedLone', float(np.mean(bl_g)))
 put('BhrfBal', BH['balanced_accuracy']); put('BhrfhF', BH['hF'])
 e0 = json.load(open('results/nslkdd/main/seed0/treetm_eval.json'))
 put('NRootBigSeedZero', e0['tree_hard']['level1'])
 put('NRootBigNovA', 100 * e0['novel_detected_as_attack_root'], 1)
 put('NRootBigNovB', 100 * rb['novel_detected_as_attack_root'], 1)
-tw = Taxonomy(meta['wos']['taxonomy'])
-hw = json.load(open('results/wos/main/seed0/root_hist.json'))['cfg']['per_class']
-hb = json.load(open('results/wos/budget/seed0/root_hist.json'))['cfg']['per_class']
-put('WPRootA', hw * len(tw.children['root'])); put('WPFlat', hw * len(tw.leaves)); put('WPRootB', hb * len(tw.children['root']))
+for d, X, _ in DS:
+    tx = Taxonomy(meta[d]['taxonomy'])
+    hw = json.load(open(f'results/{d}/main/seed0/root_hist.json'))['cfg']['per_class']
+    hb = json.load(open(f'results/{d}/budget/seed0/root_hist.json'))['cfg']['per_class']
+    put(f'{X}PRootA', hw * len(tx.children['root'])); put(f'{X}PFlat', hw * len(tx.leaves))
+    put(f'{X}PRootB', hb * len(tx.children['root']))
+    rcm = [r for r in AN[d]['root_val_curve'] if r['variant'] == 'main']
+    put(f'{X}RootValA', float(np.mean([r['acc'][0] for r in rcm]))); put(f'{X}RootValC', float(np.mean([r['acc'][-1] for r in rcm])))
 
 for d, X, _ in DS:
     if 'budget_hard' in summ[d]['mean']:
