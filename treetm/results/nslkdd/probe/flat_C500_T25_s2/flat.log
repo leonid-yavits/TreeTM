@@ -1,0 +1,5 @@
+[flat] epoch 1 train=3.3s
+[flat] epoch 2 train=1.8s
+[flat] epoch 3 train=1.6s
+[flat] epoch 4 train=1.6s
+[flat] epoch 5 val_acc=0.9486 train=1.6s

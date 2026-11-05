@@ -22,7 +22,7 @@ SEED = 0
 class Thermometer:
     """Quantile thermometer code (levels 1/8..7/8 of the non-missing training
     values) plus a missing-value bit for features with missing training values.
-    Identical to the ALeRCE booleanizer of the first study."""
+    A threshold at the training minimum becomes the strict test x > min."""
 
     def __init__(self, n_bins=8):
         self.n_bins = n_bins
@@ -30,12 +30,25 @@ class Thermometer:
     def fit(self, X):
         X = np.asarray(X, dtype=np.float64)
         qs = np.linspace(0, 1, self.n_bins + 1)[1:-1]
-        self.thresholds = []
+        self.thresholds, self.strict = [], []
         for j in range(X.shape[1]):
             v = X[:, j][X[:, j] != MISSING]
-            self.thresholds.append(np.unique(np.quantile(v, qs)) if v.size else np.array([]))
+            th = np.unique(np.quantile(v, qs)) if v.size else np.array([])
+            # A threshold at the training minimum would give a constant bit
+            # (x >= min).  For sparse features (e.g. counts that are mostly 0)
+            # this discards the feature, so it becomes the strict test x > min.
+            # A feature that is constant in training gets no threshold bit.
+            if v.size and v.max() == v.min():
+                th = np.array([])
+            strict = th <= (v.min() if v.size else 0)
+            self.thresholds.append(th)
+            self.strict.append(strict)
         self.has_missing = (X == MISSING).any(axis=0)
         return self
+
+    def names(self, cols):
+        return [f'{c} {">" if st else ">="} {t:.6g}'
+                for c, ts, sts in zip(cols, self.thresholds, self.strict) for t, st in zip(ts, sts)]
 
     def transform(self, X):
         X = np.asarray(X, dtype=np.float64)
@@ -44,7 +57,10 @@ class Thermometer:
             v = X[:, j]
             miss = v == MISSING
             if th.size:
-                cols.append((v[:, None] >= th[None, :]) & ~miss[:, None])
+                st = self.strict[j][None, :]
+                ge = v[:, None] >= th[None, :]
+                gt = v[:, None] > th[None, :]
+                cols.append(np.where(st, gt, ge) & ~miss[:, None])
             if self.has_missing[j]:
                 cols.append(miss[:, None])
         return np.hstack(cols).astype(np.uint8)
@@ -121,7 +137,7 @@ def nslkdd(d):
     Xn_tr, O_tr = feats(tr.iloc[tr_i]); Xn_va, O_va = feats(tr.iloc[va_i])
     Xn_te, O_te = feats(te[known]); Xn_nov, O_nov = feats(te[~known])
     th = Thermometer(8).fit(Xn_tr)
-    bit_names = [f'{c} >= {t:.6g}' for c, ts in zip(num, th.thresholds) for t in ts]
+    bit_names = th.names(num)
     bit_names += [f'{c} == {v}' for c in NSL_CAT for v in cats[c]]
     B = lambda Xn, O: np.hstack([th.transform(Xn), O])
     Bs = {'tr': B(Xn_tr, O_tr), 'va': B(Xn_va, O_va), 'te': B(Xn_te, O_te)}

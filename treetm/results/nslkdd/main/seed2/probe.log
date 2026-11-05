@@ -1,50 +1,50 @@
 [probe] epoch 1 train=1.3s
-[probe] epoch 2 train=1.2s
+[probe] epoch 2 train=1.0s
 [probe] epoch 3 train=1.1s
-[probe] epoch 4 train=1.1s
-[probe] epoch 5 val_acc=0.8988 train=1.1s
-[probe] epoch 6 train=1.1s
-[probe] epoch 7 train=1.1s
-[probe] epoch 8 train=1.2s
-[probe] epoch 9 train=1.1s
-[probe] epoch 10 val_acc=0.9065 train=1.2s
-[probe] epoch 11 train=1.1s
-[probe] epoch 12 train=1.1s
+[probe] epoch 4 train=1.0s
+[probe] epoch 5 val_acc=0.9005 train=1.0s
+[probe] epoch 6 train=1.0s
+[probe] epoch 7 train=0.9s
+[probe] epoch 8 train=0.9s
+[probe] epoch 9 train=1.0s
+[probe] epoch 10 val_acc=0.8988 train=1.0s
+[probe] epoch 11 train=1.0s
+[probe] epoch 12 train=1.0s
 [probe] epoch 13 train=1.0s
-[probe] epoch 14 train=1.2s
-[probe] epoch 15 val_acc=0.8842 train=1.1s
+[probe] epoch 14 train=1.1s
+[probe] epoch 15 val_acc=0.9039 train=1.0s
 [probe] epoch 16 train=1.0s
 [probe] epoch 17 train=1.0s
 [probe] epoch 18 train=1.1s
-[probe] epoch 19 train=1.2s
-[probe] epoch 20 val_acc=0.8851 train=1.2s
-[probe] epoch 21 train=1.0s
-[probe] epoch 22 train=1.1s
+[probe] epoch 19 train=0.9s
+[probe] epoch 20 val_acc=0.8842 train=0.9s
+[probe] epoch 21 train=0.9s
+[probe] epoch 22 train=1.0s
 [probe] epoch 23 train=1.1s
 [probe] epoch 24 train=1.0s
-[probe] epoch 25 val_acc=0.9048 train=1.0s
+[probe] epoch 25 val_acc=0.8834 train=0.9s
 [probe] epoch 26 train=1.0s
-[probe] epoch 27 train=1.1s
-[probe] epoch 28 train=1.2s
-[probe] epoch 29 train=1.2s
-[probe] epoch 30 val_acc=0.8834 train=1.3s
-[probe] epoch 31 train=1.2s
-[probe] epoch 32 train=1.2s
+[probe] epoch 27 train=1.0s
+[probe] epoch 28 train=1.1s
+[probe] epoch 29 train=0.9s
+[probe] epoch 30 val_acc=0.9039 train=1.0s
+[probe] epoch 31 train=1.0s
+[probe] epoch 32 train=1.1s
 [probe] epoch 33 train=1.1s
 [probe] epoch 34 train=1.0s
-[probe] epoch 35 val_acc=0.9039 train=1.0s
-[probe] epoch 36 train=1.0s
+[probe] epoch 35 val_acc=0.9014 train=1.0s
+[probe] epoch 36 train=1.1s
 [probe] epoch 37 train=1.0s
-[probe] epoch 38 train=1.1s
-[probe] epoch 39 train=1.1s
-[probe] epoch 40 val_acc=0.9022 train=1.2s
-[probe] epoch 41 train=1.2s
-[probe] epoch 42 train=1.0s
-[probe] epoch 43 train=1.3s
-[probe] epoch 44 train=1.4s
-[probe] epoch 45 val_acc=0.9057 train=1.0s
-[probe] epoch 46 train=1.2s
-[probe] epoch 47 train=1.2s
-[probe] epoch 48 train=1.3s
-[probe] epoch 49 train=1.1s
-[probe] epoch 50 val_acc=0.9031 train=1.0s
+[probe] epoch 38 train=0.9s
+[probe] epoch 39 train=0.9s
+[probe] epoch 40 val_acc=0.9022 train=0.9s
+[probe] epoch 41 train=1.0s
+[probe] epoch 42 train=1.1s
+[probe] epoch 43 train=1.0s
+[probe] epoch 44 train=1.1s
+[probe] epoch 45 val_acc=0.9048 train=1.0s
+[probe] epoch 46 train=1.0s
+[probe] epoch 47 train=1.0s
+[probe] epoch 48 train=1.0s
+[probe] epoch 49 train=1.0s
+[probe] epoch 50 val_acc=0.9057 train=0.9s

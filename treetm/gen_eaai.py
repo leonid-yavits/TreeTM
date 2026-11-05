@@ -176,7 +176,7 @@ for d, X, _ in DS:
 # ---------------------------------------------------------------- errors by depth, novel attacks, alpha/delta
 for d, X, _ in DS:
     tot = {}
-    for var, tag in [('main', 'C'), ('leafbal', 'L')]:
+    for var, tag in [('main', 'C'), ('leafbal', 'L'), ('budget', 'B')]:
         ev = [json.load(open(f)) for f in sorted(glob.glob(f'results/{d}/{var}/seed*/treetm_eval.json'))]
         if not ev:
             continue
@@ -246,6 +246,12 @@ rb = json.load(open('results/nslkdd/abl_root2000_child/seed0/treetm_eval.json'))
 put('NRootBigLone', rb['tree_hard']['level1'])
 cl = json.load(open('results/nslkdd/main/seed0/clauses_dos_neptune.json'))[0]
 put('NClTpr', cl['tpr']); put('NClFpr', cl['fpr'], 4); put('NClLits', cl['n_literals'])
+cl2 = json.load(open('results/nslkdd/main/seed0/clauses_dos_neptune.json'))[1]
+put('NClTprB', cl2['tpr']); put('NClFprB', cl2['fpr']); put('NClLitsB', cl2['n_literals'])
+for d, X in [('nslkdd', 'N'), ('wos', 'W')]:
+    clj = json.load(open(f'results/{d}/clause_length.json'))
+    put(f'{X}ClMedTree', clj['tree_median'], 0); put(f'{X}ClMedFlat', clj['flat_median'], 0)
+put('NClTprPct', 100 * cl['tpr'], 1); put('NClTprBPct', 100 * cl2['tpr'], 1); put('NClFprBPct', 100 * cl2['fpr'], 1)
 ca = json.load(open('../alerce_prep/results/clauses_root_Transient.json'))
 put('AClMinLits', min(c['n_literals'] for c in ca)); put('AClMaxLits', max(c['n_literals'] for c in ca))
 # per-depth error counts (mean over seeds) for the claim about deeper experts
@@ -268,14 +274,21 @@ for d, X, _ in DS:
     put(f'{X}ApMaxTree', c['tree_hard_expected']['cycles_max']); put(f'{X}ApFlatCyc', c['flat']['cycles'])
 mis = [r for r in AN['nslkdd']['misrouted_by_leaf'] if r['variant'] == 'main']
 for leaf, tag in [('guess_passwd', 'Guess'), ('warezmaster', 'Warez'), ('back', 'Back')]:
-    put(f'NMis{tag}Tree', float(np.mean([r['by_leaf'][leaf]['tree_wrong_level1'] for r in mis])), 1)
-    put(f'NMis{tag}Flat', float(np.mean([r['by_leaf'][leaf]['flat_wrong_level1'] for r in mis])), 1)
+    put(f'NMis{tag}Tree', float(np.mean([r['by_leaf'][leaf]['tree_wrong_level1'] for r in mis])), 0)
+    put(f'NMis{tag}Flat', float(np.mean([r['by_leaf'][leaf]['flat_wrong_level1'] for r in mis])), 0)
     misb = [r for r in AN['nslkdd']['misrouted_by_leaf'] if r['variant'] == 'budget']
     put(f'NMis{tag}Budget', float(np.mean([r['by_leaf'][leaf]['tree_wrong_level1'] for r in misb])), 1)
 put('NTestWarez', mn['class_counts_test']['warezmaster']); put('NTestBack', mn['class_counts_test']['back'])
 put('NFalseAlarmC', 100 * amean('nslkdd', 'alarms', 'tree_false_alarm'), 1)
 put('NFalseAlarmL', 100 * amean('nslkdd', 'alarms', 'tree_false_alarm', 'leafbal'), 1)
 put('NFalseAlarmFlat', 100 * amean('nslkdd', 'alarms', 'flat_false_alarm'), 1)
+put('NFalseAlarmB', 100 * amean('nslkdd', 'alarms', 'tree_false_alarm', 'budget'), 1)
+for var, tag in [('main', 'C'), ('leafbal', 'L'), ('budget', 'B')]:
+    put(f'NDetKnown{tag}', 100 * amean('nslkdd', 'alarms', 'tree_detect_known', var), 1)
+put('NDetKnownFlat', 100 * amean('nslkdd', 'alarms', 'flat_detect_known'), 1)
+for leaf, tag in [('guess_passwd', 'Guess'), ('warezmaster', 'Warez'), ('back', 'Back')]:
+    misl = [r for r in AN['nslkdd']['misrouted_by_leaf'] if r['variant'] == 'leafbal']
+    put(f'NMis{tag}Leaf', float(np.mean([r['by_leaf'][leaf]['tree_wrong_level1'] for r in misl])), 0)
 rc = [r for r in AN['wos']['root_val_curve'] if r['variant'] == 'main']
 put('WRootValA', float(np.mean([r['acc'][0] for r in rc]))); put('WRootValC', float(np.mean([r['acc'][-1] for r in rc])))
 rb2 = [r for r in AN['wos']['root_val_curve'] if r['variant'] == 'budget']

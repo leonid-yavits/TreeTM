@@ -1,19 +1,19 @@
 {
  "work": {
-  "dense_literal_tests_tree": 187202.34117271466,
-  "dense_literal_tests_flat": 823400,
-  "included_literals_tree": 74775.89975524103,
-  "included_literals_flat": 347789,
+  "dense_literal_tests_tree": 172495.39214642972,
+  "dense_literal_tests_flat": 818800,
+  "included_literals_tree": 63520.09024156645,
+  "included_literals_flat": 319656,
   "clauses_stored_tree": 2800,
   "clauses_stored_flat": 2300,
-  "expected_experts_per_input": 1.6668085559221026,
+  "expected_experts_per_input": 1.5831648398425031,
   "visit_fraction": {
    "root": 1.0,
-   "attack": 0.3334042779610514,
-   "dos": 0.28094072576354157,
-   "probe": 0.052463552197509845,
-   "r2l": 0.0,
-   "u2r": 0.0
+   "attack": 0.29158241992125145,
+   "dos": 0.2552942428434607,
+   "probe": 0.03564967542832819,
+   "r2l": 0.0005320847078854954,
+   "u2r": 0.00010641694157709908
   }
  },
  "ap_tm": {
@@ -21,55 +21,55 @@
    "root": {
     "cycles": 11,
     "reduction": 8,
-    "energy_nJ": 0.4215
+    "energy_nJ": 0.4213
    },
    "attack": {
     "cycles": 21,
     "reduction": 9,
-    "energy_nJ": 0.8989999999999999
+    "energy_nJ": 0.8986
    },
    "dos": {
     "cycles": 31,
     "reduction": 10,
-    "energy_nJ": 1.4348999999999998
+    "energy_nJ": 1.4343
    },
    "probe": {
     "cycles": 21,
     "reduction": 9,
-    "energy_nJ": 0.8989999999999999
+    "energy_nJ": 0.8986
    },
    "r2l": {
     "cycles": 41,
     "reduction": 10,
-    "energy_nJ": 2.0252
+    "energy_nJ": 2.0244
    },
    "u2r": {
     "cycles": 21,
     "reduction": 9,
-    "energy_nJ": 0.8989999999999999
+    "energy_nJ": 0.8986
    },
    "flat": {
     "cycles": 116,
     "reduction": 12,
-    "energy_nJ": 8.34325
+    "energy_nJ": 8.34095
    }
   },
   "tree_hard_expected": {
-   "cycles": 28.47919548792168,
-   "cycles_incl_reduction": 42.761413216984145,
-   "energy_nJ": 1.1715170267106523,
+   "cycles": 26.393210599127382,
+   "cycles_incl_reduction": 39.89752048526125,
+   "energy_nJ": 1.0826920719378523,
    "cycles_max": 75
   },
   "flat": {
    "cycles": 116,
    "cycles_incl_reduction": 128,
-   "energy_nJ": 8.34325
+   "energy_nJ": 8.34095
   },
   "max_depth": 3
  },
  "cpu_seconds_per_input": {
-  "flat": 2.9651828369114952e-05,
-  "tree_hard": 6.358841552867034e-06,
+  "flat": 2.87021430667167e-05,
+  "tree_hard": 6.053059081967405e-06,
   "n_inputs": 4096,
   "implementation": "bit-packed numpy, batch 256, best of 3, single process"
  },

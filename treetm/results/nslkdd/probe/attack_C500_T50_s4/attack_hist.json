@@ -1,0 +1,53 @@
+{
+ "name": "attack",
+ "classes": [
+  "dos",
+  "probe",
+  "r2l",
+  "u2r"
+ ],
+ "cfg": {
+  "clauses": 500,
+  "T": 50,
+  "s": 4.0,
+  "weighted": false,
+  "epochs": 5,
+  "per_class": 2000,
+  "seed": 0,
+  "score_every": 5,
+  "resample": "child"
+ },
+ "epochs": [
+  {
+   "epoch": 1,
+   "train_s": 0.47
+  },
+  {
+   "epoch": 2,
+   "train_s": 0.26
+  },
+  {
+   "epoch": 3,
+   "train_s": 0.26
+  },
+  {
+   "epoch": 4,
+   "train_s": 0.25
+  },
+  {
+   "epoch": 5,
+   "train_s": 0.24,
+   "node_val_acc": 0.9960770936380693,
+   "included_literals": 52552
+  }
+ ],
+ "final_stats": {
+  "classes": 4,
+  "clauses_per_class": 500,
+  "total_clauses": 2000,
+  "nonempty_clauses": 1984,
+  "n_literals": 356,
+  "included_literals_total": 52552,
+  "max_clause_weight": 1
+ }
+}

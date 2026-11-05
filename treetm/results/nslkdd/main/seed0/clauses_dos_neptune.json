@@ -1,32 +1,27 @@
 [
  {
-  "clause": 338,
-  "tpr": 0.9715605250364608,
+  "clause": 358,
+  "tpr": 0.9980554205153136,
   "fpr": 0.0,
-  "n_literals": 3,
+  "n_literals": 7,
   "simplified": [
-   "count >= 14",
-   "same_srv_rate < 1",
-   "NOT flag == SF"
+   "dst_bytes < 2499",
+   "src_bytes < 207",
+   "dst_host_diff_srv_rate > 0",
+   "protocol_type == tcp",
+   "NOT land > 0",
+   "NOT num_root > 0",
+   "NOT protocol_type == icmp"
   ]
  },
  {
-  "clause": 366,
-  "tpr": 0.9511424404472533,
-  "fpr": 0.0,
-  "n_literals": 11,
+  "clause": 182,
+  "tpr": 0.9980554205153136,
+  "fpr": 0.0020876826722338203,
+  "n_literals": 2,
   "simplified": [
-   "dst_bytes < 136",
-   "dst_host_srv_diff_host_rate < 0.04",
-   "logged_in >= 0",
-   "src_bytes < 505",
-   "srv_count >= 1",
-   "NOT protocol_type == udp",
-   "NOT service == ftp_data",
-   "NOT service == vmnet",
-   "NOT flag == S1",
-   "NOT flag == SF",
-   "NOT flag == SH"
+   "dst_host_diff_srv_rate > 0",
+   "protocol_type == tcp"
   ]
  }
 ]

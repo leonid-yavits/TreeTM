@@ -1,0 +1,29 @@
+{
+ "per_seed": [
+  {
+   "run": "results/wos/main/seed0",
+   "tree_median": 14.0,
+   "tree_mean": 55.44833197721725,
+   "flat_median": 35.0,
+   "flat_mean": 66.69490080595165
+  },
+  {
+   "run": "results/wos/main/seed1",
+   "tree_median": 14.0,
+   "tree_mean": 59.541592526690394,
+   "flat_median": 35.0,
+   "flat_mean": 68.32969668833178
+  },
+  {
+   "run": "results/wos/main/seed2",
+   "tree_median": 14.0,
+   "tree_mean": 60.75239509840327,
+   "flat_median": 34.0,
+   "flat_mean": 67.34945987654321
+  }
+ ],
+ "tree_median": 14.0,
+ "tree_mean": 58.5807732007703,
+ "flat_median": 34.666666666666664,
+ "flat_mean": 67.45801912360888
+}

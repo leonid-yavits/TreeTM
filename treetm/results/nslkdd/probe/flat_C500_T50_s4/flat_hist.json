@@ -1,0 +1,72 @@
+{
+ "name": "flat",
+ "classes": [
+  "normal",
+  "back",
+  "land",
+  "neptune",
+  "pod",
+  "smurf",
+  "teardrop",
+  "ipsweep",
+  "nmap",
+  "portsweep",
+  "satan",
+  "ftp_write",
+  "guess_passwd",
+  "imap",
+  "multihop",
+  "phf",
+  "spy",
+  "warezclient",
+  "warezmaster",
+  "buffer_overflow",
+  "loadmodule",
+  "perl",
+  "rootkit"
+ ],
+ "cfg": {
+  "clauses": 500,
+  "T": 50,
+  "s": 4.0,
+  "weighted": false,
+  "epochs": 5,
+  "per_class": 2000,
+  "seed": 0,
+  "score_every": 5,
+  "resample": "child"
+ },
+ "epochs": [
+  {
+   "epoch": 1,
+   "train_s": 3.06
+  },
+  {
+   "epoch": 2,
+   "train_s": 2.37
+  },
+  {
+   "epoch": 3,
+   "train_s": 2.03
+  },
+  {
+   "epoch": 4,
+   "train_s": 1.93
+  },
+  {
+   "epoch": 5,
+   "train_s": 2.53,
+   "node_val_acc": 0.9570566756628036,
+   "included_literals": 500572
+  }
+ ],
+ "final_stats": {
+  "classes": 23,
+  "clauses_per_class": 500,
+  "total_clauses": 11500,
+  "nonempty_clauses": 11298,
+  "n_literals": 356,
+  "included_literals_total": 500572,
+  "max_clause_weight": 1
+ }
+}

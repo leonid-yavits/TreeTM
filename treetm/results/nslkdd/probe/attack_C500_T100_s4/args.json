@@ -1,0 +1,15 @@
+{
+ "dataset": "nslkdd",
+ "run": "results/nslkdd/probe/attack_C500_T100_s4",
+ "clauses": 500,
+ "T": 100,
+ "s": 4.0,
+ "epochs": 5,
+ "per_class": 2000,
+ "seed": 0,
+ "nodes": "attack",
+ "procs": 1,
+ "weighted": false,
+ "score_every": 5,
+ "resample": "child"
+}

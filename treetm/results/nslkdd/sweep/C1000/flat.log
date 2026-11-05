@@ -1,50 +1,50 @@
-[flat] epoch 1 train=9.2s
-[flat] epoch 2 train=6.4s
-[flat] epoch 3 train=5.3s
-[flat] epoch 4 train=5.7s
-[flat] epoch 5 val_acc=0.9545 train=5.5s
-[flat] epoch 6 train=6.0s
-[flat] epoch 7 train=6.3s
-[flat] epoch 8 train=6.2s
-[flat] epoch 9 train=5.9s
-[flat] epoch 10 val_acc=0.9571 train=5.8s
-[flat] epoch 11 train=5.7s
-[flat] epoch 12 train=5.7s
-[flat] epoch 13 train=5.6s
-[flat] epoch 14 train=6.2s
-[flat] epoch 15 val_acc=0.9537 train=5.6s
-[flat] epoch 16 train=5.5s
-[flat] epoch 17 train=5.7s
-[flat] epoch 18 train=5.8s
-[flat] epoch 19 train=5.3s
-[flat] epoch 20 val_acc=0.9530 train=6.3s
-[flat] epoch 21 train=5.8s
-[flat] epoch 22 train=5.2s
-[flat] epoch 23 train=5.5s
-[flat] epoch 24 train=5.3s
-[flat] epoch 25 val_acc=0.9431 train=5.5s
-[flat] epoch 26 train=5.6s
-[flat] epoch 27 train=5.4s
-[flat] epoch 28 train=5.3s
-[flat] epoch 29 train=6.1s
-[flat] epoch 30 val_acc=0.9536 train=7.6s
-[flat] epoch 31 train=6.1s
-[flat] epoch 32 train=6.0s
-[flat] epoch 33 train=5.2s
-[flat] epoch 34 train=5.5s
-[flat] epoch 35 val_acc=0.9532 train=5.7s
-[flat] epoch 36 train=5.7s
-[flat] epoch 37 train=5.8s
-[flat] epoch 38 train=5.6s
-[flat] epoch 39 train=5.6s
-[flat] epoch 40 val_acc=0.9510 train=5.5s
-[flat] epoch 41 train=5.7s
-[flat] epoch 42 train=5.7s
-[flat] epoch 43 train=5.9s
-[flat] epoch 44 train=6.0s
-[flat] epoch 45 val_acc=0.9578 train=5.7s
-[flat] epoch 46 train=5.8s
-[flat] epoch 47 train=6.7s
-[flat] epoch 48 train=6.6s
-[flat] epoch 49 train=6.0s
-[flat] epoch 50 val_acc=0.9559 train=5.9s
+[flat] epoch 1 train=7.8s
+[flat] epoch 2 train=5.3s
+[flat] epoch 3 train=5.2s
+[flat] epoch 4 train=4.9s
+[flat] epoch 5 val_acc=0.9668 train=4.8s
+[flat] epoch 6 train=5.4s
+[flat] epoch 7 train=5.0s
+[flat] epoch 8 train=5.6s
+[flat] epoch 9 train=5.8s
+[flat] epoch 10 val_acc=0.9648 train=5.2s
+[flat] epoch 11 train=5.5s
+[flat] epoch 12 train=5.5s
+[flat] epoch 13 train=5.0s
+[flat] epoch 14 train=5.3s
+[flat] epoch 15 val_acc=0.9659 train=5.3s
+[flat] epoch 16 train=5.3s
+[flat] epoch 17 train=5.3s
+[flat] epoch 18 train=5.0s
+[flat] epoch 19 train=5.1s
+[flat] epoch 20 val_acc=0.9709 train=5.3s
+[flat] epoch 21 train=5.1s
+[flat] epoch 22 train=4.9s
+[flat] epoch 23 train=4.5s
+[flat] epoch 24 train=5.5s
+[flat] epoch 25 val_acc=0.9671 train=5.0s
+[flat] epoch 26 train=5.4s
+[flat] epoch 27 train=4.7s
+[flat] epoch 28 train=5.2s
+[flat] epoch 29 train=5.2s
+[flat] epoch 30 val_acc=0.9703 train=5.2s
+[flat] epoch 31 train=4.6s
+[flat] epoch 32 train=5.0s
+[flat] epoch 33 train=4.6s
+[flat] epoch 34 train=4.7s
+[flat] epoch 35 val_acc=0.9703 train=5.1s
+[flat] epoch 36 train=4.9s
+[flat] epoch 37 train=5.1s
+[flat] epoch 38 train=5.1s
+[flat] epoch 39 train=5.2s
+[flat] epoch 40 val_acc=0.9686 train=5.2s
+[flat] epoch 41 train=4.8s
+[flat] epoch 42 train=5.3s
+[flat] epoch 43 train=5.3s
+[flat] epoch 44 train=5.8s
+[flat] epoch 45 val_acc=0.9709 train=6.2s
+[flat] epoch 46 train=5.2s
+[flat] epoch 47 train=5.1s
+[flat] epoch 48 train=5.0s
+[flat] epoch 49 train=4.7s
+[flat] epoch 50 val_acc=0.9731 train=5.0s

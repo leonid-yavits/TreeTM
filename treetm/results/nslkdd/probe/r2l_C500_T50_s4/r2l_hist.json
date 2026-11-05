@@ -1,0 +1,57 @@
+{
+ "name": "r2l",
+ "classes": [
+  "ftp_write",
+  "guess_passwd",
+  "imap",
+  "multihop",
+  "phf",
+  "spy",
+  "warezclient",
+  "warezmaster"
+ ],
+ "cfg": {
+  "clauses": 500,
+  "T": 50,
+  "s": 4.0,
+  "weighted": false,
+  "epochs": 5,
+  "per_class": 2000,
+  "seed": 0,
+  "score_every": 5,
+  "resample": "child"
+ },
+ "epochs": [
+  {
+   "epoch": 1,
+   "train_s": 0.91
+  },
+  {
+   "epoch": 2,
+   "train_s": 0.54
+  },
+  {
+   "epoch": 3,
+   "train_s": 0.51
+  },
+  {
+   "epoch": 4,
+   "train_s": 0.51
+  },
+  {
+   "epoch": 5,
+   "train_s": 0.53,
+   "node_val_acc": 0.98989898989899,
+   "included_literals": 202366
+  }
+ ],
+ "final_stats": {
+  "classes": 8,
+  "clauses_per_class": 500,
+  "total_clauses": 4000,
+  "nonempty_clauses": 3934,
+  "n_literals": 356,
+  "included_literals_total": 202366,
+  "max_clause_weight": 1
+ }
+}

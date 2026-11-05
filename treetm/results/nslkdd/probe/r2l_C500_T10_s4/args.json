@@ -1,0 +1,15 @@
+{
+ "dataset": "nslkdd",
+ "run": "results/nslkdd/probe/r2l_C500_T10_s4",
+ "clauses": 500,
+ "T": 10,
+ "s": 4.0,
+ "epochs": 5,
+ "per_class": 2000,
+ "seed": 0,
+ "nodes": "r2l",
+ "procs": 1,
+ "weighted": false,
+ "score_every": 5,
+ "resample": "child"
+}

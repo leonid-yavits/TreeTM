@@ -1,0 +1,43 @@
+{
+ "per_seed": [
+  {
+   "run": "results/nslkdd/main/seed0",
+   "tree_median": 25.0,
+   "tree_mean": 48.59046926154966,
+   "flat_median": 31.0,
+   "flat_mean": 58.10645075657021
+  },
+  {
+   "run": "results/nslkdd/main/seed1",
+   "tree_median": 27.0,
+   "tree_mean": 49.21113537117904,
+   "flat_median": 31.0,
+   "flat_mean": 57.095015438906046
+  },
+  {
+   "run": "results/nslkdd/main/seed2",
+   "tree_median": 26.0,
+   "tree_mean": 49.08912759471622,
+   "flat_median": 29.0,
+   "flat_mean": 56.703687406494765
+  },
+  {
+   "run": "results/nslkdd/main/seed3",
+   "tree_median": 27.0,
+   "tree_mean": 49.36548260299898,
+   "flat_median": 33.0,
+   "flat_mean": 60.18693733451015
+  },
+  {
+   "run": "results/nslkdd/main/seed4",
+   "tree_median": 26.0,
+   "tree_mean": 48.50829090909091,
+   "flat_median": 32.0,
+   "flat_mean": 58.766598886040136
+  }
+ ],
+ "tree_median": 26.2,
+ "tree_mean": 48.95290114790696,
+ "flat_median": 31.2,
+ "flat_mean": 58.17173796450426
+}

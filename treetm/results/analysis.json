@@ -4,259 +4,259 @@
    {
     "variant": "main",
     "run": "results/nslkdd/main/seed0",
-    "tree_acc": 0.9799968248928401,
-    "flat_acc": 0.9651531989204636,
-    "tree_level1": 0.9922209874583268,
-    "flat_level1": 0.9757898079060169,
-    "tree_hF": 0.9838855918232773,
-    "flat_hF": 0.9688883473457617
+    "tree_acc": 0.9848388633116367,
+    "flat_acc": 0.9730115891411335,
+    "tree_level1": 0.9942054294332434,
+    "flat_level1": 0.9810287347197968,
+    "tree_hF": 0.9889314076451466,
+    "flat_hF": 0.9763795560985542
    },
    {
     "variant": "main",
     "run": "results/nslkdd/main/seed1",
-    "tree_acc": 0.9778536275599301,
-    "flat_acc": 0.9645975551674869,
-    "tree_level1": 0.9925384981743134,
-    "flat_level1": 0.9763454516589934,
-    "tree_hF": 0.9828253706754531,
-    "flat_hF": 0.9684249024707412
+    "tree_acc": 0.9838863311636767,
+    "flat_acc": 0.9693602159072868,
+    "tree_level1": 0.9948404508652167,
+    "flat_level1": 0.9782505159549135,
+    "tree_hF": 0.9889314076451466,
+    "flat_hF": 0.9727871786527824
    },
    {
     "variant": "main",
     "run": "results/nslkdd/main/seed2",
-    "tree_acc": 0.9793618034608668,
-    "flat_acc": 0.9668201301793935,
-    "tree_level1": 0.9919828544213367,
-    "flat_level1": 0.9778536275599301,
-    "tree_hF": 0.9832708393423708,
-    "flat_hF": 0.9704842053909013
+    "tree_acc": 0.9855532624226068,
+    "flat_acc": 0.9722178123511669,
+    "tree_level1": 0.9943641847912367,
+    "flat_level1": 0.9807906016828067,
+    "tree_hF": 0.9895589262958852,
+    "flat_hF": 0.9758044806517312
    },
    {
     "variant": "main",
     "run": "results/nslkdd/main/seed3",
-    "tree_acc": 0.9769804730909668,
-    "flat_acc": 0.9688839498333068,
-    "tree_level1": 0.9915859660263534,
-    "flat_level1": 0.9803937132878234,
-    "tree_hF": 0.9817792068595927,
-    "flat_hF": 0.9726802654615039
+    "tree_acc": 0.9826956659787268,
+    "flat_acc": 0.9716621685981902,
+    "tree_level1": 0.9937291633592634,
+    "flat_level1": 0.9800762025718368,
+    "tree_hF": 0.9877371301592527,
+    "flat_hF": 0.9752513534416087
    },
    {
     "variant": "main",
     "run": "results/nslkdd/main/seed4",
-    "tree_acc": 0.9789649150658835,
-    "flat_acc": 0.9694395935862835,
-    "tree_level1": 0.9917447213843468,
-    "flat_level1": 0.9794411811398634,
-    "tree_hF": 0.9828908311345647,
-    "flat_hF": 0.9729762728419682
+    "tree_acc": 0.9838069534846801,
+    "flat_acc": 0.9712652802032069,
+    "tree_level1": 0.99499920622321,
+    "flat_level1": 0.9799174472138434,
+    "tree_hF": 0.9888564496895432,
+    "flat_hF": 0.9748381580554537
    },
    {
     "variant": "leafbal",
     "run": "results/nslkdd/leafbal/seed0",
-    "tree_acc": 0.9575329417367836,
-    "flat_acc": 0.9651531989204636,
-    "tree_level1": 0.9712652802032069,
-    "flat_level1": 0.9757898079060169,
-    "tree_hF": 0.9611883280500692,
-    "flat_hF": 0.9688883473457617
+    "tree_acc": 0.9670582632163836,
+    "flat_acc": 0.9730115891411335,
+    "tree_level1": 0.9811081123987935,
+    "flat_level1": 0.9810287347197968,
+    "tree_hF": 0.9708210904342148,
+    "flat_hF": 0.9763795560985542
    },
    {
     "variant": "leafbal",
     "run": "results/nslkdd/leafbal/seed1",
-    "tree_acc": 0.9600730274646769,
-    "flat_acc": 0.9645975551674869,
-    "tree_level1": 0.9761866963010002,
-    "flat_level1": 0.9763454516589934,
-    "tree_hF": 0.9647772619920189,
-    "flat_hF": 0.9684249024707412
+    "tree_acc": 0.9633275123035402,
+    "flat_acc": 0.9693602159072868,
+    "tree_level1": 0.9772186061279569,
+    "flat_level1": 0.9782505159549135,
+    "tree_hF": 0.9680335545872867,
+    "flat_hF": 0.9727871786527824
    },
    {
     "variant": "leafbal",
     "run": "results/nslkdd/leafbal/seed2",
-    "tree_acc": 0.9620574694395936,
-    "flat_acc": 0.9668201301793935,
-    "tree_level1": 0.9757898079060169,
-    "flat_level1": 0.9778536275599301,
-    "tree_hF": 0.965827264960742,
-    "flat_hF": 0.9704842053909013
+    "tree_acc": 0.9668995078583902,
+    "flat_acc": 0.9722178123511669,
+    "tree_level1": 0.9786474043498968,
+    "flat_level1": 0.9807906016828067,
+    "tree_hF": 0.9705870371124782,
+    "flat_hF": 0.9758044806517312
    },
    {
     "variant": "leafbal",
     "run": "results/nslkdd/leafbal/seed3",
-    "tree_acc": 0.955310366724877,
-    "flat_acc": 0.9688839498333068,
-    "tree_level1": 0.9730909668201302,
-    "flat_level1": 0.9803937132878234,
-    "tree_hF": 0.9600243753808653,
-    "flat_hF": 0.9726802654615039
+    "tree_acc": 0.9634862676615336,
+    "flat_acc": 0.9716621685981902,
+    "tree_level1": 0.9776948722019368,
+    "flat_level1": 0.9800762025718368,
+    "tree_hF": 0.9682475066151028,
+    "flat_hF": 0.9752513534416087
    },
    {
     "variant": "leafbal",
     "run": "results/nslkdd/leafbal/seed4",
-    "tree_acc": 0.9596761390696936,
-    "flat_acc": 0.9694395935862835,
-    "tree_level1": 0.9750754087950468,
-    "flat_level1": 0.9794411811398634,
-    "tree_hF": 0.963484059856864,
-    "flat_hF": 0.9729762728419682
+    "tree_acc": 0.961739958723607,
+    "flat_acc": 0.9712652802032069,
+    "tree_level1": 0.9764248293379901,
+    "flat_level1": 0.9799174472138434,
+    "tree_hF": 0.966423832973831,
+    "flat_hF": 0.9748381580554537
    },
    {
     "variant": "budget",
     "run": "results/nslkdd/budget/seed0",
-    "tree_acc": 0.9806318463248135,
-    "flat_acc": 0.9651531989204636,
-    "tree_level1": 0.9929353865692967,
-    "flat_level1": 0.9757898079060169,
-    "tree_hF": 0.9845507353849956,
-    "flat_hF": 0.9688883473457617
+    "tree_acc": 0.9859501508175901,
+    "flat_acc": 0.9730115891411335,
+    "tree_level1": 0.9953960946181933,
+    "flat_level1": 0.9810287347197968,
+    "tree_hF": 0.9901453559990145,
+    "flat_hF": 0.9763795560985542
    },
    {
     "variant": "budget",
     "run": "results/nslkdd/budget/seed1",
-    "tree_acc": 0.9784092713129068,
-    "flat_acc": 0.9645975551674869,
-    "tree_level1": 0.9930147642482934,
-    "flat_level1": 0.9763454516589934,
-    "tree_hF": 0.9833566779270001,
-    "flat_hF": 0.9684249024707412
+    "tree_acc": 0.9852357517066201,
+    "flat_acc": 0.9693602159072868,
+    "tree_level1": 0.9962692490871566,
+    "flat_level1": 0.9782505159549135,
+    "tree_hF": 0.9903834299099988,
+    "flat_hF": 0.9727871786527824
    },
    {
     "variant": "budget",
     "run": "results/nslkdd/budget/seed2",
-    "tree_acc": 0.9803937132878234,
-    "flat_acc": 0.9668201301793935,
-    "tree_level1": 0.9930147642482934,
-    "flat_level1": 0.9778536275599301,
-    "tree_hF": 0.9843479693549716,
-    "flat_hF": 0.9704842053909013
+    "tree_acc": 0.9879345927925067,
+    "flat_acc": 0.9722178123511669,
+    "tree_level1": 0.9968248928401333,
+    "flat_level1": 0.9807906016828067,
+    "tree_hF": 0.9920661021129654,
+    "flat_hF": 0.9758044806517312
    },
    {
     "variant": "budget",
     "run": "results/nslkdd/budget/seed3",
-    "tree_acc": 0.9785680266709001,
-    "flat_acc": 0.9688839498333068,
-    "tree_level1": 0.9931735196062867,
-    "flat_level1": 0.9803937132878234,
-    "tree_hF": 0.9834445268099827,
-    "flat_hF": 0.9726802654615039
+    "tree_acc": 0.9851563740276235,
+    "flat_acc": 0.9716621685981902,
+    "tree_level1": 0.9962692490871566,
+    "flat_level1": 0.9800762025718368,
+    "tree_hF": 0.9903463007846198,
+    "flat_hF": 0.9752513534416087
    },
    {
     "variant": "budget",
     "run": "results/nslkdd/budget/seed4",
-    "tree_acc": 0.9803143356088267,
-    "flat_acc": 0.9694395935862835,
-    "tree_level1": 0.9932528972852834,
-    "flat_level1": 0.9794411811398634,
-    "tree_hF": 0.9843524809553222,
-    "flat_hF": 0.9729762728419682
+    "tree_acc": 0.9846801079536435,
+    "flat_acc": 0.9712652802032069,
+    "tree_level1": 0.99595173837117,
+    "flat_level1": 0.9799174472138434,
+    "tree_hF": 0.9898089171974522,
+    "flat_hF": 0.9748381580554537
    }
   ],
   "cond_leaf_err": [
    {
     "variant": "main",
     "run": "results/nslkdd/main/seed0",
-    "n_both_level1_correct": 15748,
-    "tree": 0.012065024130048261,
-    "flat": 0.012509525019050038
+    "n_both_level1_correct": 16428,
+    "tree": 0.019722425127830533,
+    "flat": 0.019296323350377405
    },
    {
     "variant": "main",
     "run": "results/nslkdd/main/seed1",
-    "n_both_level1_correct": 15752,
-    "tree": 0.01409344845099035,
-    "flat": 0.01377602844083291
+    "n_both_level1_correct": 16370,
+    "tree": 0.01795968234575443,
+    "flat": 0.016432498472816127
    },
    {
     "variant": "main",
     "run": "results/nslkdd/main/seed2",
-    "n_both_level1_correct": 15864,
-    "tree": 0.018784669692385274,
-    "flat": 0.01796520423600605
+    "n_both_level1_correct": 16469,
+    "tree": 0.021069888882142205,
+    "flat": 0.020462687473434937
    },
    {
     "variant": "main",
     "run": "results/nslkdd/main/seed3",
-    "n_both_level1_correct": 15686,
-    "tree": 0.013068978707127374,
-    "flat": 0.012622720897615708
+    "n_both_level1_correct": 16448,
+    "tree": 0.020002431906614784,
+    "flat": 0.019820038910505836
    },
    {
     "variant": "main",
     "run": "results/nslkdd/main/seed4",
-    "n_both_level1_correct": 15665,
-    "tree": 0.012511969358442388,
-    "flat": 0.011362910947973188
+    "n_both_level1_correct": 16418,
+    "tree": 0.020830795468388355,
+    "flat": 0.018516262638567427
    },
    {
     "variant": "leafbal",
     "run": "results/nslkdd/leafbal/seed0",
-    "n_both_level1_correct": 16536,
-    "tree": 0.06821480406386067,
-    "flat": 0.06198597000483793
+    "n_both_level1_correct": 16863,
+    "tree": 0.05740378343118069,
+    "flat": 0.046966731898238745
    },
    {
     "variant": "leafbal",
     "run": "results/nslkdd/leafbal/seed1",
-    "n_both_level1_correct": 16537,
-    "tree": 0.06875491322488964,
-    "flat": 0.06065187156074258
+    "n_both_level1_correct": 17020,
+    "tree": 0.0536427732079906,
+    "flat": 0.055875440658049357
    },
    {
     "variant": "leafbal",
     "run": "results/nslkdd/leafbal/seed2",
-    "n_both_level1_correct": 16699,
-    "tree": 0.07024372716929157,
-    "flat": 0.0664111623450506
+    "n_both_level1_correct": 16974,
+    "tree": 0.05850123718628491,
+    "flat": 0.053788146577117946
    },
    {
     "variant": "leafbal",
     "run": "results/nslkdd/leafbal/seed3",
-    "n_both_level1_correct": 16473,
-    "tree": 0.06732228495113216,
-    "flat": 0.05682025132034238
+    "n_both_level1_correct": 16938,
+    "tree": 0.05579171094580234,
+    "flat": 0.05118668083599008
    },
    {
     "variant": "leafbal",
     "run": "results/nslkdd/leafbal/seed4",
-    "n_both_level1_correct": 16518,
-    "tree": 0.0675626589175445,
-    "flat": 0.0561205957137668
+    "n_both_level1_correct": 16928,
+    "tree": 0.05925094517958412,
+    "flat": 0.050330812854442346
    },
    {
     "variant": "budget",
     "run": "results/nslkdd/budget/seed0",
-    "n_both_level1_correct": 15727,
-    "tree": 0.008011699624848986,
-    "flat": 0.008393209130794176
+    "n_both_level1_correct": 16646,
+    "tree": 0.03256037486483239,
+    "flat": 0.03201970443349754
    },
    {
     "variant": "budget",
     "run": "results/nslkdd/budget/seed1",
-    "n_both_level1_correct": 15776,
-    "tree": 0.011346348884381338,
-    "flat": 0.010966024340770791
+    "n_both_level1_correct": 16518,
+    "tree": 0.026092747305969246,
+    "flat": 0.024639786899140332
    },
    {
     "variant": "budget",
     "run": "results/nslkdd/budget/seed2",
-    "n_both_level1_correct": 15909,
-    "tree": 0.017851530580174742,
-    "flat": 0.01697152555157458
+    "n_both_level1_correct": 16478,
+    "tree": 0.0215438766840636,
+    "flat": 0.02093700691831533
    },
    {
     "variant": "budget",
     "run": "results/nslkdd/budget/seed3",
-    "n_both_level1_correct": 15907,
-    "tree": 0.01716225561073741,
-    "flat": 0.01665933236939712
+    "n_both_level1_correct": 16667,
+    "tree": 0.03251934961300774,
+    "flat": 0.03233935321293574
    },
    {
     "variant": "budget",
     "run": "results/nslkdd/budget/seed4",
-    "n_both_level1_correct": 15939,
-    "tree": 0.018257105213626952,
-    "flat": 0.017065060543321412
+    "n_both_level1_correct": 16481,
+    "tree": 0.02420969601359141,
+    "flat": 0.021904010678963654
    }
   ],
   "root_val_curve": [
@@ -264,19 +264,19 @@
     "variant": "main",
     "run": "results/nslkdd/main/seed0",
     "epochs": [
-     48,
-     49,
+     40,
+     45,
      50
     ],
     "acc": [
-     0.9910303222733767,
-     0.9916653437053501,
-     0.9922209874583268
+     0.99452294014923,
+     0.9946023178282267,
+     0.9942054294332434
     ],
     "flat_acc": [
-     0.9658675980314335,
-     0.9676139069693602,
-     0.9651531989204636
+     0.9703127480552468,
+     0.9744403873630735,
+     0.9730115891411335
     ]
    },
    {
@@ -288,14 +288,14 @@
      50
     ],
     "acc": [
-     0.9929353865692967,
-     0.9922209874583268,
-     0.9925384981743134
+     0.99380854103826,
+     0.9946023178282267,
+     0.9948404508652167
     ],
     "flat_acc": [
-     0.9679314176853469,
-     0.9676139069693602,
-     0.9645975551674869
+     0.9713446578822035,
+     0.9715827909191935,
+     0.9693602159072868
     ]
    },
    {
@@ -307,14 +307,14 @@
      50
     ],
     "acc": [
-     0.99095094459438,
-     0.9919828544213367,
-     0.9919828544213367
+     0.9937291633592634,
+     0.9937291633592634,
+     0.9943641847912367
     ],
     "flat_acc": [
-     0.9653913319574535,
-     0.9676139069693602,
-     0.9668201301793935
+     0.9719796793141768,
+     0.9730115891411335,
+     0.9722178123511669
     ]
    },
    {
@@ -326,14 +326,14 @@
      50
     ],
     "acc": [
-     0.9904746785204,
-     0.9922209874583268,
-     0.9915859660263534
+     0.99404667407525,
+     0.9948404508652167,
+     0.9937291633592634
     ],
     "flat_acc": [
-     0.9712652802032069,
-     0.9706302587712335,
-     0.9688839498333068
+     0.9703127480552468,
+     0.9722178123511669,
+     0.9716621685981902
     ]
    },
    {
@@ -345,14 +345,14 @@
      50
     ],
     "acc": [
-     0.9924591204953167,
-     0.9916653437053501,
-     0.9917447213843468
+     0.9943641847912367,
+     0.9944435624702334,
+     0.99499920622321
     ],
     "flat_acc": [
-     0.9642006667725036,
-     0.9637244006985236,
-     0.9694395935862835
+     0.9723765677091601,
+     0.9718209239561835,
+     0.9712652802032069
     ]
    },
    {
@@ -364,14 +364,14 @@
      50
     ],
     "acc": [
-     0.9707890141292269,
-     0.9726147007461502,
-     0.9712652802032069
+     0.9790442927448801,
+     0.9801555802508335,
+     0.9811081123987935
     ],
     "flat_acc": [
-     0.9658675980314335,
-     0.9676139069693602,
-     0.9651531989204636
+     0.9703127480552468,
+     0.9744403873630735,
+     0.9730115891411335
     ]
    },
    {
@@ -383,14 +383,14 @@
      50
     ],
     "acc": [
-     0.9732497221781236,
-     0.9733290998571201,
-     0.9761866963010002
+     0.9795999364978568,
+     0.9780123829179235,
+     0.9772186061279569
     ],
     "flat_acc": [
-     0.9679314176853469,
-     0.9676139069693602,
-     0.9645975551674869
+     0.9713446578822035,
+     0.9715827909191935,
+     0.9693602159072868
     ]
    },
    {
@@ -402,14 +402,14 @@
      50
     ],
     "acc": [
-     0.9730115891411335,
-     0.9775361168439435,
-     0.9757898079060169
+     0.9764248293379901,
+     0.9797586918558502,
+     0.9786474043498968
     ],
     "flat_acc": [
-     0.9653913319574535,
-     0.9676139069693602,
-     0.9668201301793935
+     0.9719796793141768,
+     0.9730115891411335,
+     0.9722178123511669
     ]
    },
    {
@@ -421,14 +421,14 @@
      50
     ],
     "acc": [
-     0.9736466105731069,
-     0.9736466105731069,
-     0.9730909668201302
+     0.9765835846959835,
+     0.9777742498809335,
+     0.9776948722019368
     ],
     "flat_acc": [
-     0.9712652802032069,
-     0.9706302587712335,
-     0.9688839498333068
+     0.9703127480552468,
+     0.9722178123511669,
+     0.9716621685981902
     ]
    },
    {
@@ -440,14 +440,14 @@
      50
     ],
     "acc": [
-     0.9738053659311001,
-     0.9742816320050802,
-     0.9750754087950468
+     0.9788061597078901,
+     0.9794411811398634,
+     0.9764248293379901
     ],
     "flat_acc": [
-     0.9642006667725036,
-     0.9637244006985236,
-     0.9694395935862835
+     0.9723765677091601,
+     0.9718209239561835,
+     0.9712652802032069
     ]
    },
    {
@@ -459,14 +459,14 @@
      50
     ],
     "acc": [
-     0.9928560088903,
-     0.99333227496428,
-     0.9929353865692967
+     0.9963486267661533,
+     0.9965073821241467,
+     0.9953960946181933
     ],
     "flat_acc": [
-     0.9658675980314335,
-     0.9676139069693602,
-     0.9651531989204636
+     0.9703127480552468,
+     0.9744403873630735,
+     0.9730115891411335
     ]
    },
    {
@@ -478,14 +478,14 @@
      50
     ],
     "acc": [
-     0.9926178758533101,
-     0.9928560088903,
-     0.9930147642482934
+     0.9963486267661533,
+     0.9965073821241467,
+     0.9962692490871566
     ],
     "flat_acc": [
-     0.9679314176853469,
-     0.9676139069693602,
-     0.9645975551674869
+     0.9713446578822035,
+     0.9715827909191935,
+     0.9693602159072868
     ]
    },
    {
@@ -497,14 +497,14 @@
      50
     ],
     "acc": [
-     0.9930147642482934,
-     0.9926972535323068,
-     0.9930147642482934
+     0.9965073821241467,
+     0.9965073821241467,
+     0.9968248928401333
     ],
     "flat_acc": [
-     0.9653913319574535,
-     0.9676139069693602,
-     0.9668201301793935
+     0.9719796793141768,
+     0.9730115891411335,
+     0.9722178123511669
     ]
    },
    {
@@ -516,14 +516,14 @@
      50
     ],
     "acc": [
-     0.9929353865692967,
-     0.9927766312113033,
-     0.9931735196062867
+     0.9962692490871566,
+     0.9966661374821401,
+     0.9962692490871566
     ],
     "flat_acc": [
-     0.9712652802032069,
-     0.9706302587712335,
-     0.9688839498333068
+     0.9703127480552468,
+     0.9722178123511669,
+     0.9716621685981902
     ]
    },
    {
@@ -535,14 +535,14 @@
      50
     ],
     "acc": [
-     0.9926972535323068,
-     0.9927766312113033,
-     0.9932528972852834
+     0.9962692490871566,
+     0.9963486267661533,
+     0.99595173837117
     ],
     "flat_acc": [
-     0.9642006667725036,
-     0.9637244006985236,
-     0.9694395935862835
+     0.9723765677091601,
+     0.9718209239561835,
+     0.9712652802032069
     ]
    }
   ],
@@ -550,122 +550,122 @@
    {
     "variant": "main",
     "run": "results/nslkdd/main/seed0",
-    "tree_false_alarm": 0.07300998867263928,
-    "flat_false_alarm": 0.04098445062300484,
-    "tree_detect_known": 0.757899372454035,
-    "flat_detect_known": 0.8629307497522845
+    "tree_false_alarm": 0.027391617753063535,
+    "flat_false_alarm": 0.038101122438471836,
+    "tree_detect_known": 0.7820103490036332,
+    "flat_detect_known": 0.8383793900693604
    },
    {
     "variant": "main",
     "run": "results/nslkdd/main/seed1",
-    "tree_false_alarm": 0.07352486870559159,
-    "flat_false_alarm": 0.04170528266913809,
-    "tree_detect_known": 0.759440713420676,
-    "flat_detect_known": 0.8596278762523395
+    "tree_false_alarm": 0.028009473792606324,
+    "flat_false_alarm": 0.038101122438471836,
+    "tree_detect_known": 0.7752945062204117,
+    "flat_detect_known": 0.8532423208191127
    },
    {
     "variant": "main",
     "run": "results/nslkdd/main/seed2",
-    "tree_false_alarm": 0.07476058078467716,
-    "flat_false_alarm": 0.04005766656369066,
-    "tree_detect_known": 0.7713310580204779,
-    "flat_detect_known": 0.8719586039854673
+    "tree_false_alarm": 0.028009473792606324,
+    "flat_false_alarm": 0.03655648233961487,
+    "tree_detect_known": 0.7850930309369151,
+    "flat_detect_known": 0.8522514587691291
    },
    {
     "variant": "main",
     "run": "results/nslkdd/main/seed3",
-    "tree_false_alarm": 0.07187725260014417,
-    "flat_false_alarm": 0.03768921841210998,
-    "tree_detect_known": 0.7471099856875482,
-    "flat_detect_known": 0.8502697346691622
+    "tree_false_alarm": 0.027700545772834928,
+    "flat_false_alarm": 0.03624755431984348,
+    "tree_detect_known": 0.7815699658703071,
+    "flat_detect_known": 0.8478476274358692
    },
    {
     "variant": "main",
     "run": "results/nslkdd/main/seed4",
-    "tree_false_alarm": 0.07300998867263928,
-    "flat_false_alarm": 0.04077849860982391,
-    "tree_detect_known": 0.7467796983375536,
-    "flat_detect_known": 0.8535726081691071
+    "tree_false_alarm": 0.02790649778601586,
+    "flat_false_alarm": 0.03985171455050973,
+    "tree_detect_known": 0.7822305405702962,
+    "flat_detect_known": 0.8496091599691732
    },
    {
     "variant": "leafbal",
     "run": "results/nslkdd/leafbal/seed0",
-    "tree_false_alarm": 0.0966944701884461,
-    "flat_false_alarm": 0.04098445062300484,
-    "tree_detect_known": 0.8926566112517891,
-    "flat_detect_known": 0.8629307497522845
+    "tree_false_alarm": 0.03758624240551951,
+    "flat_false_alarm": 0.038101122438471836,
+    "tree_detect_known": 0.8838489485852692,
+    "flat_detect_known": 0.8383793900693604
    },
    {
     "variant": "leafbal",
     "run": "results/nslkdd/leafbal/seed1",
-    "tree_false_alarm": 0.08701472556894244,
-    "flat_false_alarm": 0.04170528266913809,
-    "tree_detect_known": 0.8842893317185951,
-    "flat_detect_known": 0.8596278762523395
+    "tree_false_alarm": 0.040263618576871586,
+    "flat_false_alarm": 0.038101122438471836,
+    "tree_detect_known": 0.8858306726852362,
+    "flat_detect_known": 0.8532423208191127
    },
    {
     "variant": "leafbal",
     "run": "results/nslkdd/leafbal/seed2",
-    "tree_false_alarm": 0.08979507774688497,
-    "flat_false_alarm": 0.04005766656369066,
-    "tree_detect_known": 0.8886931630518551,
-    "flat_detect_known": 0.8719586039854673
+    "tree_false_alarm": 0.04397075481412831,
+    "flat_false_alarm": 0.03655648233961487,
+    "tree_detect_known": 0.8871518220852141,
+    "flat_detect_known": 0.8522514587691291
    },
    {
     "variant": "leafbal",
     "run": "results/nslkdd/leafbal/seed3",
-    "tree_false_alarm": 0.09453197405004633,
-    "flat_false_alarm": 0.03768921841210998,
-    "tree_detect_known": 0.892876802818452,
-    "flat_detect_known": 0.8502697346691622
+    "tree_false_alarm": 0.042323138708680874,
+    "flat_false_alarm": 0.03624755431984348,
+    "tree_detect_known": 0.890014312451833,
+    "flat_detect_known": 0.8478476274358692
    },
    {
     "variant": "leafbal",
     "run": "results/nslkdd/leafbal/seed4",
-    "tree_false_alarm": 0.09164864586551333,
-    "flat_false_alarm": 0.04077849860982391,
-    "tree_detect_known": 0.8881426841351976,
-    "flat_detect_known": 0.8535726081691071
+    "tree_false_alarm": 0.04098445062300484,
+    "flat_false_alarm": 0.03985171455050973,
+    "tree_detect_known": 0.8879224925685346,
+    "flat_detect_known": 0.8496091599691732
    },
    {
     "variant": "budget",
     "run": "results/nslkdd/budget/seed0",
-    "tree_false_alarm": 0.07342189269900114,
-    "flat_false_alarm": 0.04098445062300484,
-    "tree_detect_known": 0.755917648354068,
-    "flat_detect_known": 0.8629307497522845
+    "tree_false_alarm": 0.029966017917825147,
+    "flat_false_alarm": 0.038101122438471836,
+    "tree_detect_known": 0.8176813828030386,
+    "flat_detect_known": 0.8383793900693604
    },
    {
     "variant": "budget",
     "run": "results/nslkdd/budget/seed1",
-    "tree_false_alarm": 0.07445165276490577,
-    "flat_false_alarm": 0.04170528266913809,
-    "tree_detect_known": 0.763624353187273,
-    "flat_detect_known": 0.8596278762523395
+    "tree_false_alarm": 0.02842137781896818,
+    "flat_false_alarm": 0.038101122438471836,
+    "tree_detect_known": 0.7922492568534625,
+    "flat_detect_known": 0.8532423208191127
    },
    {
     "variant": "budget",
     "run": "results/nslkdd/budget/seed2",
-    "tree_false_alarm": 0.07486355679126763,
-    "flat_false_alarm": 0.04005766656369066,
-    "tree_detect_known": 0.7765055598370583,
-    "flat_detect_known": 0.8719586039854673
+    "tree_false_alarm": 0.028009473792606324,
+    "flat_false_alarm": 0.03655648233961487,
+    "tree_detect_known": 0.7853132225035782,
+    "flat_detect_known": 0.8522514587691291
    },
    {
     "variant": "budget",
     "run": "results/nslkdd/budget/seed3",
-    "tree_false_alarm": 0.07486355679126763,
-    "flat_false_alarm": 0.03768921841210998,
-    "tree_detect_known": 0.7746339315204228,
-    "flat_detect_known": 0.8502697346691622
+    "tree_false_alarm": 0.02914220986510143,
+    "flat_false_alarm": 0.03624755431984348,
+    "tree_detect_known": 0.8068919960365518,
+    "flat_detect_known": 0.8478476274358692
    },
    {
     "variant": "budget",
     "run": "results/nslkdd/budget/seed4",
-    "tree_false_alarm": 0.07424570075172485,
-    "flat_false_alarm": 0.04077849860982391,
-    "tree_detect_known": 0.7773863261037103,
-    "flat_detect_known": 0.8535726081691071
+    "tree_false_alarm": 0.02842137781896818,
+    "flat_false_alarm": 0.03985171455050973,
+    "tree_detect_known": 0.7900473411868325,
+    "flat_detect_known": 0.8496091599691732
    }
   ],
   "misrouted_by_leaf": [
@@ -675,13 +675,13 @@
     "by_leaf": {
      "normal": {
       "n": 9711,
-      "tree_wrong_level1": 709,
-      "flat_wrong_level1": 398
+      "tree_wrong_level1": 266,
+      "flat_wrong_level1": 370
      },
      "back": {
       "n": 359,
-      "tree_wrong_level1": 83,
-      "flat_wrong_level1": 0
+      "tree_wrong_level1": 6,
+      "flat_wrong_level1": 3
      },
      "land": {
       "n": 7,
@@ -691,12 +691,12 @@
      "neptune": {
       "n": 4657,
       "tree_wrong_level1": 1,
-      "flat_wrong_level1": 1
+      "flat_wrong_level1": 3
      },
      "pod": {
       "n": 41,
       "tree_wrong_level1": 2,
-      "flat_wrong_level1": 1
+      "flat_wrong_level1": 2
      },
      "smurf": {
       "n": 665,
@@ -710,7 +710,7 @@
      },
      "ipsweep": {
       "n": 141,
-      "tree_wrong_level1": 2,
+      "tree_wrong_level1": 1,
       "flat_wrong_level1": 0
      },
      "nmap": {
@@ -725,7 +725,7 @@
      },
      "satan": {
       "n": 735,
-      "tree_wrong_level1": 4,
+      "tree_wrong_level1": 3,
       "flat_wrong_level1": 0
      },
      "ftp_write": {
@@ -736,17 +736,17 @@
      "guess_passwd": {
       "n": 1231,
       "tree_wrong_level1": 1231,
-      "flat_wrong_level1": 982
+      "flat_wrong_level1": 1145
      },
      "imap": {
       "n": 1,
-      "tree_wrong_level1": 0,
+      "tree_wrong_level1": 1,
       "flat_wrong_level1": 0
      },
      "multihop": {
       "n": 18,
       "tree_wrong_level1": 18,
-      "flat_wrong_level1": 7
+      "flat_wrong_level1": 9
      },
      "phf": {
       "n": 2,
@@ -755,17 +755,17 @@
      },
      "warezmaster": {
       "n": 944,
-      "tree_wrong_level1": 816,
-      "flat_wrong_level1": 232
+      "tree_wrong_level1": 681,
+      "flat_wrong_level1": 287
      },
      "buffer_overflow": {
       "n": 20,
-      "tree_wrong_level1": 20,
-      "flat_wrong_level1": 11
+      "tree_wrong_level1": 16,
+      "flat_wrong_level1": 7
      },
      "loadmodule": {
       "n": 2,
-      "tree_wrong_level1": 2,
+      "tree_wrong_level1": 1,
       "flat_wrong_level1": 1
      },
      "perl": {
@@ -775,8 +775,8 @@
      },
      "rootkit": {
       "n": 13,
-      "tree_wrong_level1": 13,
-      "flat_wrong_level1": 7
+      "tree_wrong_level1": 12,
+      "flat_wrong_level1": 8
      }
     }
    },
@@ -786,12 +786,12 @@
     "by_leaf": {
      "normal": {
       "n": 9711,
-      "tree_wrong_level1": 714,
-      "flat_wrong_level1": 405
+      "tree_wrong_level1": 272,
+      "flat_wrong_level1": 370
      },
      "back": {
       "n": 359,
-      "tree_wrong_level1": 80,
+      "tree_wrong_level1": 6,
       "flat_wrong_level1": 2
      },
      "land": {
@@ -821,7 +821,7 @@
      },
      "ipsweep": {
       "n": 141,
-      "tree_wrong_level1": 1,
+      "tree_wrong_level1": 2,
       "flat_wrong_level1": 0
      },
      "nmap": {
@@ -836,18 +836,18 @@
      },
      "satan": {
       "n": 735,
-      "tree_wrong_level1": 4,
+      "tree_wrong_level1": 7,
       "flat_wrong_level1": 0
      },
      "ftp_write": {
       "n": 3,
       "tree_wrong_level1": 3,
-      "flat_wrong_level1": 2
+      "flat_wrong_level1": 1
      },
      "guess_passwd": {
       "n": 1231,
       "tree_wrong_level1": 1231,
-      "flat_wrong_level1": 893
+      "flat_wrong_level1": 1087
      },
      "imap": {
       "n": 1,
@@ -856,8 +856,8 @@
      },
      "multihop": {
       "n": 18,
-      "tree_wrong_level1": 17,
-      "flat_wrong_level1": 7
+      "tree_wrong_level1": 18,
+      "flat_wrong_level1": 10
      },
      "phf": {
       "n": 2,
@@ -866,18 +866,18 @@
      },
      "warezmaster": {
       "n": 944,
-      "tree_wrong_level1": 808,
-      "flat_wrong_level1": 347
+      "tree_wrong_level1": 738,
+      "flat_wrong_level1": 213
      },
      "buffer_overflow": {
       "n": 20,
-      "tree_wrong_level1": 18,
-      "flat_wrong_level1": 10
+      "tree_wrong_level1": 15,
+      "flat_wrong_level1": 8
      },
      "loadmodule": {
       "n": 2,
-      "tree_wrong_level1": 2,
-      "flat_wrong_level1": 1
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 0
      },
      "perl": {
       "n": 2,
@@ -886,8 +886,8 @@
      },
      "rootkit": {
       "n": 13,
-      "tree_wrong_level1": 13,
-      "flat_wrong_level1": 9
+      "tree_wrong_level1": 12,
+      "flat_wrong_level1": 8
      }
     }
    },
@@ -897,13 +897,13 @@
     "by_leaf": {
      "normal": {
       "n": 9711,
-      "tree_wrong_level1": 726,
-      "flat_wrong_level1": 389
+      "tree_wrong_level1": 272,
+      "flat_wrong_level1": 355
      },
      "back": {
       "n": 359,
-      "tree_wrong_level1": 58,
-      "flat_wrong_level1": 0
+      "tree_wrong_level1": 6,
+      "flat_wrong_level1": 2
      },
      "land": {
       "n": 7,
@@ -913,12 +913,12 @@
      "neptune": {
       "n": 4657,
       "tree_wrong_level1": 1,
-      "flat_wrong_level1": 0
+      "flat_wrong_level1": 2
      },
      "pod": {
       "n": 41,
       "tree_wrong_level1": 2,
-      "flat_wrong_level1": 0
+      "flat_wrong_level1": 2
      },
      "smurf": {
       "n": 665,
@@ -943,52 +943,52 @@
      "portsweep": {
       "n": 157,
       "tree_wrong_level1": 0,
-      "flat_wrong_level1": 0
+      "flat_wrong_level1": 1
      },
      "satan": {
       "n": 735,
-      "tree_wrong_level1": 4,
+      "tree_wrong_level1": 3,
       "flat_wrong_level1": 0
      },
      "ftp_write": {
       "n": 3,
       "tree_wrong_level1": 3,
-      "flat_wrong_level1": 2
+      "flat_wrong_level1": 1
      },
      "guess_passwd": {
       "n": 1231,
       "tree_wrong_level1": 1231,
-      "flat_wrong_level1": 898
+      "flat_wrong_level1": 1080
      },
      "imap": {
       "n": 1,
-      "tree_wrong_level1": 0,
+      "tree_wrong_level1": 1,
       "flat_wrong_level1": 0
      },
      "multihop": {
       "n": 18,
       "tree_wrong_level1": 18,
-      "flat_wrong_level1": 7
+      "flat_wrong_level1": 8
      },
      "phf": {
       "n": 2,
       "tree_wrong_level1": 2,
-      "flat_wrong_level1": 2
+      "flat_wrong_level1": 1
      },
      "warezmaster": {
       "n": 944,
-      "tree_wrong_level1": 719,
-      "flat_wrong_level1": 237
+      "tree_wrong_level1": 653,
+      "flat_wrong_level1": 227
      },
      "buffer_overflow": {
       "n": 20,
-      "tree_wrong_level1": 20,
-      "flat_wrong_level1": 8
+      "tree_wrong_level1": 16,
+      "flat_wrong_level1": 7
      },
      "loadmodule": {
       "n": 2,
-      "tree_wrong_level1": 2,
-      "flat_wrong_level1": 1
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 0
      },
      "perl": {
       "n": 2,
@@ -997,8 +997,8 @@
      },
      "rootkit": {
       "n": 13,
-      "tree_wrong_level1": 13,
-      "flat_wrong_level1": 7
+      "tree_wrong_level1": 11,
+      "flat_wrong_level1": 10
      }
     }
    },
@@ -1008,13 +1008,13 @@
     "by_leaf": {
      "normal": {
       "n": 9711,
-      "tree_wrong_level1": 698,
-      "flat_wrong_level1": 366
+      "tree_wrong_level1": 269,
+      "flat_wrong_level1": 352
      },
      "back": {
       "n": 359,
-      "tree_wrong_level1": 180,
-      "flat_wrong_level1": 8
+      "tree_wrong_level1": 6,
+      "flat_wrong_level1": 2
      },
      "land": {
       "n": 7,
@@ -1024,12 +1024,12 @@
      "neptune": {
       "n": 4657,
       "tree_wrong_level1": 1,
-      "flat_wrong_level1": 1
+      "flat_wrong_level1": 2
      },
      "pod": {
       "n": 41,
       "tree_wrong_level1": 2,
-      "flat_wrong_level1": 0
+      "flat_wrong_level1": 1
      },
      "smurf": {
       "n": 665,
@@ -1058,48 +1058,48 @@
      },
      "satan": {
       "n": 735,
-      "tree_wrong_level1": 4,
+      "tree_wrong_level1": 7,
       "flat_wrong_level1": 0
      },
      "ftp_write": {
       "n": 3,
       "tree_wrong_level1": 3,
-      "flat_wrong_level1": 2
+      "flat_wrong_level1": 1
      },
      "guess_passwd": {
       "n": 1231,
-      "tree_wrong_level1": 1230,
-      "flat_wrong_level1": 1068
+      "tree_wrong_level1": 1231,
+      "flat_wrong_level1": 1151
      },
      "imap": {
       "n": 1,
-      "tree_wrong_level1": 0,
+      "tree_wrong_level1": 1,
       "flat_wrong_level1": 0
      },
      "multihop": {
       "n": 18,
       "tree_wrong_level1": 18,
-      "flat_wrong_level1": 7
+      "flat_wrong_level1": 8
      },
      "phf": {
       "n": 2,
       "tree_wrong_level1": 2,
-      "flat_wrong_level1": 2
+      "flat_wrong_level1": 1
      },
      "warezmaster": {
       "n": 944,
-      "tree_wrong_level1": 818,
-      "flat_wrong_level1": 248
+      "tree_wrong_level1": 678,
+      "flat_wrong_level1": 200
      },
      "buffer_overflow": {
       "n": 20,
-      "tree_wrong_level1": 20,
-      "flat_wrong_level1": 12
+      "tree_wrong_level1": 18,
+      "flat_wrong_level1": 7
      },
      "loadmodule": {
       "n": 2,
-      "tree_wrong_level1": 2,
-      "flat_wrong_level1": 1
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 0
      },
      "perl": {
       "n": 2,
@@ -1108,8 +1108,8 @@
      },
      "rootkit": {
       "n": 13,
-      "tree_wrong_level1": 13,
-      "flat_wrong_level1": 10
+      "tree_wrong_level1": 12,
+      "flat_wrong_level1": 8
      }
     }
    },
@@ -1119,13 +1119,13 @@
     "by_leaf": {
      "normal": {
       "n": 9711,
-      "tree_wrong_level1": 709,
-      "flat_wrong_level1": 396
+      "tree_wrong_level1": 271,
+      "flat_wrong_level1": 387
      },
      "back": {
       "n": 359,
-      "tree_wrong_level1": 179,
-      "flat_wrong_level1": 0
+      "tree_wrong_level1": 6,
+      "flat_wrong_level1": 2
      },
      "land": {
       "n": 7,
@@ -1135,12 +1135,12 @@
      "neptune": {
       "n": 4657,
       "tree_wrong_level1": 1,
-      "flat_wrong_level1": 1
+      "flat_wrong_level1": 2
      },
      "pod": {
       "n": 41,
       "tree_wrong_level1": 2,
-      "flat_wrong_level1": 0
+      "flat_wrong_level1": 1
      },
      "smurf": {
       "n": 665,
@@ -1154,7 +1154,7 @@
      },
      "ipsweep": {
       "n": 141,
-      "tree_wrong_level1": 2,
+      "tree_wrong_level1": 1,
       "flat_wrong_level1": 0
      },
      "nmap": {
@@ -1165,11 +1165,11 @@
      "portsweep": {
       "n": 157,
       "tree_wrong_level1": 0,
-      "flat_wrong_level1": 0
+      "flat_wrong_level1": 1
      },
      "satan": {
       "n": 735,
-      "tree_wrong_level1": 4,
+      "tree_wrong_level1": 3,
       "flat_wrong_level1": 0
      },
      "ftp_write": {
@@ -1180,37 +1180,37 @@
      "guess_passwd": {
       "n": 1231,
       "tree_wrong_level1": 1231,
-      "flat_wrong_level1": 992
+      "flat_wrong_level1": 1116
      },
      "imap": {
       "n": 1,
       "tree_wrong_level1": 1,
-      "flat_wrong_level1": 0
+      "flat_wrong_level1": 1
      },
      "multihop": {
       "n": 18,
       "tree_wrong_level1": 18,
-      "flat_wrong_level1": 6
+      "flat_wrong_level1": 9
      },
      "phf": {
       "n": 2,
       "tree_wrong_level1": 2,
-      "flat_wrong_level1": 2
+      "flat_wrong_level1": 1
      },
      "warezmaster": {
       "n": 944,
-      "tree_wrong_level1": 820,
-      "flat_wrong_level1": 309
+      "tree_wrong_level1": 679,
+      "flat_wrong_level1": 215
      },
      "buffer_overflow": {
       "n": 20,
-      "tree_wrong_level1": 20,
-      "flat_wrong_level1": 10
+      "tree_wrong_level1": 17,
+      "flat_wrong_level1": 8
      },
      "loadmodule": {
       "n": 2,
-      "tree_wrong_level1": 2,
-      "flat_wrong_level1": 1
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 0
      },
      "perl": {
       "n": 2,
@@ -1219,8 +1219,8 @@
      },
      "rootkit": {
       "n": 13,
-      "tree_wrong_level1": 13,
-      "flat_wrong_level1": 7
+      "tree_wrong_level1": 11,
+      "flat_wrong_level1": 8
      }
     }
    },
@@ -1230,13 +1230,13 @@
     "by_leaf": {
      "normal": {
       "n": 9711,
-      "tree_wrong_level1": 939,
-      "flat_wrong_level1": 398
+      "tree_wrong_level1": 365,
+      "flat_wrong_level1": 370
      },
      "back": {
       "n": 359,
-      "tree_wrong_level1": 0,
-      "flat_wrong_level1": 0
+      "tree_wrong_level1": 4,
+      "flat_wrong_level1": 3
      },
      "land": {
       "n": 7,
@@ -1245,13 +1245,13 @@
      },
      "neptune": {
       "n": 4657,
-      "tree_wrong_level1": 15,
-      "flat_wrong_level1": 1
+      "tree_wrong_level1": 3,
+      "flat_wrong_level1": 3
      },
      "pod": {
       "n": 41,
       "tree_wrong_level1": 1,
-      "flat_wrong_level1": 1
+      "flat_wrong_level1": 2
      },
      "smurf": {
       "n": 665,
@@ -1275,12 +1275,12 @@
      },
      "portsweep": {
       "n": 157,
-      "tree_wrong_level1": 1,
+      "tree_wrong_level1": 2,
       "flat_wrong_level1": 0
      },
      "satan": {
       "n": 735,
-      "tree_wrong_level1": 2,
+      "tree_wrong_level1": 4,
       "flat_wrong_level1": 0
      },
      "ftp_write": {
@@ -1290,8 +1290,8 @@
      },
      "guess_passwd": {
       "n": 1231,
-      "tree_wrong_level1": 806,
-      "flat_wrong_level1": 982
+      "tree_wrong_level1": 847,
+      "flat_wrong_level1": 1145
      },
      "imap": {
       "n": 1,
@@ -1301,7 +1301,7 @@
      "multihop": {
       "n": 18,
       "tree_wrong_level1": 6,
-      "flat_wrong_level1": 7
+      "flat_wrong_level1": 9
      },
      "phf": {
       "n": 2,
@@ -1310,13 +1310,13 @@
      },
      "warezmaster": {
       "n": 944,
-      "tree_wrong_level1": 133,
-      "flat_wrong_level1": 232
+      "tree_wrong_level1": 179,
+      "flat_wrong_level1": 287
      },
      "buffer_overflow": {
       "n": 20,
-      "tree_wrong_level1": 2,
-      "flat_wrong_level1": 11
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 7
      },
      "loadmodule": {
       "n": 2,
@@ -1325,13 +1325,13 @@
      },
      "perl": {
       "n": 2,
-      "tree_wrong_level1": 1,
+      "tree_wrong_level1": 0,
       "flat_wrong_level1": 1
      },
      "rootkit": {
       "n": 13,
-      "tree_wrong_level1": 6,
-      "flat_wrong_level1": 7
+      "tree_wrong_level1": 7,
+      "flat_wrong_level1": 8
      }
     }
    },
@@ -1341,12 +1341,12 @@
     "by_leaf": {
      "normal": {
       "n": 9711,
-      "tree_wrong_level1": 845,
-      "flat_wrong_level1": 405
+      "tree_wrong_level1": 391,
+      "flat_wrong_level1": 370
      },
      "back": {
       "n": 359,
-      "tree_wrong_level1": 0,
+      "tree_wrong_level1": 5,
       "flat_wrong_level1": 2
      },
      "land": {
@@ -1356,12 +1356,12 @@
      },
      "neptune": {
       "n": 4657,
-      "tree_wrong_level1": 39,
+      "tree_wrong_level1": 0,
       "flat_wrong_level1": 1
      },
      "pod": {
       "n": 41,
-      "tree_wrong_level1": 0,
+      "tree_wrong_level1": 1,
       "flat_wrong_level1": 1
      },
      "smurf": {
@@ -1386,23 +1386,23 @@
      },
      "portsweep": {
       "n": 157,
-      "tree_wrong_level1": 2,
+      "tree_wrong_level1": 0,
       "flat_wrong_level1": 0
      },
      "satan": {
       "n": 735,
-      "tree_wrong_level1": 1,
+      "tree_wrong_level1": 4,
       "flat_wrong_level1": 0
      },
      "ftp_write": {
       "n": 3,
       "tree_wrong_level1": 1,
-      "flat_wrong_level1": 2
+      "flat_wrong_level1": 1
      },
      "guess_passwd": {
       "n": 1231,
-      "tree_wrong_level1": 838,
-      "flat_wrong_level1": 893
+      "tree_wrong_level1": 843,
+      "flat_wrong_level1": 1087
      },
      "imap": {
       "n": 1,
@@ -1412,7 +1412,7 @@
      "multihop": {
       "n": 18,
       "tree_wrong_level1": 6,
-      "flat_wrong_level1": 7
+      "flat_wrong_level1": 10
      },
      "phf": {
       "n": 2,
@@ -1421,28 +1421,28 @@
      },
      "warezmaster": {
       "n": 944,
-      "tree_wrong_level1": 154,
-      "flat_wrong_level1": 347
+      "tree_wrong_level1": 170,
+      "flat_wrong_level1": 213
      },
      "buffer_overflow": {
       "n": 20,
-      "tree_wrong_level1": 2,
-      "flat_wrong_level1": 10
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 8
      },
      "loadmodule": {
       "n": 2,
       "tree_wrong_level1": 0,
-      "flat_wrong_level1": 1
+      "flat_wrong_level1": 0
      },
      "perl": {
       "n": 2,
-      "tree_wrong_level1": 1,
+      "tree_wrong_level1": 0,
       "flat_wrong_level1": 1
      },
      "rootkit": {
       "n": 13,
       "tree_wrong_level1": 6,
-      "flat_wrong_level1": 9
+      "flat_wrong_level1": 8
      }
     }
    },
@@ -1452,13 +1452,13 @@
     "by_leaf": {
      "normal": {
       "n": 9711,
-      "tree_wrong_level1": 872,
-      "flat_wrong_level1": 389
+      "tree_wrong_level1": 427,
+      "flat_wrong_level1": 355
      },
      "back": {
       "n": 359,
-      "tree_wrong_level1": 2,
-      "flat_wrong_level1": 0
+      "tree_wrong_level1": 3,
+      "flat_wrong_level1": 2
      },
      "land": {
       "n": 7,
@@ -1467,13 +1467,13 @@
      },
      "neptune": {
       "n": 4657,
-      "tree_wrong_level1": 7,
-      "flat_wrong_level1": 0
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 2
      },
      "pod": {
       "n": 41,
       "tree_wrong_level1": 1,
-      "flat_wrong_level1": 0
+      "flat_wrong_level1": 2
      },
      "smurf": {
       "n": 665,
@@ -1497,23 +1497,23 @@
      },
      "portsweep": {
       "n": 157,
-      "tree_wrong_level1": 0,
-      "flat_wrong_level1": 0
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 1
      },
      "satan": {
       "n": 735,
-      "tree_wrong_level1": 1,
+      "tree_wrong_level1": 5,
       "flat_wrong_level1": 0
      },
      "ftp_write": {
       "n": 3,
-      "tree_wrong_level1": 1,
-      "flat_wrong_level1": 2
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 1
      },
      "guess_passwd": {
       "n": 1231,
-      "tree_wrong_level1": 828,
-      "flat_wrong_level1": 898
+      "tree_wrong_level1": 846,
+      "flat_wrong_level1": 1080
      },
      "imap": {
       "n": 1,
@@ -1523,37 +1523,37 @@
      "multihop": {
       "n": 18,
       "tree_wrong_level1": 6,
-      "flat_wrong_level1": 7
+      "flat_wrong_level1": 8
      },
      "phf": {
       "n": 2,
       "tree_wrong_level1": 1,
-      "flat_wrong_level1": 2
+      "flat_wrong_level1": 1
      },
      "warezmaster": {
       "n": 944,
-      "tree_wrong_level1": 155,
-      "flat_wrong_level1": 237
+      "tree_wrong_level1": 156,
+      "flat_wrong_level1": 227
      },
      "buffer_overflow": {
       "n": 20,
-      "tree_wrong_level1": 2,
-      "flat_wrong_level1": 8
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 7
      },
      "loadmodule": {
       "n": 2,
       "tree_wrong_level1": 0,
-      "flat_wrong_level1": 1
+      "flat_wrong_level1": 0
      },
      "perl": {
       "n": 2,
-      "tree_wrong_level1": 1,
+      "tree_wrong_level1": 0,
       "flat_wrong_level1": 1
      },
      "rootkit": {
       "n": 13,
       "tree_wrong_level1": 6,
-      "flat_wrong_level1": 7
+      "flat_wrong_level1": 10
      }
     }
    },
@@ -1563,13 +1563,13 @@
     "by_leaf": {
      "normal": {
       "n": 9711,
-      "tree_wrong_level1": 918,
-      "flat_wrong_level1": 366
+      "tree_wrong_level1": 411,
+      "flat_wrong_level1": 352
      },
      "back": {
       "n": 359,
-      "tree_wrong_level1": 0,
-      "flat_wrong_level1": 8
+      "tree_wrong_level1": 5,
+      "flat_wrong_level1": 2
      },
      "land": {
       "n": 7,
@@ -1578,13 +1578,13 @@
      },
      "neptune": {
       "n": 4657,
-      "tree_wrong_level1": 1,
-      "flat_wrong_level1": 1
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 2
      },
      "pod": {
       "n": 41,
       "tree_wrong_level1": 1,
-      "flat_wrong_level1": 0
+      "flat_wrong_level1": 1
      },
      "smurf": {
       "n": 665,
@@ -1608,23 +1608,23 @@
      },
      "portsweep": {
       "n": 157,
-      "tree_wrong_level1": 2,
+      "tree_wrong_level1": 1,
       "flat_wrong_level1": 0
      },
      "satan": {
       "n": 735,
-      "tree_wrong_level1": 1,
+      "tree_wrong_level1": 4,
       "flat_wrong_level1": 0
      },
      "ftp_write": {
       "n": 3,
       "tree_wrong_level1": 1,
-      "flat_wrong_level1": 2
+      "flat_wrong_level1": 1
      },
      "guess_passwd": {
       "n": 1231,
-      "tree_wrong_level1": 839,
-      "flat_wrong_level1": 1068
+      "tree_wrong_level1": 823,
+      "flat_wrong_level1": 1151
      },
      "imap": {
       "n": 1,
@@ -1633,38 +1633,38 @@
      },
      "multihop": {
       "n": 18,
-      "tree_wrong_level1": 6,
-      "flat_wrong_level1": 7
+      "tree_wrong_level1": 7,
+      "flat_wrong_level1": 8
      },
      "phf": {
       "n": 2,
       "tree_wrong_level1": 1,
-      "flat_wrong_level1": 2
+      "flat_wrong_level1": 1
      },
      "warezmaster": {
       "n": 944,
-      "tree_wrong_level1": 111,
-      "flat_wrong_level1": 248
+      "tree_wrong_level1": 150,
+      "flat_wrong_level1": 200
      },
      "buffer_overflow": {
       "n": 20,
-      "tree_wrong_level1": 2,
-      "flat_wrong_level1": 12
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 7
      },
      "loadmodule": {
       "n": 2,
       "tree_wrong_level1": 0,
-      "flat_wrong_level1": 1
+      "flat_wrong_level1": 0
      },
      "perl": {
       "n": 2,
-      "tree_wrong_level1": 1,
+      "tree_wrong_level1": 0,
       "flat_wrong_level1": 1
      },
      "rootkit": {
       "n": 13,
-      "tree_wrong_level1": 7,
-      "flat_wrong_level1": 10
+      "tree_wrong_level1": 6,
+      "flat_wrong_level1": 8
      }
     }
    },
@@ -1674,13 +1674,13 @@
     "by_leaf": {
      "normal": {
       "n": 9711,
-      "tree_wrong_level1": 890,
-      "flat_wrong_level1": 396
+      "tree_wrong_level1": 398,
+      "flat_wrong_level1": 387
      },
      "back": {
       "n": 359,
-      "tree_wrong_level1": 0,
-      "flat_wrong_level1": 0
+      "tree_wrong_level1": 4,
+      "flat_wrong_level1": 2
      },
      "land": {
       "n": 7,
@@ -1689,13 +1689,13 @@
      },
      "neptune": {
       "n": 4657,
-      "tree_wrong_level1": 0,
-      "flat_wrong_level1": 1
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 2
      },
      "pod": {
       "n": 41,
       "tree_wrong_level1": 1,
-      "flat_wrong_level1": 0
+      "flat_wrong_level1": 1
      },
      "smurf": {
       "n": 665,
@@ -1720,11 +1720,11 @@
      "portsweep": {
       "n": 157,
       "tree_wrong_level1": 2,
-      "flat_wrong_level1": 0
+      "flat_wrong_level1": 1
      },
      "satan": {
       "n": 735,
-      "tree_wrong_level1": 1,
+      "tree_wrong_level1": 8,
       "flat_wrong_level1": 0
      },
      "ftp_write": {
@@ -1734,48 +1734,48 @@
      },
      "guess_passwd": {
       "n": 1231,
-      "tree_wrong_level1": 839,
-      "flat_wrong_level1": 992
+      "tree_wrong_level1": 827,
+      "flat_wrong_level1": 1116
      },
      "imap": {
       "n": 1,
       "tree_wrong_level1": 0,
-      "flat_wrong_level1": 0
+      "flat_wrong_level1": 1
      },
      "multihop": {
       "n": 18,
-      "tree_wrong_level1": 6,
-      "flat_wrong_level1": 6
+      "tree_wrong_level1": 7,
+      "flat_wrong_level1": 9
      },
      "phf": {
       "n": 2,
       "tree_wrong_level1": 1,
-      "flat_wrong_level1": 2
+      "flat_wrong_level1": 1
      },
      "warezmaster": {
       "n": 944,
-      "tree_wrong_level1": 156,
-      "flat_wrong_level1": 309
+      "tree_wrong_level1": 160,
+      "flat_wrong_level1": 215
      },
      "buffer_overflow": {
       "n": 20,
-      "tree_wrong_level1": 2,
-      "flat_wrong_level1": 10
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 8
      },
      "loadmodule": {
       "n": 2,
       "tree_wrong_level1": 0,
-      "flat_wrong_level1": 1
+      "flat_wrong_level1": 0
      },
      "perl": {
       "n": 2,
-      "tree_wrong_level1": 1,
+      "tree_wrong_level1": 0,
       "flat_wrong_level1": 1
      },
      "rootkit": {
       "n": 13,
       "tree_wrong_level1": 6,
-      "flat_wrong_level1": 7
+      "flat_wrong_level1": 8
      }
     }
    },
@@ -1785,13 +1785,13 @@
     "by_leaf": {
      "normal": {
       "n": 9711,
-      "tree_wrong_level1": 713,
-      "flat_wrong_level1": 398
+      "tree_wrong_level1": 291,
+      "flat_wrong_level1": 370
      },
      "back": {
       "n": 359,
-      "tree_wrong_level1": 36,
-      "flat_wrong_level1": 0
+      "tree_wrong_level1": 5,
+      "flat_wrong_level1": 3
      },
      "land": {
       "n": 7,
@@ -1801,12 +1801,12 @@
      "neptune": {
       "n": 4657,
       "tree_wrong_level1": 1,
-      "flat_wrong_level1": 1
+      "flat_wrong_level1": 3
      },
      "pod": {
       "n": 41,
-      "tree_wrong_level1": 2,
-      "flat_wrong_level1": 1
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 2
      },
      "smurf": {
       "n": 665,
@@ -1820,7 +1820,7 @@
      },
      "ipsweep": {
       "n": 141,
-      "tree_wrong_level1": 2,
+      "tree_wrong_level1": 1,
       "flat_wrong_level1": 0
      },
      "nmap": {
@@ -1835,18 +1835,18 @@
      },
      "satan": {
       "n": 735,
-      "tree_wrong_level1": 4,
+      "tree_wrong_level1": 1,
       "flat_wrong_level1": 0
      },
      "ftp_write": {
       "n": 3,
-      "tree_wrong_level1": 3,
+      "tree_wrong_level1": 1,
       "flat_wrong_level1": 1
      },
      "guess_passwd": {
       "n": 1231,
-      "tree_wrong_level1": 1231,
-      "flat_wrong_level1": 982
+      "tree_wrong_level1": 1222,
+      "flat_wrong_level1": 1145
      },
      "imap": {
       "n": 1,
@@ -1855,8 +1855,8 @@
      },
      "multihop": {
       "n": 18,
-      "tree_wrong_level1": 17,
-      "flat_wrong_level1": 7
+      "tree_wrong_level1": 13,
+      "flat_wrong_level1": 9
      },
      "phf": {
       "n": 2,
@@ -1865,17 +1865,17 @@
      },
      "warezmaster": {
       "n": 944,
-      "tree_wrong_level1": 882,
-      "flat_wrong_level1": 232
+      "tree_wrong_level1": 392,
+      "flat_wrong_level1": 287
      },
      "buffer_overflow": {
       "n": 20,
-      "tree_wrong_level1": 20,
-      "flat_wrong_level1": 11
+      "tree_wrong_level1": 6,
+      "flat_wrong_level1": 7
      },
      "loadmodule": {
       "n": 2,
-      "tree_wrong_level1": 2,
+      "tree_wrong_level1": 0,
       "flat_wrong_level1": 1
      },
      "perl": {
@@ -1885,8 +1885,8 @@
      },
      "rootkit": {
       "n": 13,
-      "tree_wrong_level1": 13,
-      "flat_wrong_level1": 7
+      "tree_wrong_level1": 10,
+      "flat_wrong_level1": 8
      }
     }
    },
@@ -1896,12 +1896,12 @@
     "by_leaf": {
      "normal": {
       "n": 9711,
-      "tree_wrong_level1": 723,
-      "flat_wrong_level1": 405
+      "tree_wrong_level1": 276,
+      "flat_wrong_level1": 370
      },
      "back": {
       "n": 359,
-      "tree_wrong_level1": 0,
+      "tree_wrong_level1": 5,
       "flat_wrong_level1": 2
      },
      "land": {
@@ -1916,7 +1916,7 @@
      },
      "pod": {
       "n": 41,
-      "tree_wrong_level1": 0,
+      "tree_wrong_level1": 1,
       "flat_wrong_level1": 1
      },
      "smurf": {
@@ -1931,7 +1931,7 @@
      },
      "ipsweep": {
       "n": 141,
-      "tree_wrong_level1": 2,
+      "tree_wrong_level1": 0,
       "flat_wrong_level1": 0
      },
      "nmap": {
@@ -1946,18 +1946,18 @@
      },
      "satan": {
       "n": 735,
-      "tree_wrong_level1": 4,
+      "tree_wrong_level1": 1,
       "flat_wrong_level1": 0
      },
      "ftp_write": {
       "n": 3,
-      "tree_wrong_level1": 3,
-      "flat_wrong_level1": 2
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
      },
      "guess_passwd": {
       "n": 1231,
-      "tree_wrong_level1": 1231,
-      "flat_wrong_level1": 893
+      "tree_wrong_level1": 1230,
+      "flat_wrong_level1": 1087
      },
      "imap": {
       "n": 1,
@@ -1966,8 +1966,8 @@
      },
      "multihop": {
       "n": 18,
-      "tree_wrong_level1": 17,
-      "flat_wrong_level1": 7
+      "tree_wrong_level1": 14,
+      "flat_wrong_level1": 10
      },
      "phf": {
       "n": 2,
@@ -1976,18 +1976,18 @@
      },
      "warezmaster": {
       "n": 944,
-      "tree_wrong_level1": 850,
-      "flat_wrong_level1": 347
+      "tree_wrong_level1": 607,
+      "flat_wrong_level1": 213
      },
      "buffer_overflow": {
       "n": 20,
-      "tree_wrong_level1": 20,
-      "flat_wrong_level1": 10
+      "tree_wrong_level1": 12,
+      "flat_wrong_level1": 8
      },
      "loadmodule": {
       "n": 2,
-      "tree_wrong_level1": 2,
-      "flat_wrong_level1": 1
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
      },
      "perl": {
       "n": 2,
@@ -1996,8 +1996,8 @@
      },
      "rootkit": {
       "n": 13,
-      "tree_wrong_level1": 13,
-      "flat_wrong_level1": 9
+      "tree_wrong_level1": 10,
+      "flat_wrong_level1": 8
      }
     }
    },
@@ -2007,13 +2007,13 @@
     "by_leaf": {
      "normal": {
       "n": 9711,
-      "tree_wrong_level1": 727,
-      "flat_wrong_level1": 389
+      "tree_wrong_level1": 272,
+      "flat_wrong_level1": 355
      },
      "back": {
       "n": 359,
-      "tree_wrong_level1": 0,
-      "flat_wrong_level1": 0
+      "tree_wrong_level1": 5,
+      "flat_wrong_level1": 2
      },
      "land": {
       "n": 7,
@@ -2023,12 +2023,12 @@
      "neptune": {
       "n": 4657,
       "tree_wrong_level1": 1,
-      "flat_wrong_level1": 0
+      "flat_wrong_level1": 2
      },
      "pod": {
       "n": 41,
-      "tree_wrong_level1": 0,
-      "flat_wrong_level1": 0
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 2
      },
      "smurf": {
       "n": 665,
@@ -2053,52 +2053,52 @@
      "portsweep": {
       "n": 157,
       "tree_wrong_level1": 0,
-      "flat_wrong_level1": 0
+      "flat_wrong_level1": 1
      },
      "satan": {
       "n": 735,
-      "tree_wrong_level1": 4,
+      "tree_wrong_level1": 3,
       "flat_wrong_level1": 0
      },
      "ftp_write": {
       "n": 3,
       "tree_wrong_level1": 3,
-      "flat_wrong_level1": 2
+      "flat_wrong_level1": 1
      },
      "guess_passwd": {
       "n": 1231,
-      "tree_wrong_level1": 1229,
-      "flat_wrong_level1": 898
+      "tree_wrong_level1": 1231,
+      "flat_wrong_level1": 1080
      },
      "imap": {
       "n": 1,
-      "tree_wrong_level1": 0,
+      "tree_wrong_level1": 1,
       "flat_wrong_level1": 0
      },
      "multihop": {
       "n": 18,
-      "tree_wrong_level1": 17,
-      "flat_wrong_level1": 7
+      "tree_wrong_level1": 16,
+      "flat_wrong_level1": 8
      },
      "phf": {
       "n": 2,
       "tree_wrong_level1": 2,
-      "flat_wrong_level1": 2
+      "flat_wrong_level1": 1
      },
      "warezmaster": {
       "n": 944,
-      "tree_wrong_level1": 736,
-      "flat_wrong_level1": 237
+      "tree_wrong_level1": 654,
+      "flat_wrong_level1": 227
      },
      "buffer_overflow": {
       "n": 20,
-      "tree_wrong_level1": 20,
-      "flat_wrong_level1": 8
+      "tree_wrong_level1": 16,
+      "flat_wrong_level1": 7
      },
      "loadmodule": {
       "n": 2,
-      "tree_wrong_level1": 2,
-      "flat_wrong_level1": 1
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 0
      },
      "perl": {
       "n": 2,
@@ -2107,8 +2107,8 @@
      },
      "rootkit": {
       "n": 13,
-      "tree_wrong_level1": 13,
-      "flat_wrong_level1": 7
+      "tree_wrong_level1": 12,
+      "flat_wrong_level1": 10
      }
     }
    },
@@ -2118,13 +2118,13 @@
     "by_leaf": {
      "normal": {
       "n": 9711,
-      "tree_wrong_level1": 727,
-      "flat_wrong_level1": 366
+      "tree_wrong_level1": 283,
+      "flat_wrong_level1": 352
      },
      "back": {
       "n": 359,
-      "tree_wrong_level1": 0,
-      "flat_wrong_level1": 8
+      "tree_wrong_level1": 5,
+      "flat_wrong_level1": 2
      },
      "land": {
       "n": 7,
@@ -2134,12 +2134,12 @@
      "neptune": {
       "n": 4657,
       "tree_wrong_level1": 1,
-      "flat_wrong_level1": 1
+      "flat_wrong_level1": 2
      },
      "pod": {
       "n": 41,
-      "tree_wrong_level1": 0,
-      "flat_wrong_level1": 0
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 1
      },
      "smurf": {
       "n": 665,
@@ -2153,7 +2153,7 @@
      },
      "ipsweep": {
       "n": 141,
-      "tree_wrong_level1": 2,
+      "tree_wrong_level1": 1,
       "flat_wrong_level1": 0
      },
      "nmap": {
@@ -2173,13 +2173,13 @@
      },
      "ftp_write": {
       "n": 3,
-      "tree_wrong_level1": 3,
-      "flat_wrong_level1": 2
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
      },
      "guess_passwd": {
       "n": 1231,
       "tree_wrong_level1": 1231,
-      "flat_wrong_level1": 1068
+      "flat_wrong_level1": 1151
      },
      "imap": {
       "n": 1,
@@ -2188,28 +2188,28 @@
      },
      "multihop": {
       "n": 18,
-      "tree_wrong_level1": 17,
-      "flat_wrong_level1": 7
+      "tree_wrong_level1": 13,
+      "flat_wrong_level1": 8
      },
      "phf": {
       "n": 2,
       "tree_wrong_level1": 2,
-      "flat_wrong_level1": 2
+      "flat_wrong_level1": 1
      },
      "warezmaster": {
       "n": 944,
-      "tree_wrong_level1": 752,
-      "flat_wrong_level1": 248
+      "tree_wrong_level1": 470,
+      "flat_wrong_level1": 200
      },
      "buffer_overflow": {
       "n": 20,
-      "tree_wrong_level1": 20,
-      "flat_wrong_level1": 12
+      "tree_wrong_level1": 14,
+      "flat_wrong_level1": 7
      },
      "loadmodule": {
       "n": 2,
-      "tree_wrong_level1": 2,
-      "flat_wrong_level1": 1
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
      },
      "perl": {
       "n": 2,
@@ -2218,8 +2218,8 @@
      },
      "rootkit": {
       "n": 13,
-      "tree_wrong_level1": 13,
-      "flat_wrong_level1": 10
+      "tree_wrong_level1": 10,
+      "flat_wrong_level1": 8
      }
     }
    },
@@ -2229,13 +2229,13 @@
     "by_leaf": {
      "normal": {
       "n": 9711,
-      "tree_wrong_level1": 721,
-      "flat_wrong_level1": 396
+      "tree_wrong_level1": 276,
+      "flat_wrong_level1": 387
      },
      "back": {
       "n": 359,
-      "tree_wrong_level1": 0,
-      "flat_wrong_level1": 0
+      "tree_wrong_level1": 6,
+      "flat_wrong_level1": 2
      },
      "land": {
       "n": 7,
@@ -2245,12 +2245,12 @@
      "neptune": {
       "n": 4657,
       "tree_wrong_level1": 1,
-      "flat_wrong_level1": 1
+      "flat_wrong_level1": 2
      },
      "pod": {
       "n": 41,
-      "tree_wrong_level1": 0,
-      "flat_wrong_level1": 0
+      "tree_wrong_level1": 2,
+      "flat_wrong_level1": 1
      },
      "smurf": {
       "n": 665,
@@ -2264,7 +2264,7 @@
      },
      "ipsweep": {
       "n": 141,
-      "tree_wrong_level1": 0,
+      "tree_wrong_level1": 1,
       "flat_wrong_level1": 0
      },
      "nmap": {
@@ -2275,11 +2275,11 @@
      "portsweep": {
       "n": 157,
       "tree_wrong_level1": 0,
-      "flat_wrong_level1": 0
+      "flat_wrong_level1": 1
      },
      "satan": {
       "n": 735,
-      "tree_wrong_level1": 2,
+      "tree_wrong_level1": 3,
       "flat_wrong_level1": 0
      },
      "ftp_write": {
@@ -2289,38 +2289,38 @@
      },
      "guess_passwd": {
       "n": 1231,
-      "tree_wrong_level1": 1231,
-      "flat_wrong_level1": 992
+      "tree_wrong_level1": 1219,
+      "flat_wrong_level1": 1116
      },
      "imap": {
       "n": 1,
-      "tree_wrong_level1": 0,
-      "flat_wrong_level1": 0
+      "tree_wrong_level1": 1,
+      "flat_wrong_level1": 1
      },
      "multihop": {
       "n": 18,
-      "tree_wrong_level1": 17,
-      "flat_wrong_level1": 6
+      "tree_wrong_level1": 14,
+      "flat_wrong_level1": 9
      },
      "phf": {
       "n": 2,
       "tree_wrong_level1": 2,
-      "flat_wrong_level1": 2
+      "flat_wrong_level1": 1
      },
      "warezmaster": {
       "n": 944,
-      "tree_wrong_level1": 731,
-      "flat_wrong_level1": 309
+      "tree_wrong_level1": 627,
+      "flat_wrong_level1": 215
      },
      "buffer_overflow": {
       "n": 20,
-      "tree_wrong_level1": 18,
-      "flat_wrong_level1": 10
+      "tree_wrong_level1": 15,
+      "flat_wrong_level1": 8
      },
      "loadmodule": {
       "n": 2,
-      "tree_wrong_level1": 2,
-      "flat_wrong_level1": 1
+      "tree_wrong_level1": 0,
+      "flat_wrong_level1": 0
      },
      "perl": {
       "n": 2,
@@ -2329,8 +2329,8 @@
      },
      "rootkit": {
       "n": 13,
-      "tree_wrong_level1": 13,
-      "flat_wrong_level1": 7
+      "tree_wrong_level1": 11,
+      "flat_wrong_level1": 8
      }
     }
    }

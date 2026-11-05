@@ -8,7 +8,8 @@
  "per_class": 4000,
  "seed": 1,
  "nodes": "",
- "procs": 1,
+ "procs": 2,
  "weighted": false,
- "score_every": 5
+ "score_every": 5,
+ "resample": "child"
 }
