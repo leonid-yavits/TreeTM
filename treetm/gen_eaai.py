@@ -135,7 +135,7 @@ with open(os.path.join(PAPER, 'tables', 'tab_main.tex'), 'w') as f:
     f.write('\\begin{table*}[!p]\n\\centering\n\\caption{Test results, mean $\\pm$ standard deviation over '
             'seeds. \\tmt-C and \\tmt-L use child-balanced and leaf-balanced resampling. \\tmt-B is \\tmt-C with a budget-matched root (Section~\\ref{subsec:errors}). The single-seed \\brf is included in the bolding. Acc: leaf accuracy; '
             'Bal: balanced accuracy; F1: macro F1; hF: hierarchical F-measure; Exp.: experts evaluated per input. Flat \\tm, tuned $C$: clauses per class selected on the validation set (1{,}000 on NSL-KDD, 200 on WOS; on ALeRCE, validation selects the $C$ of Table~\\ref{tab:config}). '
-            'Bold: best mean per column.}\n\\label{tab:main}\n\\scriptsize\n\\setlength{\\tabcolsep}{3pt}\n\\renewcommand{\\arraystretch}{0.9}\n'
+            'Bold: best mean per column.}\n\\label{tab:main}\n\\scriptsize\n\\setlength{\\tabcolsep}{3pt}\n\\renewcommand{\\arraystretch}{0.87}\n'
             '\\begin{tabular}{lccccc}\n\\toprule\n')
     for d, X, name in DS:
         f.write(f'\\multicolumn{{6}}{{l}}{{\\textbf{{{name}}}}}\\\\\n')
