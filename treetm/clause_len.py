@@ -1,6 +1,6 @@
 """Clause length statistics (included literals per clause, non-empty clauses)
 for TreeTM experts and the flat TM. Usage: python clause_len.py <dataset> [variant]
-Writes results/<dataset>/clause_length.json"""
+Writes results/<dataset>/clause_length[_<variant>].json"""
 import glob, json, sys
 import numpy as np
 from taxonomy import Taxonomy
@@ -19,5 +19,5 @@ r = out['per_seed']
 for k in ('tree_median', 'tree_mean', 'flat_median', 'flat_mean'):
     out[k] = float(np.mean([x[k] for x in r]))
 del out['tree'], out['flat']
-json.dump(out, open(f'results/{ds}/clause_length.json', 'w'), indent=1)
+json.dump(out, open(f'results/{ds}/clause_length' + ('' if var == 'main' else f'_{var}') + '.json', 'w'), indent=1)
 print(ds, {k: round(v, 1) for k, v in out.items() if k != 'per_seed'})

@@ -68,8 +68,8 @@
   "max_depth": 3
  },
  "cpu_seconds_per_input": {
-  "flat": 0.00010988795581057254,
-  "tree_hard": 3.133261157239886e-05,
+  "flat": 0.00011461379467772592,
+  "tree_hard": 3.11269084472543e-05,
   "n_inputs": 4096,
   "implementation": "bit-packed numpy, batch 256, best of 3, single process"
  },

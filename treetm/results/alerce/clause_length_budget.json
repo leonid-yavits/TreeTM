@@ -1,0 +1,29 @@
+{
+ "per_seed": [
+  {
+   "run": "results/alerce/budget/seed0",
+   "tree_median": 35.0,
+   "tree_mean": 59.07562837875495,
+   "flat_median": 28.0,
+   "flat_mean": 64.90112556446721
+  },
+  {
+   "run": "results/alerce/budget/seed1",
+   "tree_median": 34.0,
+   "tree_mean": 59.094522378089515,
+   "flat_median": 29.0,
+   "flat_mean": 67.97705894295189
+  },
+  {
+   "run": "results/alerce/budget/seed2",
+   "tree_median": 35.0,
+   "tree_mean": 59.95792285857405,
+   "flat_median": 30.0,
+   "flat_mean": 66.14138070791678
+  }
+ ],
+ "tree_median": 34.666666666666664,
+ "tree_mean": 59.37602453847284,
+ "flat_median": 29.0,
+ "flat_mean": 66.33985507177863
+}

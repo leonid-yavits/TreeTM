@@ -6,7 +6,18 @@ It holds the code, configurations, and per-seed results behind every number, tab
 TreeTM places one multiclass Tsetlin Machine (TM), an *expert*, at every internal node of a class taxonomy.
 Each expert is trained only on the samples of its own subtree, with class-balanced resampling.
 With hard routing, only the experts on one root-to-leaf path are evaluated.
-Soft routing and confidence-gated routing are also provided.
+Two training mechanisms act on the routing experts: leaf-balanced resampling and a budget-matched root.
+
+## Configuration reported in the paper
+
+| Dataset | TreeTM run | Flat TM (same C) | Flat TM (validation-selected C) |
+|---|---|---|---|
+| NSL-KDD | `results/nslkdd/leafbal/` (leaf-balanced resampling at the root and the attack expert) | `results/nslkdd/main/` (flat) | `results/nslkdd/flattuned/`, C = 1000 |
+| ALeRCE | `results/alerce/budget/` (child-balanced resampling, budget-matched root, P_root = 20000) | `results/alerce/main/` (flat) | validation selects C = 1000, the C of the main runs |
+
+The paper reports hard routing.
+The repository also holds every other run of the project (the child-balanced TreeTM in `main/`, soft and gated routing, the clause sweep, and the non-TM baselines).
+`gen_eaai.py` and `figs_eaai.py` regenerate every number, table, and figure of the paper from these files.
 
 ## Repository layout
 
@@ -70,7 +81,9 @@ python baselines.py alerce <s>
 ./eval_all.sh
 python aggregate.py <dataset>
 python analysis.py
-python cost.py <dataset> results/<dataset>/main/seed0
+python cost.py nslkdd results/nslkdd/leafbal/seed0
+python cost.py alerce results/alerce/budget/seed0
+python clause_len.py nslkdd leafbal
 python interpret.py nslkdd results/nslkdd/main/seed0 dos neptune 2
 
 # 6. Paper tables and figures

@@ -1,0 +1,43 @@
+{
+ "per_seed": [
+  {
+   "run": "results/nslkdd/leafbal/seed0",
+   "tree_median": 27.0,
+   "tree_mean": 50.68364669873196,
+   "flat_median": 31.0,
+   "flat_mean": 58.10645075657021
+  },
+  {
+   "run": "results/nslkdd/leafbal/seed1",
+   "tree_median": 29.0,
+   "tree_mean": 51.439051015209955,
+   "flat_median": 31.0,
+   "flat_mean": 57.095015438906046
+  },
+  {
+   "run": "results/nslkdd/leafbal/seed2",
+   "tree_median": 28.0,
+   "tree_mean": 50.96207773338177,
+   "flat_median": 29.0,
+   "flat_mean": 56.703687406494765
+  },
+  {
+   "run": "results/nslkdd/leafbal/seed3",
+   "tree_median": 29.0,
+   "tree_mean": 51.76343381389253,
+   "flat_median": 33.0,
+   "flat_mean": 60.18693733451015
+  },
+  {
+   "run": "results/nslkdd/leafbal/seed4",
+   "tree_median": 29.0,
+   "tree_mean": 50.473423620212614,
+   "flat_median": 32.0,
+   "flat_mean": 58.766598886040136
+  }
+ ],
+ "tree_median": 28.4,
+ "tree_mean": 51.06432657628577,
+ "flat_median": 31.2,
+ "flat_mean": 58.17173796450426
+}
