@@ -18,7 +18,6 @@ PAPER = sys.argv[1]
 os.makedirs(os.path.join(PAPER, 'tables'), exist_ok=True)
 DS = [('nslkdd', 'N', 'NSL-KDD'), ('alerce', 'A', 'ALeRCE')]
 VAR = {'nslkdd': 'leafbal', 'alerce': 'budget'}          # run directory of the reported TreeTM
-KEY = {'nslkdd': 'leaf_hard', 'alerce': 'budget_hard'}   # its key in summary.json
 MET = [('accuracy', 'Acc'), ('balanced_accuracy', 'Bal'), ('macro_f1', 'F'), ('hF', 'hF'), ('level1', 'Lone')]
 m = {}
 
@@ -42,8 +41,7 @@ def pstr(p):
 
 
 meta = {d: json.load(open(f'work/{d}/meta.json')) for d, _, _ in DS}
-summ = {d: json.load(open(f'results/{d}/summary.json')) for d, _, _ in DS}
-seeds = {d: summ[d]['n_seeds']['tree_hard'] for d, _, _ in DS}
+seeds = {d: len(glob.glob(f'results/{d}/{VAR[d]}/seed*/treetm_eval.json')) for d, _, _ in DS}
 
 # ---------------------------------------------------------------- datasets
 for d, X, name in DS:
@@ -84,7 +82,7 @@ with open(os.path.join(PAPER, 'tables', 'tab_datasets.tex'), 'w') as f:
 # ---------------------------------------------------------------- configuration
 cfg = {}
 for d, X, _ in DS:
-    h = json.load(open(f'results/{d}/main/seed0/root_hist.json'))['cfg']; cfg[d] = h
+    h = json.load(open(f'results/{d}/main/seed0/flat_hist.json'))['cfg']; cfg[d] = h
     put(f'{X}C', h['clauses']); put(f'{X}T', h['T']); put(f'{X}S', float(h['s']), 0 if float(h['s']).is_integer() else 1)
     put(f'{X}P', h['per_class']); put(f'{X}E', h['epochs'])
     put(f'{X}PRoot', json.load(open(f'results/{d}/{VAR[d]}/seed0/root_hist.json'))['cfg']['per_class'])
@@ -110,7 +108,7 @@ def per_seed(d, var, k):
 
 
 def tuned(d):
-    fs = sorted(glob.glob(f'results/{d}/baselines/seed*/flat_tm_tuned.json'))
+    fs = sorted(glob.glob(f'results/{d}/flattuned/seed*/flat_eval.json'))
     return [json.load(open(f)) for f in fs]
 
 

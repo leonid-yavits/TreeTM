@@ -1,5 +1,5 @@
 #!/bin/bash
-# Equal-budget root (review M-4): TreeTM-C whose root draws P_root = P * L / K_root
+# Budget-matched root: the root draws P_root = P * L / K_root
 # samples per child and epoch, i.e. as many samples per epoch as the flat TM.
 # All other experts and the flat TM are shared with results/<ds>/main/seed<s>.
 # Usage: budget.sh <ds> <seed> <P_root> C T s E

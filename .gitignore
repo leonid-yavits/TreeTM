@@ -1,5 +1,5 @@
 __pycache__/
 *.pyc
 *_ckpt.pkl*
-work/*/prepared.npz
+treetm/work/*/prepared.npz
 alerce_prep/work/

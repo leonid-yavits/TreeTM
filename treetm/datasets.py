@@ -1,10 +1,10 @@
 """Dataset preparation for TreeTM. Each dataset is written to
 work/<name>/prepared.npz (Btr/Bva/Bte booleanized bits, Ftr/Fva/Fte float
-features for the non-TM baselines, ytr/yva/yte leaf ids) and
+features, ytr/yva/yte leaf ids) and
 work/<name>/meta.json (taxonomy, leaves, sizes, provenance).
 
 Usage:
-  python datasets.py alerce   <hier_tm dir>
+  python datasets.py alerce   ../alerce_prep
   python datasets.py nslkdd   <dir with KDDTrain+.txt, KDDTest+.txt, training_attack_types.txt>
 """
 import json

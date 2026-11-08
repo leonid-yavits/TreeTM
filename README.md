@@ -5,43 +5,43 @@ It holds the code, configurations, and per-seed results behind every number, tab
 
 TreeTM places one multiclass Tsetlin Machine (TM), an *expert*, at every internal node of a class taxonomy.
 Each expert is trained only on the samples of its own subtree, with class-balanced resampling.
-With hard routing, only the experts on one root-to-leaf path are evaluated.
+Hard routing evaluates only the experts on one root-to-leaf path.
 Two training mechanisms act on the routing experts: leaf-balanced resampling and a budget-matched root.
 
 ## Configuration reported in the paper
 
-| Dataset | TreeTM run | Flat TM (same C) | Flat TM (validation-selected C) |
+| Dataset | TreeTM | Flat TM, same C | Flat TM, validation-selected C |
 |---|---|---|---|
-| NSL-KDD | `results/nslkdd/leafbal/` (leaf-balanced resampling at the root and the attack expert) | `results/nslkdd/main/` (flat) | `results/nslkdd/flattuned/`, C = 1000 |
-| ALeRCE | `results/alerce/budget/` (child-balanced resampling, budget-matched root, P_root = 20000) | `results/alerce/main/` (flat) | validation selects C = 1000, the C of the main runs |
+| NSL-KDD (5 seeds) | `results/nslkdd/leafbal/`: leaf-balanced resampling at the root and the attack expert, C = 500 | `results/nslkdd/main/` | `results/nslkdd/flattuned/`, C = 1000 |
+| ALeRCE (3 seeds) | `results/alerce/budget/`: budget-matched root (P_root = 20000), C = 1000 | `results/alerce/main/` | validation selects C = 1000, the C of the main runs |
 
-The paper reports hard routing.
-The repository also holds every other run of the project (the child-balanced TreeTM in `main/`, soft and gated routing, the clause sweep, and the non-TM baselines).
+All paths are relative to `treetm/`.
 `gen_eaai.py` and `figs_eaai.py` regenerate every number, table, and figure of the paper from these files.
 
 ## Repository layout
 
 | Path | Content |
 |---|---|
-| `treetm/` | TreeTM framework: data preparation, training, evaluation, baselines, cost model, analysis, paper tables and figures |
-| `treetm/work/<dataset>/meta.json` | Taxonomy, leaf classes, class counts, Boolean feature names, and split description of each dataset |
+| `treetm/` | TreeTM code: data preparation, training, evaluation, cost model, analyses, paper tables and figure |
+| `treetm/run_paper.sh` | Every run and analysis behind the paper, in order |
+| `treetm/work/<dataset>/meta.json` | Taxonomy, leaf classes, class counts, Boolean feature names, and split of each dataset |
 | `treetm/results/<dataset>/` | Per-seed results (see below) |
-| `alerce_prep/` | ALeRCE preprocessing, booleanization, and the balanced hierarchical random forest (BHRF) reference |
-| `alerce_prep/results/` | BHRF predictions and results, and the earlier ALeRCE analyses |
+| `alerce_prep/` | ALeRCE preprocessing and booleanization, and the training code of ALeRCE seed 0 (`run_tms.py`) |
 
 ### Results per dataset (`treetm/results/<dataset>/`)
 
 | Folder | Content |
 |---|---|
-| `main/seed<s>/` | TreeTM-C (child-balanced resampling) and the flat TM: per-epoch histories, validation and test scores, final clause masks, evaluation, predictions, cost |
-| `leafbal/seed<s>/` | TreeTM-L (leaf-balanced resampling). Experts identical to TreeTM-C are symbolic links to `main/` |
-| `budget/seed<s>/` | TreeTM-B (budget-matched root). Non-root experts are symbolic links to `main/` |
-| `baselines/seed<s>/` | RF, LCPN-RF (hard and soft), HGB, and MLP results and predictions |
-| `sweep/C<clauses>/` | Clause-budget sweep (seed 0) |
-| `probe/` | Short T and s probes |
-| `summary.json`, `summary.txt` | Means, standard deviations, Welch t-tests, and McNemar tests over seeds |
+| `main/seed<s>/` | Flat TM and the experts below the root: training histories, validation and test class sums, final clause masks, evaluation, predictions |
+| `leafbal/seed<s>/` (NSL-KDD) | TreeTM. Root and attack expert trained with leaf-balanced resampling. The other experts and the flat TM are symbolic links to `main/` |
+| `budget/seed<s>/` (ALeRCE) | TreeTM. Budget-matched root. The other experts and the flat TM are symbolic links to `main/` |
+| `sweep/C<clauses>/` | Flat TM with other clause budgets (seed 0), used to select C on the validation set |
+| `flattuned/seed<s>/` (NSL-KDD) | Flat TM with the validation-selected C = 1000 and its evaluation (`flat_eval.json`) |
+| `probe/` (NSL-KDD) | Short T and s probes |
 
-`treetm/results/analysis.json` holds the validation, misrouting, false-alarm, and conditional-error analyses.
+Each run folder holds `treetm_eval.json` (test metrics) and `treetm_predictions.npz`.
+`leafbal/seed0` and `budget/seed0` also hold `treetm_cost.json` (literal tests, CPU time, and the AP(TM) model).
+`results/analysis.json` holds the NSL-KDD misrouting counts by leaf.
 TM checkpoints are not included. The final clause masks of every expert are.
 
 ## Datasets
@@ -53,51 +53,26 @@ The datasets are public and are not redistributed here.
 
 ## Requirements
 
-Python 3 with pyTsetlinMachine 0.6.6, scikit-learn 1.9.1, imbalanced-learn 0.14.2, numpy, scipy, pandas, and matplotlib.
+Python 3 with pyTsetlinMachine 0.6.6, scikit-learn, numpy, scipy, pandas, and matplotlib.
 
 ## Reproducing the results
 
 Run all commands from `treetm/`.
 
 ```bash
-# 1. Prepare the data (writes work/<dataset>/prepared.npz)
-python ../alerce_prep/prepare.py <ALeRCE data dir> --out ../alerce_prep/work
+# 0. Prepare the data (writes work/<dataset>/prepared.npz)
+cd ../alerce_prep && python prepare.py <ALeRCE data dir> && cd ../treetm
 python datasets.py alerce ../alerce_prep
 python datasets.py nslkdd <NSL-KDD dir>
 
-# 2. TreeTM-C and the flat TM, one call per seed
-python train.py nslkdd --run results/nslkdd/main/seed<s> --clauses 500  --T 50  --s 4 --epochs 50 --per_class 4000 --seed <s>
-python train.py alerce --run results/alerce/main/seed<s> --clauses 1000 --T 100 --s 4 --epochs 50 --per_class 4000 --seed <s>
-
-# 3. TreeTM-L and TreeTM-B
-./leafbal.sh <dataset> <seed> <nodes> C T s E P    # nodes: root (NSL-KDD: root,attack)
-./budget.sh  <dataset> <seed> <P_root> C T s E     # P_root = P*L/K_root: 46000 (NSL-KDD), 20000 (ALeRCE)
-
-# 4. Baselines
-python baselines.py nslkdd <s>
-python baselines.py alerce <s>
-
-# 5. Evaluation, statistics, cost, and analyses
-./eval_all.sh
-python aggregate.py <dataset>
-python analysis.py
-python cost.py nslkdd results/nslkdd/leafbal/seed0
-python cost.py alerce results/alerce/budget/seed0
-python clause_len.py nslkdd leafbal
-python interpret.py nslkdd results/nslkdd/main/seed0 dos neptune 2
-
-# 6. Paper tables and figures
-python gen_eaai.py <paper dir>
-python figs_eaai.py <paper dir>
+# 1-6. Training, evaluation, cost, analyses, and the paper tables and figure
+./run_paper.sh <paper dir>
 ```
-
-The shell scripts `run_*.sh` and `queue*.sh` list the exact runs and their order.
-NSL-KDD uses five seeds (0 to 4). ALeRCE uses three seeds (0 to 2).
 
 ## Notes on reproducibility
 
 - Training is resumable. The TM state and the random-number state are checkpointed every epoch.
 - The clause-feedback generator of pyTsetlinMachine is process-wide with a fixed initial state, and four expert runs were resumed from checkpoints. Runs are therefore repeatable in distribution but not bit for bit.
-- `results/alerce/main/seed0` is the first ALeRCE run, produced with `alerce_prep/run_tms.py`.
+- `results/alerce/main/seed0` was produced with `alerce_prep/run_tms.py` and the same configuration as the other ALeRCE seeds.
 - CPU timings (`treetm_cost.json`) come from a bit-packed NumPy implementation on a shared two-core machine. Repeated measurements varied by about 15%.
 - Latency and energy on the associative processor are predictions of an analytical model, not measurements.
