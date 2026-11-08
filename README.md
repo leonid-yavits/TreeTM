@@ -76,3 +76,7 @@ python datasets.py nslkdd <NSL-KDD dir>
 - `results/alerce/main/seed0` was produced with `alerce_prep/run_tms.py` and the same configuration as the other ALeRCE seeds.
 - CPU timings (`treetm_cost.json`) come from a bit-packed NumPy implementation on a shared two-core machine. Repeated measurements varied by about 15%.
 - Latency and energy on the associative processor are predictions of an analytical model, not measurements.
+
+## License
+
+MIT License, see `LICENSE`.
