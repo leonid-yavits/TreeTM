@@ -1,0 +1,50 @@
+[attack] epoch 1 train=0.8s
+[attack] epoch 2 train=0.5s
+[attack] epoch 3 train=0.5s
+[attack] epoch 4 train=0.5s
+[attack] epoch 5 val_acc=0.9959 train=0.6s
+[attack] epoch 6 train=0.5s
+[attack] epoch 7 train=0.5s
+[attack] epoch 8 train=0.5s
+[attack] epoch 9 train=0.6s
+[attack] epoch 10 val_acc=0.9990 train=0.5s
+[attack] epoch 11 train=0.4s
+[attack] epoch 12 train=0.4s
+[attack] epoch 13 train=0.4s
+[attack] epoch 14 train=0.4s
+[attack] epoch 15 val_acc=0.9993 train=0.5s
+[attack] epoch 16 train=0.4s
+[attack] epoch 17 train=0.4s
+[attack] epoch 18 train=0.4s
+[attack] epoch 19 train=0.4s
+[attack] epoch 20 val_acc=0.9986 train=0.4s
+[attack] epoch 21 train=0.5s
+[attack] epoch 22 train=0.4s
+[attack] epoch 23 train=0.4s
+[attack] epoch 24 train=0.5s
+[attack] epoch 25 val_acc=0.9995 train=0.4s
+[attack] epoch 26 train=0.5s
+[attack] epoch 27 train=0.5s
+[attack] epoch 28 train=0.4s
+[attack] epoch 29 train=0.4s
+[attack] epoch 30 val_acc=0.9997 train=0.4s
+[attack] epoch 31 train=0.4s
+[attack] epoch 32 train=0.4s
+[attack] epoch 33 train=0.4s
+[attack] epoch 34 train=0.4s
+[attack] epoch 35 val_acc=0.9998 train=0.4s
+[attack] epoch 36 train=0.5s
+[attack] epoch 37 train=0.4s
+[attack] epoch 38 train=0.4s
+[attack] epoch 39 train=0.4s
+[attack] epoch 40 val_acc=0.9997 train=0.4s
+[attack] epoch 41 train=0.4s
+[attack] epoch 42 train=0.4s
+[attack] epoch 43 train=0.4s
+[attack] epoch 44 train=0.4s
+[attack] epoch 45 val_acc=0.9995 train=0.4s
+[attack] epoch 46 train=0.4s
+[attack] epoch 47 train=0.4s
+[attack] epoch 48 train=0.5s
+[attack] epoch 49 train=0.4s
+[attack] epoch 50 val_acc=0.9998 train=0.5s

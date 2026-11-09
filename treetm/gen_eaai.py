@@ -114,10 +114,11 @@ def tuned(d):
 
 VALS = {}
 for d, X, _ in DS:
-    VALS[d] = {'tree': per_seed(d, VAR[d], 'tree_hard'), 'flat': per_seed(d, 'main', 'flat')}
+    VALS[d] = {'tree': per_seed(d, VAR[d], 'tree_hard'), 'flat': per_seed(d, 'main', 'flat'),
+               'cb': per_seed(d, 'main', 'tree_hard')}
     if tuned(d):
         VALS[d]['tuned'] = tuned(d)
-    for k, tag in [('tree', 'Tree'), ('flat', 'Flat'), ('tuned', 'Tuned')]:
+    for k, tag in [('tree', 'Tree'), ('flat', 'Flat'), ('tuned', 'Tuned'), ('cb', 'CB')]:
         if k not in VALS[d]:
             continue
         for mm, mt in MET:
@@ -138,7 +139,9 @@ for d, X, _ in DS:
 with open(os.path.join(PAPER, 'tables', 'tab_main.tex'), 'w') as f:
     f.write('\\begin{table}[t]\n\\centering\n\\caption{Test results, mean $\\pm$ standard deviation over seeds. '
             'Acc: leaf accuracy; Bal: balanced accuracy; F1: macro F1; hF: hierarchical F-measure; '
-            'Top: accuracy at the first level of the taxonomy. '
+            'Top: accuracy at the first level of the taxonomy. Records of attack types unseen in training are excluded '
+            'from all columns. Child-balanced: \\tmt with child-balanced resampling at every expert and '
+            '$P_{\\mathrm{root}}=P$. '
             'On NSL-KDD, the flat \\tm with $C{=}' + m['NCTuned'] + '$ uses the clause budget selected on the validation set. '
             'On ALeRCE, validation selects the $C$ of Table~\\ref{tab:config}. Bold: best mean per column. '
             '$^{\\ast}$: \\tmt is significantly better than the flat \\tm with the same $C$ (Welch\'s $t$-test, $p<0.05$).}\n'
@@ -147,7 +150,8 @@ with open(os.path.join(PAPER, 'tables', 'tab_main.tex'), 'w') as f:
             'Model & Acc & Bal & F1 & hF & Top\\\\\n')
     for d, X, name in DS:
         f.write(f'\\midrule\n\\multicolumn{{6}}{{l}}{{\\textit{{{name}}}}}\\\\\n')
-        rows = [('tree', '\\tmt', m[f'{X}TreeExp']), ('flat', f'Flat \\tm, $C{{=}}{m[f"{X}C"]}$', '1.00')]
+        rows = [('tree', '\\tmt', m[f'{X}TreeExp']), ('cb', 'Child-balanced', ''),
+                ('flat', f'Flat \\tm, $C{{=}}{m[f"{X}C"]}$', '1.00')]
         if 'tuned' in VALS[d]:
             rows.append(('tuned', f'Flat \\tm, $C{{=}}{m[f"{X}CTuned"]}$', '1.00'))
         best = {mm: max(np.mean([r[mm] for r in VALS[d][k]]) for k, _, _ in rows) for mm, _ in MET}
@@ -220,8 +224,9 @@ w = cs['nslkdd']['work']
 put('NRedDenseTuned', pct(1 - w['dense_literal_tests_tree'] / (w['dense_literal_tests_flat'] * int(m['NCTuned'].replace('{,}', '')) / cfg['nslkdd']['clauses'])))
 
 # ---------------------------------------------------------------- interpretability (NSL-KDD)
-# The DoS expert of the leaf-balanced runs is shared with the child-balanced runs (all its children are leaves).
-assert os.path.realpath('results/nslkdd/leafbal/seed0/dos_final_masks.npz') == os.path.realpath('results/nslkdd/main/seed0/dos_final_masks.npz')
+# The DoS expert of the leaf-balanced runs is the one of the child-balanced runs (all its children are leaves).
+import filecmp
+assert filecmp.cmp('results/nslkdd/leafbal/seed0/dos_final_masks.npz', 'results/nslkdd/main/seed0/dos_final_masks.npz', shallow=False)
 cl = json.load(open('results/nslkdd/main/seed0/clauses_dos_neptune.json'))
 put('NClTprPct', 100 * cl[0]['tpr'], 1); put('NClFpr', cl[0]['fpr'], 4); put('NClLits', cl[0]['n_literals'])
 put('NClTprBPct', 100 * cl[1]['tpr'], 1); put('NClFprBPct', 100 * cl[1]['fpr'], 1); put('NClLitsB', cl[1]['n_literals'])
@@ -239,6 +244,59 @@ for var, vt in [('leafbal', 'Tree')]:
     for leaf, tag in [('guess_passwd', 'Guess'), ('warezmaster', 'Warez')]:
         put(f'NMis{tag}{vt}', float(np.mean([r['by_leaf'][leaf]['tree_wrong_level1'] for r in mis])), 0)
         put(f'NMis{tag}Flat', float(np.mean([r['by_leaf'][leaf]['flat_wrong_level1'] for r in mis])), 0)
+
+# ---------------------------------------------------------------- NSL-KDD validation accuracy, leaf-balanced and child-balanced
+from evaluate import load_scores, Router
+tn = Taxonomy(meta['nslkdd']['taxonomy'])
+yv = np.load('work/nslkdd/prepared.npz')['yva']
+for var, tag in [('leafbal', 'Tree'), ('main', 'CB')]:
+    acc = []
+    for s in range(seeds['nslkdd']):
+        S = {u: load_scores(f'results/nslkdd/{var}/seed{s}', u, 'val') for u in tn.internal}
+        acc.append(float((Router(tn, S).hard()[0] == yv).mean()))
+    put(f'NValAcc{tag}', float(np.mean(acc)))
+
+# ---------------------------------------------------------------- NSL-KDD: test records of unseen attack types
+# Share of the unseen-attack records that the first decision flags as an attack (not normal).
+import zlib
+
+
+def novel(run, u):
+    v = np.load(f'{run}/{u}_novel_uscores.npy').astype(float)
+    return v + np.random.default_rng(zlib.crc32(f'{u}/novel'.encode())).uniform(0, 1e-3, v.shape)
+
+
+nr, nl = tn.children['root'].index('normal'), tn.leaf_index['normal']
+uf = {'Tree': [], 'CB': [], 'Flat': [], 'Tuned': []}
+for s in range(seeds['nslkdd']):
+    uf['Tree'].append((novel(f'results/nslkdd/leafbal/seed{s}', 'root').argmax(1) != nr).mean())
+    uf['CB'].append((novel(f'results/nslkdd/main/seed{s}', 'root').argmax(1) != nr).mean())
+    uf['Flat'].append((novel(f'results/nslkdd/main/seed{s}', 'flat').argmax(1) != nl).mean())
+    uf['Tuned'].append((novel(f'results/nslkdd/flattuned/seed{s}', 'flat').argmax(1) != nl).mean())
+for k, v in uf.items():
+    put(f'NUnseen{k}', 100 * float(np.mean(v)), 1)
+
+# ---------------------------------------------------------------- ALeRCE: per-leaf recall and top-level misrouting
+ta = Taxonomy(meta['alerce']['taxonomy']); ya = np.load('work/alerce/prepared.npz')['yte']
+lv1 = lambda a: np.array(ta.level_label(a, 1))
+for leaf, tag in [('CV/Nova', 'CV'), ('YSO', 'YSO')]:
+    i = ta.leaf_index[leaf]; msk = ya == i
+    for k, key in [('Tree', 'tree_hard'), ('Flat', 'flat')]:
+        P = [np.load(f'results/alerce/budget/seed{s}/treetm_predictions.npz')[key][msk] for s in range(seeds['alerce'])]
+        put(f'ARec{tag}{k}', 100 * float(np.mean([(p == i).mean() for p in P])), 0)
+        put(f'AMisTop{tag}{k}', 100 * float(np.mean([(lv1(p) != lv1(ya[msk])).mean() for p in P])), 0)
+    put(f'AN{tag}Test', int(msk.sum()))
+
+# ---------------------------------------------------------------- stored clauses (rows on AP(TM))
+for d, X, _ in DS:
+    t = Taxonomy(meta[d]['taxonomy']); kt = sum(len(t.children[u]) for u in t.internal); C = cfg[d]['clauses']
+    put(f'{X}TreeClasses', kt); put(f'{X}TreeClauses', kt * C); put(f'{X}FlatClauses', len(t.leaves) * C)
+    put(f'{X}ExtraRows', pct(kt / len(t.leaves) - 1))
+
+# ---------------------------------------------------------------- rank of the example clause in the DoS expert
+z = np.load('results/nslkdd/main/seed0/dos_final_masks.npz'); nlit = int(z['n_literals'])
+ln = np.unpackbits(z['masks'], axis=2)[:, :, :nlit].sum(2).ravel(); ln = ln[ln > 0]
+put('NDosLongerPct', pct((ln > cl[0]['n_literals']).mean())); put('NDosMedian', float(np.median(ln)), 0)
 
 with open(os.path.join(PAPER, 'numbers.tex'), 'w') as fh:
     fh.write('% Auto-generated by gen_eaai.py from the result files. Do not edit.\n')

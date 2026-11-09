@@ -32,9 +32,9 @@ All paths are relative to `treetm/`.
 
 | Folder | Content |
 |---|---|
-| `main/seed<s>/` | Flat TM and the experts below the root: training histories, validation and test class sums, final clause masks, evaluation, predictions |
-| `leafbal/seed<s>/` (NSL-KDD) | TreeTM. Root and attack expert trained with leaf-balanced resampling. The other experts and the flat TM are symbolic links to `main/` |
-| `budget/seed<s>/` (ALeRCE) | TreeTM. Budget-matched root. The other experts and the flat TM are symbolic links to `main/` |
+| `main/seed<s>/` | Flat TM and TreeTM with child-balanced resampling at every expert and P_root = P (the "Child-balanced" rows of Table 3): training histories, validation and test class sums, final clause masks, evaluation, predictions |
+| `leafbal/seed<s>/` (NSL-KDD) | TreeTM. Root and attack expert trained with leaf-balanced resampling. The other experts and the flat TM are copies of the files in `main/` |
+| `budget/seed<s>/` (ALeRCE) | TreeTM. Budget-matched root. The other experts and the flat TM are copies of the files in `main/` |
 | `sweep/C<clauses>/` | Flat TM with other clause budgets (seed 0), used to select C on the validation set |
 | `flattuned/seed<s>/` (NSL-KDD) | Flat TM with the validation-selected C = 1000 and its evaluation (`flat_eval.json`) |
 | `probe/` (NSL-KDD) | Short T and s probes |
@@ -42,6 +42,8 @@ All paths are relative to `treetm/`.
 Each run folder holds `treetm_eval.json` (test metrics) and `treetm_predictions.npz`.
 `leafbal/seed0` and `budget/seed0` also hold `treetm_cost.json` (literal tests, CPU time, and the AP(TM) model).
 `results/analysis.json` holds the NSL-KDD misrouting counts by leaf.
+The NSL-KDD runs also hold the class sums of the test records of unseen attack types (`*_novel_uscores.npy`).
+The repository contains no symbolic links, so a downloaded archive runs as is.
 TM checkpoints are not included. The final clause masks of every expert are.
 
 ## Datasets
